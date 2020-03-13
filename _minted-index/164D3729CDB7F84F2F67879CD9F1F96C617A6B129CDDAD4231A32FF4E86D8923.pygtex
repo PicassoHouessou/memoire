@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{passdb \PYGZob{}}
+\PYG{g+go}{  driver = sql}
+\PYG{g+go}{  args = /etc/dovecot/dovecot\PYGZhy{}sql.conf.ext}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{userdb \PYGZob{}}
+\PYG{g+go}{  driver = static}
+\PYG{g+go}{  args = uid=vhosts gid=vhosts home=/externe/mail/vhosts/\PYGZpc{}d/\PYGZpc{}n}
+\PYG{g+go}{\PYGZcb{}}
+\end{Verbatim}

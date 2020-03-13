@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{groupadd \PYGZhy{}g 5000 vhosts}
+\PYG{g+go}{useradd \PYGZhy{}g vhosts \PYGZhy{}u 5000 vhosts \PYGZhy{}d /externe/mail/vhosts \PYGZhy{}s /bin/false \PYGZhy{}m}
+\end{Verbatim}

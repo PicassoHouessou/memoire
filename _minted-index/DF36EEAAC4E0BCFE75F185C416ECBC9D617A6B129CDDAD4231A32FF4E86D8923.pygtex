@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{ls \PYGZhy{}la /dev/sd*}
+\end{Verbatim}

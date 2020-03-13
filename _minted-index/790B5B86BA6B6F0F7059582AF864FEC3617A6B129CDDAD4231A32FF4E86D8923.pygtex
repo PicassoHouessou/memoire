@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{sudo apt\PYGZhy{}get update}
+\PYG{g+go}{sudo apt\PYGZhy{}get install vsftpd}
+\end{Verbatim}

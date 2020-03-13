@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{driver = mysql}
+\PYG{g+go}{default\PYGZus{}pass\PYGZus{}scheme = ARGON2I}
+\PYG{g+go}{connect = host=127.0.0.1 dbname=messagerie user=messagerieUser password=AMETTRE}
+\PYG{g+go}{password\PYGZus{}query = SELECT email as user, password FROM virtual\PYGZus{}users WHERE email=\PYGZsq{}\PYGZpc{}u\PYGZsq{}}
+\end{Verbatim}

@@ -1,0 +1,50 @@
+\babel@toc {nil}{}
+\vspace *{3ex}
+\contentsline {chapter}{Introduction}{3}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Cadre de l'étude}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Présentation du bureau d'étude JScom}{8}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Presentation générale}{8}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Situation géographique}{8}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Domaine d'intervention}{8}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Déroulement et observations}{8}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Cadre théorique et méthodologique}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Contexte et énoncé du problème}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Objectif}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Hypothèse}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Etude théorique}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Définition d'un serveur}{11}{subsection.2.4.1}%
+\contentsline {subsubsection}{Les caractéristiques d'un serveur}{11}{section*.8}%
+\contentsline {subsubsection}{Quelques services}{11}{section*.9}%
+\contentsline {subsubsection}{Spécification d'un OS seveur}{12}{section*.10}%
+\contentsline {subsection}{\numberline {2.4.2}Disque dur RAID LVM}{12}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Serveur web APACHE}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Base de donnée}{12}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Modélisation avec GNS3}{13}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Programmation}{13}{subsection.2.4.6}%
+\contentsline {subsubsection}{HTML , CSS, PHP JAVASCRIPT JQUERY BASH}{13}{section*.11}%
+\contentsline {paragraph}{HTML}{13}{section*.12}%
+\contentsline {paragraph}{PHP}{14}{section*.13}%
+\contentsline {subsection}{\numberline {2.4.7}Fonctionnement du mail}{14}{subsection.2.4.7}%
+\contentsline {subsubsection}{SMTP}{14}{section*.14}%
+\contentsline {subsubsection}{IMAP}{14}{section*.16}%
+\contentsline {subsection}{\numberline {2.4.8}Sécurité}{15}{subsection.2.4.8}%
+\contentsline {subsubsection}{firewall}{16}{section*.17}%
+\contentsline {subsubsection}{VPN}{16}{section*.18}%
+\contentsline {chapter}{\numberline {3}Implémentation du projet}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Monter le serveur Linux}{17}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Installation du serveur}{17}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Gestion du stockage de fichier}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Systeme de fichier}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Ajout de disque dur au serveur}{18}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Configurer le LAMP}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Modélisation de l'architecture reseau avec GNS3}{21}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Description du schéma}{21}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Configuration des equipements}{22}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Installation Postfix}{22}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Création de la base de donnée des tables}{27}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Installation de Dovecot}{27}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Installation du client mail}{30}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Le site d'administration}{30}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Configuration du FTP avec vsftpd}{34}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Spamassassin}{37}{section.3.10}%
+\contentsline {section}{\numberline {3.11} Sécurité}{37}{section.3.11}%

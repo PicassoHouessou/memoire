@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{rewrite\PYGZus{}header Subject [***** SPAM \PYGZus{}SCORE\PYGZus{} *****]}
+\PYG{g+go}{required\PYGZus{}score 5.0}
+\PYG{g+go}{use\PYGZus{}bayes 1}
+\PYG{g+go}{bayes\PYGZus{}auto\PYGZus{}learn 1}
+\end{Verbatim}

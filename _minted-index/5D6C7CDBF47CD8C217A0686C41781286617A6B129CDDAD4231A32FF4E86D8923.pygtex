@@ -1,0 +1,72 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{service imap\PYGZhy{}login \PYGZob{}}
+\PYG{g+go}{  inet\PYGZus{}listener imap \PYGZob{}}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{port} \PYG{o}{=} \PYG{l+m}{143}
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{  inet\PYGZus{}listener imaps \PYGZob{}}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{port} \PYG{o}{=} \PYG{l+m}{993}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{ssl} \PYG{o}{=} yes
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service pop3\PYGZhy{}login \PYGZob{}}
+\PYG{g+go}{  inet\PYGZus{}listener pop3 \PYGZob{}}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{port} \PYG{o}{=} \PYG{l+m}{110}
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{  inet\PYGZus{}listener pop3s \PYGZob{}}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{port} \PYG{o}{=} \PYG{l+m}{995}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{ssl} \PYG{o}{=} yes
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service submission\PYGZhy{}login \PYGZob{}}
+\PYG{g+go}{  inet\PYGZus{}listener submission \PYGZob{}}
+\PYG{g+gp}{    \PYGZsh{}}\PYG{n+nv}{port} \PYG{o}{=} \PYG{l+m}{587}
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service lmtp \PYGZob{}}
+\PYG{g+go}{    unix\PYGZus{}listener /var/spool/postfix/private/dovecot\PYGZhy{}lmtp \PYGZob{}}
+\PYG{g+go}{    mode = 0600}
+\PYG{g+go}{    user = postfix}
+\PYG{g+go}{    group = postfix}
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{\PYGZcb{}}
+
+\PYG{g+go}{service imap \PYGZob{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service pop3 \PYGZob{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service submission \PYGZob{}}
+\PYG{g+gp}{  \PYGZsh{}} Max. number of SMTP Submission processes \PYG{o}{(}connections\PYG{o}{)}
+\PYG{g+gp}{  \PYGZsh{}}\PYG{n+nv}{process\PYGZus{}limit} \PYG{o}{=} \PYG{l+m}{1024}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service auth \PYGZob{}}
+\PYG{g+go}{  unix\PYGZus{}listener auth\PYGZhy{}userdb \PYGZob{}}
+\PYG{g+go}{    mode = 0600}
+\PYG{g+go}{    user = vhosts}
+\PYG{g+go}{    group = vhosts}
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+gp}{  \PYGZsh{}} Postfix smtp\PYGZhy{}auth
+\PYG{g+go}{  unix\PYGZus{}listener /var/spool/postfix/private/auth \PYGZob{}}
+\PYG{g+go}{    mode = 0666}
+\PYG{g+go}{    user = postfix}
+\PYG{g+go}{    group = postfix}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service auth\PYGZhy{}worker \PYGZob{}}
+
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{service dict \PYGZob{}}
+\PYG{g+go}{  unix\PYGZus{}listener dict \PYGZob{}}
+\PYG{g+go}{    mode = 0600}
+\PYG{g+go}{    user = vhosts}
+\PYG{g+go}{    group = vhosts}
+\PYG{g+go}{  \PYGZcb{}}
+\PYG{g+go}{\PYGZcb{}}
+\PYG{g+go}{\PYGZbs{}end\PYGZob{}exempleConsole}
+\PYG{g+go}{Le fichier /etc/dovecot/10\PYGZhy{}ssl.conf va contenir les informations pour sécuriser le serveur avec les certificats :}
+\PYG{g+go}{\PYGZbs{}begin\PYGZob{}exempleconsole\PYGZcb{}}
+\PYG{g+go}{ssl = yes}
+\PYG{g+go}{ssl\PYGZus{}cert = \PYGZlt{}/etc/ssl/certs/dovecot\PYGZhy{}autosigne.pem}
+\PYG{g+go}{ssl\PYGZus{}key = \PYGZlt{}/etc/ssl/private/dovecot\PYGZhy{}private\PYGZhy{}autosigne.pem}
+\PYG{g+go}{ssl\PYGZus{}dh = \PYGZlt{}/etc/ssl/certs/dovecot\PYGZhy{}dh\PYGZhy{}autosigne.pem}
+\PYG{g+go}{ssl\PYGZus{}prefer\PYGZus{}server\PYGZus{}ciphers = yes}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{ARRAY /dev/md0 level=raid1 num\PYGZhy{}devices=2 spares=1 UUID=1bf998cb:0b420815:25812e34:403d63c5 devices=/dev/sdb,/dev/sdc,/dev/sdd}
+\end{Verbatim}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{sudo pvcreate /dev/md0}
+\PYG{g+go}{sudo vgcreate raid\PYGZhy{}volume /dev/md0}
+\PYG{g+go}{sudo lvcreate \PYGZhy{}\PYGZhy{}name data \PYGZhy{}\PYGZhy{}size 2000M raid\PYGZhy{}volume}
+\end{Verbatim}

@@ -1,0 +1,5 @@
+user = postfix
+password = isidore 
+hosts = 127.0.0.1
+dbname = postfix
+SELECT maildir FROM mailbox WHERE username='%s' AND active = 1

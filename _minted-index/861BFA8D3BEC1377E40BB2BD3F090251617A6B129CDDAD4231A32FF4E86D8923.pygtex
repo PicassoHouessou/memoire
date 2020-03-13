@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{sudo su}
+\PYG{g+go}{apt\PYGZhy{}get update \PYGZsh{}Pour mettre à jour le cache local}
+\PYG{g+go}{apt\PYGZhy{}get install apache2 libapache2\PYGZhy{}mod\PYGZhy{}php php\PYGZhy{}fpm mysql\PYGZhy{}server}
+\end{Verbatim}

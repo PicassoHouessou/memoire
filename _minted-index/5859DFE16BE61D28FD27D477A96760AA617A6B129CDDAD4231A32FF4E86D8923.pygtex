@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{apt\PYGZhy{}get install postfix \PYGZsh{}et on reponds aux boites de dialogues qui s\PYGZsq{}affiche}
+\end{Verbatim}

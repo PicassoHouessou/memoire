@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{mkdir \PYGZhy{}p /externe}
+\PYG{g+go}{mount \PYGZhy{}t ext4 /dev/raid\PYGZhy{}volume/data /externe}
+\end{Verbatim}

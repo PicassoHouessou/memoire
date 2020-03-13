@@ -1,0 +1,63 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZsh{}} See /usr/share/postfix/main.cf.dist \PYG{k}{for} a commented, more \PYG{n+nb}{complete} version
+
+\PYG{g+gp}{\PYGZsh{}}\PYG{n+nv}{myorigin} \PYG{o}{=} /etc/mailname
+
+\PYG{g+gp}{\PYGZsh{}}\PYG{n+nv}{smtpd\PYGZus{}banner} \PYG{o}{=} \PYG{n+nv}{\PYGZdl{}myhostname} ESMTP \PYG{n+nv}{\PYGZdl{}mail\PYGZus{}name} \PYG{o}{(}Ubuntu\PYG{o}{)}
+\PYG{g+go}{smtpd\PYGZus{}banner = \PYGZdl{}myhostname ESMTP \PYGZdl{}mail\PYGZus{}name ( Tout droit réservé à Picasso Houessou)}
+\PYG{g+go}{biff = no}
+
+\PYG{g+gp}{\PYGZsh{}} appending .domain is the MUA\PYG{err}{\PYGZsq{}}s job.
+\PYG{g+go}{append\PYGZus{}dot\PYGZus{}mydomain = no}
+\PYG{g+gp}{\PYGZsh{}} Uncomment the next line to generate \PYG{l+s+s2}{\PYGZdq{}delayed mail\PYGZdq{}} warnings
+\PYG{g+go}{delay\PYGZus{}warning\PYGZus{}time = 1h}
+
+\PYG{g+go}{readme\PYGZus{}directory = no}
+\PYG{g+go}{compatibility\PYGZus{}level = 2}
+
+\PYG{g+go}{virtual\PYGZus{}transport = lmtp:unix:private/dovecot\PYGZhy{}lmtp}
+\PYG{g+gp}{\PYGZsh{}}SASL AUTHENTIFICATION
+\PYG{g+go}{smtpd\PYGZus{}sasl\PYGZus{}type = dovecot}
+\PYG{g+go}{smtpd\PYGZus{}sasl\PYGZus{}path = private/auth}
+\PYG{g+go}{smtpd\PYGZus{}sasl\PYGZus{}local\PYGZus{}domain =}
+\PYG{g+go}{smtpd\PYGZus{}sasl\PYGZus{}security\PYGZus{}options = noanonymous}
+\PYG{g+go}{broken\PYGZus{}sasl\PYGZus{}auth\PYGZus{}clients = yes}
+\PYG{g+go}{smtpd\PYGZus{}sasl\PYGZus{}auth\PYGZus{}enable = yes}
+\PYG{g+gp}{\PYGZsh{}} TLS parameters
+\PYG{g+go}{smtp\PYGZus{}tls\PYGZus{}security\PYGZus{}level = may}
+\PYG{g+go}{smtpd\PYGZus{}tls\PYGZus{}security\PYGZus{}level = may}
+\PYG{g+go}{smtp\PYGZus{}tls\PYGZus{}note\PYGZus{}starttls\PYGZus{}offer = yes}
+\PYG{g+go}{smtpd\PYGZus{}tls\PYGZus{}loglevel = 1}
+\PYG{g+go}{smtpd\PYGZus{}tls\PYGZus{}received\PYGZus{}header = yes}
+\PYG{g+go}{smtpd\PYGZus{}tls\PYGZus{}cert\PYGZus{}file = /etc/ssl/certs/dovecot\PYGZhy{}autosigne.pem}
+\PYG{g+go}{smtpd\PYGZus{}tls\PYGZus{}key\PYGZus{}file = /etc/ssl/private/dovecot\PYGZhy{}private\PYGZhy{}autosigne.pem}
+\PYG{g+go}{smtpd\PYGZus{}use\PYGZus{}tls = yes}
+\PYG{g+gp}{\PYGZsh{}}\PYG{n+nv}{smtpd\PYGZus{}tls\PYGZus{}CApath} \PYG{o}{=} /etc/ssl/certs
+\PYG{g+go}{smtpd\PYGZus{}tls\PYGZus{}session\PYGZus{}cache\PYGZus{}database = btree:\PYGZdl{}\PYGZob{}data\PYGZus{}directory\PYGZcb{}/smtpd\PYGZus{}scache}
+\PYG{g+go}{smtp\PYGZus{}tls\PYGZus{}session\PYGZus{}cache\PYGZus{}database = btree:\PYGZdl{}\PYGZob{}data\PYGZus{}directory\PYGZcb{}/smtp\PYGZus{}scache}
+
+\PYG{g+go}{smtpd\PYGZus{}recipient\PYGZus{}restrictions = permit\PYGZus{}sasl\PYGZus{}authenticated permit\PYGZus{}mynetworks reject\PYGZus{}unauth\PYGZus{}destination}
+\PYG{g+go}{smtpd\PYGZus{}relay\PYGZus{}restrictions = permit\PYGZus{}mynetworks permit\PYGZus{}sasl\PYGZus{}authenticated defer\PYGZus{}unauth\PYGZus{}destination}
+\PYG{g+go}{myhostname = vm\PYGZhy{}serveur}
+\PYG{g+go}{alias\PYGZus{}maps = hash:/etc/aliases}
+\PYG{g+go}{alias\PYGZus{}database = hash:/etc/aliases}
+\PYG{g+go}{myorigin = /etc/mailname}
+\PYG{g+go}{mydestination = \PYGZdl{}myhostname, serveur, localhost.localdomain, localhost}
+\PYG{g+go}{mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128}
+\PYG{g+go}{mailbox\PYGZus{}size\PYGZus{}limit = 51200000}
+\PYG{g+go}{recipient\PYGZus{}delimiter = +}
+\PYG{g+go}{inet\PYGZus{}interfaces = all}
+\PYG{g+go}{inet\PYGZus{}protocols = all}
+
+\PYG{g+gp}{\PYGZsh{}}Utilisation de boite aux mails virtuels
+\PYG{g+gp}{\PYGZsh{}}\PYG{n+nv}{local\PYGZus{}transport} \PYG{o}{=} virtual
+\PYG{g+go}{local\PYGZus{}recipient\PYGZus{}maps = \PYGZdl{}virtual\PYGZus{}mailbox\PYGZus{}maps}
+\PYG{g+go}{virtual\PYGZus{}mailbox\PYGZus{}domains = mysql:/etc/postfix/sql/mysql\PYGZhy{}virtual\PYGZhy{}mailbox\PYGZhy{}domains.cf}
+\PYG{g+go}{virtual\PYGZus{}mailbox\PYGZus{}base = /externe/mail/vhosts/}
+\PYG{g+go}{virtual\PYGZus{}mailbox\PYGZus{}maps = mysql:/etc/postfix/sql/mysql\PYGZhy{}virtual\PYGZhy{}mailbox\PYGZhy{}maps.cf}
+\PYG{g+gp}{\PYGZsh{}}\PYG{n+nv}{virtual\PYGZus{}alias\PYGZus{}maps} \PYG{o}{=} mysql:/etc/postfix/mysql\PYGZhy{}virtual\PYGZhy{}alias\PYGZhy{}maps.cf
+\PYG{g+go}{virtual\PYGZus{}minimum\PYGZus{}uid = 100 }
+\PYG{g+go}{virtual\PYGZus{}uid\PYGZus{}maps = static:5000}
+\PYG{g+go}{virtual\PYGZus{}gid\PYGZus{}maps = static:5000}
+\PYG{g+go}{relayhost = }
+\end{Verbatim}

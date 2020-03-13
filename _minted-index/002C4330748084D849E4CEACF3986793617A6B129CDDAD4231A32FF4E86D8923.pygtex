@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{user = messagerieUser}
+\PYG{g+go}{password = isidore}
+\PYG{g+go}{hosts = 127.0.0.1}
+\PYG{g+go}{dbname = messagerie}
+\PYG{g+go}{query = SELECT 1 FROM virtual\PYGZus{}domains WHERE name=\PYGZsq{}\PYGZpc{}s\PYGZsq{}}
+\end{Verbatim}

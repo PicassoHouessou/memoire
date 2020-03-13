@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{/dev/raid\PYGZhy{}volume/data /externe ext4 defaults 0 0}
+\end{Verbatim}

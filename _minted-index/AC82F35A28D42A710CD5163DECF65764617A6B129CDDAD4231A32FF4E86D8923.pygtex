@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}policy FORWARD DROP}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}policy INPUT  DROP}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}policy OUTPUT  DROP}
+\PYG{g+gp}{\PYGZsh{}}FTP
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 21 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+gp}{\PYGZsh{}}SSH
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 22 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+gp}{\PYGZsh{}}SMTP et SMTPS SMTP sur STARTLS
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 25 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 465 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 587 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+gp}{\PYGZsh{}}HTTP et HTTPS
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 80 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 443 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 7080 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 7443 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+gp}{\PYGZsh{}}IMAP
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 143 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 993 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\PYG{g+gp}{\PYGZsh{}}MYSQL
+\PYG{g+go}{iptables \PYGZhy{}\PYGZhy{}append INPUT \PYGZhy{}\PYGZhy{}protocol tcp \PYGZhy{}\PYGZhy{}dport 3306 \PYGZhy{}m conntrack \PYGZhy{}\PYGZhy{}ctstate NEW,ESTABLISHED \PYGZhy{}j ACCEPT}
+\end{Verbatim}
