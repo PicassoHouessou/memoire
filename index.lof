@@ -1,5 +1,20 @@
-\babel@toc {nil}{}
+\babel@toc {french}{}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Situation géographique de JScom\relax }}{3}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Principe du SMTP\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Principe du SMTP\relax }}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Reception d'un mail en IMAP\relax }}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Résumé de l'envoi et de la réception d'un mail\relax }}{12}{figure.caption.19}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Topologie de notre projet dans GNS3\relax }}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Connexion à pfsense par un navigateur\relax }}{20}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuration du port forwarding\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Connexion de l'administrateur au site d'administration\relax }}{35}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Création du compte bake@eneam.da\relax }}{36}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Connexion de Baké au client webmail\relax }}{37}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Envoi d'un mail de Baké à Toto\relax }}{37}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Reponsé de Toto au mail de Baké\relax }}{38}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Lecture du mail reçu de Baké par Toto\relax }}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Suppression du compte de Béréké\relax }}{40}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Vérification de l'état des services\relax }}{41}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Arret des services Postfix et Dovecot\relax }}{41}{figure.caption.32}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.15)  12 MAR 2020 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.15)  18 MAR 2020 21:59
 entering extended mode
 **./index.tex
 (index.tex
@@ -20,6 +20,42 @@ File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\dvipsnam.def"
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/titlesec\titlesec.sty"
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen103
+\ttl@minus=\dimen104
+\ttl@toksa=\toks14
+\titlewidth=\dimen105
+\titlewidthlast=\dimen106
+\titlewidthfirst=\dimen107
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
@@ -50,7 +86,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
@@ -82,7 +118,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen103
+\@linkdim=\dimen108
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
@@ -99,6 +135,7 @@ Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4409.
 Package hyperref Info: Hyper figures OFF on input line 4535.
 Package hyperref Info: Link nesting OFF on input line 4540.
 Package hyperref Info: Hyper index ON on input line 4543.
@@ -113,7 +150,7 @@ Package hyperref Info: Bookmarks ON on input line 4788.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5147.
-\XeTeXLinkMargin=\dimen104
+\XeTeXLinkMargin=\dimen109
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\bitset.sty"
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
@@ -123,13 +160,13 @@ Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count93
-\Field@Width=\dimen105
-\Fld@charsize=\dimen106
+\Field@Width=\dimen110
+\Fld@charsize=\dimen111
 Package hyperref Info: Hyper figures OFF on input line 6418.
 Package hyperref Info: Link nesting OFF on input line 6423.
 Package hyperref Info: Hyper index ON on input line 6426.
 Package hyperref Info: backreferencing OFF on input line 6433.
-Package hyperref Info: Link coloring OFF on input line 6438.
+Package hyperref Info: Link coloring ON on input line 6436.
 Package hyperref Info: Link coloring with OCG OFF on input line 6443.
 Package hyperref Info: PDF/A mode OFF on input line 6448.
 LaTeX Info: Redefining \ref on input line 6488.
@@ -163,15 +200,15 @@ Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip43
+\Hy@SectionHShift=\skip45
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
@@ -226,15 +263,15 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \Gm@cnth=\count130
 \Gm@cntv=\count131
 \c@Gm@tempcnt=\count132
-\Gm@bindingoffset=\dimen107
-\Gm@wd@mp=\dimen108
-\Gm@odd@mp=\dimen109
-\Gm@even@mp=\dimen110
-\Gm@layoutwidth=\dimen111
-\Gm@layoutheight=\dimen112
-\Gm@layouthoffset=\dimen113
-\Gm@layoutvoffset=\dimen114
-\Gm@dimlist=\toks17
+\Gm@bindingoffset=\dimen112
+\Gm@wd@mp=\dimen113
+\Gm@odd@mp=\dimen114
+\Gm@even@mp=\dimen115
+\Gm@layoutwidth=\dimen116
+\Gm@layoutheight=\dimen117
+\Gm@layouthoffset=\dimen118
+\Gm@layoutvoffset=\dimen119
+\Gm@dimlist=\toks18
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/setspace\setspace.sty"
@@ -288,12 +325,291 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/mdframed\mdframed.sty"
+Package: mdframed 2013/07/01 1.9b: mdframed
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-02-25 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
+Package: expl3 2020-02-25 L3 programming layer (code)
+\c_max_int=\count133
+\l_tmpa_int=\count134
+\l_tmpb_int=\count135
+\g_tmpa_int=\count136
+\g_tmpb_int=\count137
+\l__seq_internal_a_int=\count138
+\l__seq_internal_b_int=\count139
+\g__kernel_prg_map_int=\count140
+\c__ior_term_noprompt_ior=\count141
+\c_log_iow=\count142
+\l_iow_line_count_int=\count143
+\l__iow_line_target_int=\count144
+\l__iow_one_indent_int=\count145
+\l__iow_indent_int=\count146
+\c_zero_dim=\dimen122
+\c_max_dim=\dimen123
+\l_tmpa_dim=\dimen124
+\l_tmpb_dim=\dimen125
+\g_tmpa_dim=\dimen126
+\g_tmpb_dim=\dimen127
+\c_zero_skip=\skip46
+\c_max_skip=\skip47
+\l_tmpa_skip=\skip48
+\l_tmpb_skip=\skip49
+\g_tmpa_skip=\skip50
+\g_tmpb_skip=\skip51
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count147
+\l__intarray_loop_int=\count148
+\c__intarray_sp_dim=\dimen128
+\g__intarray_font_int=\count149
+\c__fp_leading_shift_int=\count150
+\c__fp_middle_shift_int=\count151
+\c__fp_trailing_shift_int=\count152
+\c__fp_big_leading_shift_int=\count153
+\c__fp_big_middle_shift_int=\count154
+\c__fp_big_trailing_shift_int=\count155
+\c__fp_Bigg_leading_shift_int=\count156
+\c__fp_Bigg_middle_shift_int=\count157
+\c__fp_Bigg_trailing_shift_int=\count158
+\c__kernel_randint_max_int=\count159
+\g__fp_array_int=\count160
+\l__fp_array_loop_int=\count161
+\l__sort_length_int=\count162
+\l__sort_min_int=\count163
+\l__sort_top_int=\count164
+\l__sort_max_int=\count165
+\l__sort_true_max_int=\count166
+\l__sort_block_int=\count167
+\l__sort_begin_int=\count168
+\l__sort_end_int=\count169
+\l__sort_A_int=\count170
+\l__sort_B_int=\count171
+\l__sort_C_int=\count172
+\l__str_internal_int=\count173
+\c__str_replacement_char_int=\count174
+\l__tl_analysis_normal_int=\count175
+\l__tl_analysis_index_int=\count176
+\l__tl_analysis_nesting_int=\count177
+\l__tl_analysis_type_int=\count178
+\l__regex_internal_a_int=\count179
+\l__regex_internal_b_int=\count180
+\l__regex_internal_c_int=\count181
+\l__regex_balance_int=\count182
+\l__regex_group_level_int=\count183
+\l__regex_mode_int=\count184
+\c__regex_cs_in_class_mode_int=\count185
+\c__regex_cs_mode_int=\count186
+\l__regex_catcodes_int=\count187
+\l__regex_default_catcodes_int=\count188
+\c__regex_catcode_D_int=\count189
+\c__regex_catcode_S_int=\count190
+\c__regex_catcode_L_int=\count191
+\c__regex_catcode_O_int=\count192
+\c__regex_catcode_A_int=\count193
+\c__regex_all_catcodes_int=\count194
+\l__regex_show_lines_int=\count195
+\l__regex_min_state_int=\count196
+\l__regex_max_state_int=\count197
+\l__regex_left_state_int=\count198
+\l__regex_right_state_int=\count199
+\l__regex_capturing_group_int=\count266
+\l__regex_min_pos_int=\count267
+\l__regex_max_pos_int=\count268
+\l__regex_curr_pos_int=\count269
+\l__regex_start_pos_int=\count270
+\l__regex_success_pos_int=\count271
+\l__regex_curr_char_int=\count272
+\l__regex_curr_catcode_int=\count273
+\l__regex_last_char_int=\count274
+\l__regex_case_changed_char_int=\count275
+\l__regex_curr_state_int=\count276
+\l__regex_step_int=\count277
+\l__regex_min_active_int=\count278
+\l__regex_max_active_int=\count279
+\l__regex_replacement_csnames_int=\count280
+\l__regex_match_count_int=\count281
+\l__regex_min_submatch_int=\count282
+\l__regex_submatch_int=\count283
+\l__regex_zeroth_submatch_int=\count284
+\g__regex_trace_regex_int=\count285
+\c_empty_box=\box28
+\l_tmpa_box=\box29
+\l_tmpb_box=\box30
+\g_tmpa_box=\box31
+\g_tmpb_box=\box32
+\l__box_top_dim=\dimen129
+\l__box_bottom_dim=\dimen130
+\l__box_left_dim=\dimen131
+\l__box_right_dim=\dimen132
+\l__box_top_new_dim=\dimen133
+\l__box_bottom_new_dim=\dimen134
+\l__box_left_new_dim=\dimen135
+\l__box_right_new_dim=\dimen136
+\l__box_internal_box=\box33
+\l__coffin_internal_box=\box34
+\l__coffin_internal_dim=\dimen137
+\l__coffin_offset_x_dim=\dimen138
+\l__coffin_offset_y_dim=\dimen139
+\l__coffin_x_dim=\dimen140
+\l__coffin_y_dim=\dimen141
+\l__coffin_x_prime_dim=\dimen142
+\l__coffin_y_prime_dim=\dimen143
+\c_empty_coffin=\box35
+\l__coffin_aligned_coffin=\box36
+\l__coffin_aligned_internal_coffin=\box37
+\l_tmpa_coffin=\box38
+\l_tmpb_coffin=\box39
+\g_tmpa_coffin=\box40
+\g_tmpb_coffin=\box41
+\l__coffin_bounding_shift_dim=\dimen144
+\l__coffin_left_corner_dim=\dimen145
+\l__coffin_right_corner_dim=\dimen146
+\l__coffin_bottom_corner_dim=\dimen147
+\l__coffin_top_corner_dim=\dimen148
+\l__coffin_scaled_total_height_dim=\dimen149
+\l__coffin_scaled_width_dim=\dimen150
+\c__coffin_empty_coffin=\box42
+\l__coffin_display_coffin=\box43
+\l__coffin_display_coord_coffin=\box44
+\l__coffin_display_pole_coffin=\box45
+\l__coffin_display_offset_dim=\dimen151
+\l__coffin_display_x_dim=\dimen152
+\l__coffin_display_y_dim=\dimen153
+\g__char_data_ior=\read1
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3deprecation.def"
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count286
+\l__pdf_internal_box=\box46
+))
+Package: xparse 2020-02-25 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count287
+\g__xparse_grabber_int=\count288
+\l__xparse_m_args_int=\count289
+\l__xparse_v_nesting_int=\count290
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count291
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\zref-abspage.sty"
+Package: zref-abspage 2018/11/21 v2.27 Module abspage for zref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\zref-base.sty"
+Package: zref-base 2018/11/21 v2.27 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count292
+Package zref Info: New property: abspage on input line 62.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/needspace\needspace.sty"
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip52
+\c@mdf@globalstyle@cnt=\count293
+\mdf@skipabove@length=\skip53
+\mdf@skipbelow@length=\skip54
+\mdf@leftmargin@length=\skip55
+\mdf@rightmargin@length=\skip56
+\mdf@innerleftmargin@length=\skip57
+\mdf@innerrightmargin@length=\skip58
+\mdf@innertopmargin@length=\skip59
+\mdf@innerbottommargin@length=\skip60
+\mdf@splittopskip@length=\skip61
+\mdf@splitbottomskip@length=\skip62
+\mdf@outermargin@length=\skip63
+\mdf@innermargin@length=\skip64
+\mdf@linewidth@length=\skip65
+\mdf@innerlinewidth@length=\skip66
+\mdf@middlelinewidth@length=\skip67
+\mdf@outerlinewidth@length=\skip68
+\mdf@roundcorner@length=\skip69
+\mdf@footenotedistance@length=\skip70
+\mdf@userdefinedwidth@length=\skip71
+\mdf@needspace@length=\skip72
+\mdf@frametitleaboveskip@length=\skip73
+\mdf@frametitlebelowskip@length=\skip74
+\mdf@frametitlerulewidth@length=\skip75
+\mdf@frametitleleftmargin@length=\skip76
+\mdf@frametitlerightmargin@length=\skip77
+\mdf@shadowsize@length=\skip78
+\mdf@extratopheight@length=\skip79
+\mdf@subtitleabovelinewidth@length=\skip80
+\mdf@subtitlebelowlinewidth@length=\skip81
+\mdf@subtitleaboveskip@length=\skip82
+\mdf@subtitlebelowskip@length=\skip83
+\mdf@subtitleinneraboveskip@length=\skip84
+\mdf@subtitleinnerbelowskip@length=\skip85
+\mdf@subsubtitleabovelinewidth@length=\skip86
+\mdf@subsubtitlebelowlinewidth@length=\skip87
+\mdf@subsubtitleaboveskip@length=\skip88
+\mdf@subsubtitlebelowskip@length=\skip89
+\mdf@subsubtitleinneraboveskip@length=\skip90
+\mdf@subsubtitleinnerbelowskip@length=\skip91
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/mdframed\md-frame-0.mdf"
+File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
+)
+\mdf@frametitlebox=\box47
+\mdf@footnotebox=\box48
+\mdf@splitbox@one=\box49
+\mdf@splitbox@two=\box50
+\mdf@splitbox@save=\box51
+\mdfsplitboxwidth=\skip92
+\mdfsplitboxtotalwidth=\skip93
+\mdfsplitboxheight=\skip94
+\mdfsplitboxdepth=\skip95
+\mdfsplitboxtotalheight=\skip96
+\mdfframetitleboxwidth=\skip97
+\mdfframetitleboxtotalwidth=\skip98
+\mdfframetitleboxheight=\skip99
+\mdfframetitleboxdepth=\skip100
+\mdfframetitleboxtotalheight=\skip101
+\mdffootnoteboxwidth=\skip102
+\mdffootnoteboxtotalwidth=\skip103
+\mdffootnoteboxheight=\skip104
+\mdffootnoteboxdepth=\skip105
+\mdffootnoteboxtotalheight=\skip106
+\mdftotallinewidth=\skip107
+\mdfboundingboxwidth=\skip108
+\mdfboundingboxtotalwidth=\skip109
+\mdfboundingboxheight=\skip110
+\mdfboundingboxdepth=\skip111
+\mdfboundingboxtotalheight=\skip112
+\mdf@freevspace@length=\skip113
+\mdf@horizontalwidthofbox@length=\skip114
+\mdf@verticalmarginwhole@length=\skip115
+\mdf@horizontalspaceofbox=\skip116
+\mdfsubtitleheight=\skip117
+\mdfsubsubtitleheight=\skip118
+\c@mdfcountframes=\count294
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count295
+\c@mdf@env@i=\count296
+\c@mdf@env@ii=\count297
+\c@mdf@zref@counter=\count298
+Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/minted\minted.sty"
 Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
@@ -304,19 +620,15 @@ Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count133
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.sty"
 Package: fancyvrb 2019/11/09
 
 Style option: `fancyvrb' v3.4 <2019/11/09> (tvz)
-\FV@CodeLineNo=\count134
-\FV@InFile=\read1
-\FV@TabBox=\box27
-\c@FancyVerbLine=\count135
-\FV@StepNumber=\count136
+\FV@CodeLineNo=\count299
+\FV@InFile=\read2
+\FV@TabBox=\box52
+\c@FancyVerbLine=\count300
+\FV@StepNumber=\count301
 \FV@OutFile=\write3
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/upquote\upquote.sty"
@@ -484,57 +796,57 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lineno\lineno.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count137
-\output=\toks18
-\linenoprevgraf=\count138
-\linenumbersep=\dimen117
-\linenumberwidth=\dimen118
-\c@linenumber=\count139
-\c@pagewiselinenumber=\count140
-\c@LN@truepage=\count141
-\c@internallinenumber=\count142
-\c@internallinenumbers=\count143
-\quotelinenumbersep=\dimen119
-\bframerule=\dimen120
-\bframesep=\dimen121
-\bframebox=\box28
+\linenopenalty=\count302
+\output=\toks19
+\linenoprevgraf=\count303
+\linenumbersep=\dimen154
+\linenumberwidth=\dimen155
+\c@linenumber=\count304
+\c@pagewiselinenumber=\count305
+\c@LN@truepage=\count306
+\c@internallinenumber=\count307
+\c@internallinenumbers=\count308
+\quotelinenumbersep=\dimen156
+\bframerule=\dimen157
+\bframesep=\dimen158
+\bframebox=\box53
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count144
-\c@FV@TrueTabCounter=\count145
-\FV@TabBox@Group=\box29
-\FV@TmpLength=\skip44
-\c@FV@HighlightLinesStart=\count146
-\c@FV@HighlightLinesStop=\count147
-\FV@LoopCount=\count148
-\FV@NCharsBox=\box30
-\FV@BreakIndent=\dimen122
-\FV@BreakIndentNChars=\count149
-\FV@BreakSymbolSepLeft=\dimen123
-\FV@BreakSymbolSepLeftNChars=\count150
-\FV@BreakSymbolSepRight=\dimen124
-\FV@BreakSymbolSepRightNChars=\count151
-\FV@BreakSymbolIndentLeft=\dimen125
-\FV@BreakSymbolIndentLeftNChars=\count152
-\FV@BreakSymbolIndentRight=\dimen126
-\FV@BreakSymbolIndentRightNChars=\count153
-\c@FancyVerbLineBreakLast=\count154
-\FV@LineBox=\box31
-\FV@LineIndentBox=\box32
-\FV@LineWidth=\dimen127
+\c@FV@TrueTabGroupLevel=\count309
+\c@FV@TrueTabCounter=\count310
+\FV@TabBox@Group=\box54
+\FV@TmpLength=\skip119
+\c@FV@HighlightLinesStart=\count311
+\c@FV@HighlightLinesStop=\count312
+\FV@LoopCount=\count313
+\FV@NCharsBox=\box55
+\FV@BreakIndent=\dimen159
+\FV@BreakIndentNChars=\count314
+\FV@BreakSymbolSepLeft=\dimen160
+\FV@BreakSymbolSepLeftNChars=\count315
+\FV@BreakSymbolSepRight=\dimen161
+\FV@BreakSymbolSepRightNChars=\count316
+\FV@BreakSymbolIndentLeft=\dimen162
+\FV@BreakSymbolIndentLeftNChars=\count317
+\FV@BreakSymbolIndentRight=\dimen163
+\FV@BreakSymbolIndentRightNChars=\count318
+\c@FancyVerbLineBreakLast=\count319
+\FV@LineBox=\box56
+\FV@LineIndentBox=\box57
+\FV@LineWidth=\dimen164
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count155
-\calc@Bcount=\count156
-\calc@Adimen=\dimen128
-\calc@Bdimen=\dimen129
-\calc@Askip=\skip45
-\calc@Bskip=\skip46
+\calc@Acount=\count320
+\calc@Bcount=\count321
+\calc@Adimen=\dimen165
+\calc@Bdimen=\dimen166
+\calc@Askip=\skip120
+\calc@Bskip=\skip121
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count157
-\calc@Cskip=\skip47
+\calc@Ccount=\count322
+\calc@Cskip=\skip122
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\shellesc.sty"
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
@@ -548,34 +860,34 @@ Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/xstring\xstring.sty"
 ("C:\Program Files\MiKTeX 2.9\tex/generic/xstring\xstring.tex"
-\integerpart=\count158
-\decimalpart=\count159
+\integerpart=\count323
+\decimalpart=\count324
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/framed\framed.sty"
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip48
-\fb@frw=\dimen130
-\fb@frh=\dimen131
-\FrameRule=\dimen132
-\FrameSep=\dimen133
+\OuterFrameSep=\skip123
+\fb@frw=\dimen167
+\fb@frh=\dimen168
+\FrameRule=\dimen169
+\FrameSep=\dimen170
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count160
-\float@exts=\toks19
-\float@box=\box33
-\@float@everytoks=\toks20
-\@floatcapt=\box34
+\c@float@type=\count325
+\float@exts=\toks20
+\float@box=\box58
+\@float@everytoks=\toks21
+\@floatcapt=\box59
 )
-\minted@appexistsfile=\read2
-\minted@bgbox=\box35
+\minted@appexistsfile=\read3
+\minted@bgbox=\box60
 \minted@code=\write4
-\c@minted@FancyVerbLineTemp=\count161
-\c@minted@pygmentizecounter=\count162
-\@float@every@listing=\toks21
-\c@listing=\count163
+\c@minted@FancyVerbLineTemp=\count326
+\c@minted@pygmentizecounter=\count327
+\@float@every@listing=\toks22
+\c@listing=\count328
 )
 runsystem(if not exist _minted-index mkdir _minted-index)...executed.
 
@@ -586,24 +898,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count164
-\c@Blindtext=\count165
-\c@blind@countparstart=\count166
-\blind@countxx=\count167
-\blindtext@numBlindtext=\count168
-\blind@countyy=\count169
-\c@blindlist=\count170
-\c@blindlistlevel=\count171
-\c@blindlist@level=\count172
-\blind@listitem=\count173
-\c@blind@listcount=\count174
-\c@blind@levelcount=\count175
-\blind@mathformula=\count176
-\blind@Mathformula=\count177
-\c@blind@randomcount=\count178
-\c@blind@randommax=\count179
-\c@blind@pangramcount=\count180
-\c@blind@pangrammax=\count181
+\c@blindtext=\count329
+\c@Blindtext=\count330
+\c@blind@countparstart=\count331
+\blind@countxx=\count332
+\blindtext@numBlindtext=\count333
+\blind@countyy=\count334
+\c@blindlist=\count335
+\c@blindlistlevel=\count336
+\c@blindlist@level=\count337
+\blind@listitem=\count338
+\c@blind@listcount=\count339
+\c@blind@levelcount=\count340
+\blind@mathformula=\count341
+\blind@Mathformula=\count342
+\c@blind@randomcount=\count343
+\c@blind@randommax=\count344
+\c@blind@pangramcount=\count345
+\c@blind@pangrammax=\count346
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
 Package: caption 2019/09/01 v3.3d Customizing captions (AR)
@@ -611,53 +923,18 @@ Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
 Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen134
-\captionmargin@=\dimen135
-\captionwidth=\dimen136
-\caption@tempdima=\dimen137
-\caption@indent=\dimen138
-\caption@parindent=\dimen139
-\caption@hangindent=\dimen140
+\captionmargin=\dimen171
+\captionmargin@=\dimen172
+\captionwidth=\dimen173
+\caption@tempdima=\dimen174
+\caption@indent=\dimen175
+\caption@parindent=\dimen176
+\caption@hangindent=\dimen177
 )
-\c@caption@flags=\count182
-\c@ContinuedFloat=\count183
+\c@caption@flags=\count347
+\c@ContinuedFloat=\count348
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/colortbl\colortbl.sty"
-Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen141
-\ar@mcellbox=\box36
-\extrarowheight=\dimen142
-\NC@list=\toks22
-\extratabsurround=\skip49
-\backup@length=\skip50
-\ar@cellbox=\box37
-)
-\everycr=\toks23
-\minrowclearance=\skip51
-)
-\rownum=\count184
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2019/10/15 3.35 The Babel package
@@ -672,46 +949,77 @@ File: switch.def 2019/10/15 3.35 Babel switching mechanism
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-Package babel Info: You haven't specified a language. I'll use 'nil'
-(babel)             as the main language. Reported on input line 584.
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\nil.ldf"
-Language: nil 2019/10/15 3.35 Nil language
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel-french\french.ldf"
+Language: french 2019/09/07 v3.5f French support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/10/15 3.35 Babel common definitions
-\babel@savecnt=\count185
-\U@D=\dimen143
+\babel@savecnt=\count349
+\U@D=\dimen178
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count186
+\bbl@dirlevel=\count350
 )
-\l@nil=\language82
+\l@acadian = a dialect from \language\l@french 
+\l@canadien = a dialect from \language\l@french 
+\FB@nonchar=\count351
+Package babel Info: Making : an active character on input line 419.
+Package babel Info: Making ; an active character on input line 420.
+Package babel Info: Making ! an active character on input line 421.
+Package babel Info: Making ? an active character on input line 422.
+\FBguill@level=\count352
+\FBold@everypar=\toks23
+\FB@Mht=\dimen179
+\mc@charclass=\count353
+\mc@charfam=\count354
+\mc@charslot=\count355
+\std@mcc=\count356
+\dec@mcc=\count357
+\c@FBcaption@count=\count358
+\listindentFB=\dimen180
+\descindentFB=\dimen181
+\labelindentFB=\dimen182
+\labelwidthFB=\dimen183
+\leftmarginFB=\dimen184
+\parindentFFN=\dimen185
+\FBfnindent=\dimen186
 ))
+("C:\Program Files\MiKTeX 2.9\tex/latex/carlisle\scalefnt.sty")
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.sty"
-\lst@mode=\count187
-\lst@gtempboxa=\box38
+\lst@mode=\count359
+\lst@gtempboxa=\box61
 \lst@token=\toks24
-\lst@length=\count188
-\lst@currlwidth=\dimen144
-\lst@column=\count189
-\lst@pos=\count190
-\lst@lostspace=\dimen145
-\lst@width=\dimen146
-\lst@newlines=\count191
-\lst@lineno=\count192
-\lst@maxwidth=\dimen147
+\lst@length=\count360
+\lst@currlwidth=\dimen187
+\lst@column=\count361
+\lst@pos=\count362
+\lst@lostspace=\dimen188
+\lst@width=\dimen189
+\lst@newlines=\count363
+\lst@lineno=\count364
+\lst@maxwidth=\dimen190
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count193
-\lst@skipnumbers=\count194
-\lst@framebox=\box39
+\c@lstnumber=\count365
+\lst@skipnumbers=\count366
+\lst@framebox=\box62
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.cfg"
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen191
+\ar@mcellbox=\box63
+\extrarowheight=\dimen192
+\NC@list=\toks25
+\extratabsurround=\skip124
+\backup@length=\skip125
+\ar@cellbox=\box64
+)
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > in
 dex.aex <nul: /p x=^%~$PATH:i>> index.aex)...executed.
 
@@ -719,65 +1027,84 @@ runsystem(del index.aex)...executed.
 
  (index.aux
 
-Package babel Warning: Unknown language `french'. Very likely you
-(babel)                requested it in a previous run. Expect some
-(babel)                wrong results in this run, which should vanish
-(babel)                in the next one. Reported on input line 24.
+LaTeX Warning: Label `ref:eneam' multiply defined.
 
-! Undefined control sequence.
-<argument> r@ref:
-                 html
-l.41 ... et Ã©noncÃ© du problÃ¨me}{section.2.1}{}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-<argument> r@ref:
-                 html
-l.41 ... et Ã©noncÃ© du problÃ¨me}{section.2.1}{}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: Label `ref:eneam' multiply defined.
+
+
+LaTeX Warning: Label `ref:eneam' multiply defined.
+
+
+LaTeX Warning: Label `ref:eneam' multiply defined.
+
+
+LaTeX Warning: Label `ref:eneam' multiply defined.
+
+
+LaTeX Warning: Label `ref:eneam' multiply defined.
+
+
+LaTeX Warning: Label `ref:eneam' multiply defined.
 
 )
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+1.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 25.
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count367
+\scratchdimen=\dimen193
+\scratchbox=\box65
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen194
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks27
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\AtBeginShipoutBox=\box66
+Package hyperref Info: Link coloring ON on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -788,11 +1115,11 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count195
+\c@section@level=\count373
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (index.out) (index.out)
 \@outlinefile=\write5
@@ -833,194 +1160,113 @@ LaTeX Info: Redefining \nameref on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count196
-\scratchdimen=\dimen148
-\scratchbox=\box41
-\nofMPsegments=\count197
-\nofMParguments=\count198
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count199
-\MPscratchDim=\dimen149
-\MPnumerator=\count266
-\makeMPintoPDFobject=\count267
-\everyMPtoPDFconversion=\toks26
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count268
-<figure/eneam-logo.png, id=155, 187.45032pt x 152.06813pt>
+LaTeX Info: Redefining \degres on input line 31.
+
+Package french.ldf Warning: Figures' and tables' captions might look like
+(french.ldf)                `Figure 1:' in French instead of `Figure 1 :'.
+(french.ldf)                If you have loaded any of the packages caption,
+(french.ldf)                subcaption or floatrow BEFORE babel/french,
+(french.ldf)                please move them AFTER babel/french.
+(french.ldf)                If one of them is loaded by your class,
+(french.ldf)                you can still add AFTER babel/french
+(french.ldf)                \usepackage[labelsep=period]{caption} or
+(french.ldf)                \usepackage[labelsep=endash]{caption} or
+(french.ldf)                ... live with it; reported on input line 31.
+
+LaTeX Info: Redefining \dots on input line 31.
+LaTeX Info: Redefining \up on input line 31.
+\c@lstlisting=\count374
+<figure/eneam-logo.png, id=183, 187.45032pt x 152.06813pt>
 File: figure/eneam-logo.png Graphic file (type png)
 <use figure/eneam-logo.png>
-Package pdftex.def Info: figure/eneam-logo.png  used on input line 32.
+Package pdftex.def Info: figure/eneam-logo.png  used on input line 39.
 (pdftex.def)             Requested size: 187.44984pt x 152.06775pt.
- [1
+[1
 
 {C:/Users/Picasso Houessou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <
 ./figure/eneam-logo.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-7.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
+6.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.62 \chapter
-             *{Remerciements} [1
+) [1
 
 ] [2
 
 ] [3
 
 ] (index.toc
-
-! Package babel Error: Unknown language `french'. Either you have
-(babel)                misspelled its name, it has not been installed,
-(babel)                or you requested it in a previous run. Fix its name,
-(babel)                install it or just rerun the file, respectively. In
-(babel)                some cases, you may need to remove the aux file.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \babel@toc {french}{}
-                         
-You may proceed, but expect wrong results
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
 .
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
 .
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-5.
+8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-5.
+8.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 8.
  [4
 
 ])
 \tf@toc=\write6
 \openout6 = `index.toc'.
 
- [5] (index.lof
-
-! Package babel Error: Unknown language `french'. Either you have
-(babel)                misspelled its name, it has not been installed,
-(babel)                or you requested it in a previous run. Fix its name,
-(babel)                install it or just rerun the file, respectively. In
-(babel)                some cases, you may need to remove the aux file.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \babel@toc {french}{}
-                         
-You may proceed, but expect wrong results
-
-)
+ [5] (index.lof)
 \tf@lof=\write7
 \openout7 = `index.lof'.
 
- [6
+
+[6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[7
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 \chapter
+              {Cadre de l'Ã©tude} [1
+
 
 ]
-Chapter 1.
+Chapitre 1.
+<figure/jscom-map.png, id=302, 549.55313pt x 349.305pt>
+File: figure/jscom-map.png Graphic file (type png)
+<use figure/jscom-map.png>
+Package pdftex.def Info: figure/jscom-map.png  used on input line 154.
+(pdftex.def)             Requested size: 439.6431pt x 279.44437pt.
+[2
 
-Overfull \hbox (10.58328pt too wide) in paragraph at lines 114--115
-\T1/lmr/m/n/12 l'informatisation d'entreprise et de la mise en place d'un intra
-net/Internet dans les administrations
- []
+] [3 <./figure/jscom-map.png>]
+Chapitre 2.
+[4
 
-
-Overfull \hbox (9.33652pt too wide) in paragraph at lines 116--117
-[]\T1/lmr/m/n/12 JSCOM-Bénin est spécialisée, entre autre activités de mise en 
-place des systèmes d'information
- []
-
-[8
-
-]
-Chapter 2.
-! Undefined control sequence.
-l.130 ...pas au courant; je me rappelle en \tertio
-                                                   annÃ©e, un de mes camarad...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9
-
-] [10]
-Overfull \hbox (0.464pt too wide) in paragraph at lines 181--182
-\T1/lmr/m/n/12 Un système d'exploitation de serveur (OS Operating System ) n'es
-t qu'un système d'exploitation
- []
-
-
-Overfull \hbox (5.41414pt too wide) in paragraph at lines 181--182
-\T1/lmr/m/n/12 optimisé pour l'installation de logiciels serveur. Les OS serveu
-rs ont les caractéristiques suivantes: 
- []
-
-[11]
-Overfull \hbox (4.7309pt too wide) in paragraph at lines 192--194
-[]\T1/lmr/m/n/12 Le raid 1 : Pour deux disques durs physiques A et B , les donn
-ées sont écrites simultanément
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 197.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 197.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 197.
-[12]
+] [5] [6]
 \openout3 = `index.pyg'.
 
  (_minted-index/default-pyg-prefix.pygstyle)
@@ -1039,17 +1285,45 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [13]
-<figure/figure envoi SMTP.png, id=283, 423.83344pt x 294.34969pt>
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 2.
+) [7] [8]
+Overfull \hbox (32.77747pt too wide) in paragraph at lines 279--280
+\T1/lmr/m/n/12 Si Toto veut en-voyer un mail à Baké. Toto a pour adresse mail t
+oto@toto.com et Baké bake@gmail.com.
+ []
+
+<figure/figure envoi SMTP.png, id=351, 423.83344pt x 294.34969pt>
 File: figure/figure envoi SMTP.png Graphic file (type png)
 <use figure/figure envoi SMTP.png>
-Package pdftex.def Info: figure/figure envoi SMTP.png  used on input line 231.
+Package pdftex.def Info: figure/figure envoi SMTP.png  used on input line 287.
 (pdftex.def)             Requested size: 423.83238pt x 294.34895pt.
- [14] [15 <./figure/figure envoi SMTP.png>] [16]
-Chapter 3.
+[9]
+<figure/figure_reception_imap.png, id=357, 470.50781pt x 272.51813pt>
+File: figure/figure_reception_imap.png Graphic file (type png)
+<use figure/figure_reception_imap.png>
+Package pdftex.def Info: figure/figure_reception_imap.png  used on input line 2
+96.
+(pdftex.def)             Requested size: 470.50665pt x 272.51746pt.
+ [10 <./figure/figure envoi SMTP.png>]
+<figure/figure_envoi_reception_mail.png, id=364, 618.05907pt x 316.18124pt>
+File: figure/figure_envoi_reception_mail.png Graphic file (type png)
+<use figure/figure_envoi_reception_mail.png>
+Package pdftex.def Info: figure/figure_envoi_reception_mail.png  used on input 
+line 310.
+(pdftex.def)             Requested size: 494.44792pt x 252.94533pt.
+
+Overfull \hbox (10.75105pt too wide) in paragraph at lines 310--311
+ [][] 
+ []
+
+[11 <./figure/figure_reception_imap.png>] [12 <./figure/figure_envoi_reception_
+mail.png>] [13]
+Chapitre 3.
 \openout3 = `index.pyg'.
 
-(_minted-index/vim.pygstyle) [17
+(_minted-index/vim.pygstyle) [14
 
 ]
 (_minted-index/E275D10530499306BEEB0FFD6E21ED5A617A6B129CDDAD4231A32FF4E86D8923
@@ -1066,7 +1340,7 @@ Chapter 3.
 .pygtex)
 \openout3 = `index.pyg'.
 
- [18]
+ [15]
 (_minted-index/ECB7A1E229FE64217BB04CFFC35936CE617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
 \openout3 = `index.pyg'.
@@ -1078,7 +1352,7 @@ Chapter 3.
 
 
 (_minted-index/ACFCB1995B9B9837C34F5D6AD4F89F5B617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [19]
+.pygtex) [16]
 \openout3 = `index.pyg'.
 
 
@@ -1108,29 +1382,55 @@ Chapter 3.
 
 
 (_minted-index/861BFA8D3BEC1377E40BB2BD3F090251617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [20] [21]
+.pygtex) [17]
+<figure/topologie_gns3.png, id=412, 1373.88281pt x 615.80063pt>
+File: figure/topologie_gns3.png Graphic file (type png)
+<use figure/topologie_gns3.png>
+Package pdftex.def Info: figure/topologie_gns3.png  used on input line 478.
+(pdftex.def)             Requested size: 540.60236pt x 242.30363pt.
+
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 478--479
+ [][] 
+ []
+
+[18] [19 <./figure/topologie_gns3.png (PNG copy)>]
+<figure/pfsense_login.png, id=428, 964.35281pt x 505.13719pt>
+File: figure/pfsense_login.png Graphic file (type png)
+<use figure/pfsense_login.png>
+Package pdftex.def Info: figure/pfsense_login.png  used on input line 505.
+(pdftex.def)             Requested size: 385.7343pt x 202.05128pt.
+<figure/figure_routeurMail_configuration_pat.png, id=429, 964.35281pt x 505.137
+19pt>
+File: figure/figure_routeurMail_configuration_pat.png Graphic file (type png)
+<use figure/figure_routeurMail_configuration_pat.png>
+Package pdftex.def Info: figure/figure_routeurMail_configuration_pat.png  used 
+on input line 512.
+(pdftex.def)             Requested size: 398.33018pt x 227.62566pt.
+ [20 <./figure/pfsense_login.png>]
 \openout3 = `index.pyg'.
 
 
 (_minted-index/5859DFE16BE61D28FD27D477A96760AA617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
 (_minted-index/52C0D77A57DFF7AA3E6F1A55F338F770617A6B129CDDAD4231A32FF4E86D8923
-.pygtex)
-Overfull \vbox (2.01369pt too high) detected at line 409
+.pygtex) [21 <./figure/figure_routeurMail_configuration_pat.png>]
+Underfull \vbox (badness 10000) detected at line 534
+ []
+
+
+Overfull \vbox (0.54202pt too high) detected at line 534
  []
 
 [22]
-Underfull \vbox (badness 10000) detected at line 409
+Overfull \hbox (1.31175pt too wide) in paragraph at lines 541--542
+[]\T1/lmr/m/n/12 la pro-priété vir-tual_mailbox_domains = mysql :/etc/postfix/s
+ql/mysql-virtual-mailbox-
  []
 
 
-Overfull \vbox (0.54204pt too high) detected at line 409
- []
-
-[23]
-Overfull \hbox (6.06905pt too wide) in paragraph at lines 416--417
-\T1/lmr/m/n/12 mysql plus précisément MariaDB. virtual_mailbox_maps = mysql:/et
-c/postfix/sql/mysql-
+Overfull \hbox (14.55518pt too wide) in paragraph at lines 541--542
+\T1/lmr/m/n/12 mysql plus pré-ci-sé-ment Ma-riaDB. vir-tual_mailbox_maps = mysq
+l :/etc/postfix/sql/mysql-
  []
 
 \openout3 = `index.pyg'.
@@ -1142,27 +1442,27 @@ c/postfix/sql/mysql-
 
 
 (_minted-index/002C4330748084D849E4CEACF3986793617A6B129CDDAD4231A32FF4E86D8923
-.pygtex)
+.pygtex) [23]
 \openout3 = `index.pyg'.
 
 
-(_minted-index/C79B13D85671FC1512685D0957317912617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [24]
+(_minted-index/06D6312244D7E853CDE04DF3DEEC64AC617A6B129CDDAD4231A32FF4E86D8923
+.pygtex)
 \openout3 = `index.pyg'.
 
 
 (_minted-index/AAC07FD3E35AFC20261988F99237CD2F617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
 (_minted-index/04A02A39329BD3C2EC879A1F071616F0617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [25]
-Underfull \vbox (badness 10000) detected at line 445
+.pygtex) [24]
+Underfull \vbox (badness 10000) detected at line 569
  []
 
 
-Overfull \vbox (0.54205pt too high) detected at line 445
+Overfull \vbox (0.542pt too high) detected at line 569
  []
 
-[26]
+[25]
 \openout3 = `index.pyg'.
 
 
@@ -1180,9 +1480,9 @@ Overfull \vbox (0.54205pt too high) detected at line 445
 .pygtex)
 \openout3 = `index.pyg'.
 
-
+ [26]
 (_minted-index/164D3729CDB7F84F2F67879CD9F1F96C617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [27]
+.pygtex)
 \openout3 = `index.pyg'.
 
 
@@ -1191,74 +1491,51 @@ Overfull \vbox (0.54205pt too high) detected at line 445
 \openout3 = `index.pyg'.
 
 
-(_minted-index/5D6C7CDBF47CD8C217A0686C41781286617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [28]
-Underfull \vbox (badness 10000) detected at line 560
+(_minted-index/A833D4D655453CF20362CA3342482C0E617A6B129CDDAD4231A32FF4E86D8923
+.pygtex) [27]
+Underfull \vbox (badness 10000) detected at line 684
  []
 
 
-Overfull \vbox (0.542pt too high) detected at line 560
+Overfull \vbox (0.54199pt too high) detected at line 684
  []
 
-[29]
-Overfull \hbox (28.56853pt too wide) in paragraph at lines 567--568
-[]\T1/lmr/m/n/12 Le bonheur de coder: on va comprendre les principes de base po
-ur coder un site d'administration
- []
-
-
-Overfull \hbox (23.80312pt too wide) in paragraph at lines 572--573
-\T1/lmr/m/n/12 L'administrateur du système va exécuter des instructions depuis 
-l'interface web et pour communiquer
- []
-
-[30]
-(_minted-index/89370E0CAB013245869B1C4615E7717BC452DA2E4F6E117992E5CF4B94296664
-.pygtex)
-Underfull \vbox (badness 10000) detected at line 573
- []
-
-
-Overfull \vbox (3.94205pt too high) detected at line 573
- []
-
-[31]
-Underfull \vbox (badness 10000) detected at line 573
- []
-
-
-Overfull \vbox (0.542pt too high) detected at line 573
- []
-
-[32]
-Underfull \vbox (badness 10000) detected at line 573
- []
-
-
-Overfull \vbox (0.54205pt too high) detected at line 573
- []
-
-[33]
+[28]
 \openout3 = `index.pyg'.
 
 
-(_minted-index/790B5B86BA6B6F0F7059582AF864FEC3617A6B129CDDAD4231A32FF4E86D8923
+(_minted-index/6ADC4654A59DB7598683AB65D4A16F05617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
+\openout3 = `index.pyg'.
+
+
+Overfull \hbox (18.73167pt too wide) in paragraph at lines 690--715
+\T1/lmr/m/n/12 Il nous faut créer le vir-tual-host as-so-cié à rain-loop dans A
+pache. Voici son contenu /etc/apache2/site-
+ []
+
+
+(_minted-index/9657046A61805743A5CF7D3D491B9C5D617A6B129CDDAD4231A32FF4E86D8923
+.pygtex)
+Overfull \vbox (16.20636pt too high) detected at line 715
+ []
+
+[29]
 (_minted-index/EFCBF20C948EA6C7E0F54974CD623B09617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [34]
-Underfull \vbox (badness 10000) detected at line 580
+.pygtex) [30]
+Underfull \vbox (badness 10000) detected at line 717
  []
 
 
-Overfull \vbox (0.54199pt too high) detected at line 580
+Overfull \vbox (1.34198pt too high) detected at line 717
  []
 
-[35]
+[31]
 (_minted-index/0E3DECCC8FF580CEDC50E833E7791FEE617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
 \openout3 = `index.pyg'.
 
- [36]
+
 (_minted-index/ABEDE04ED58DD0D2AE6EC0656F51A449617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
 \openout3 = `index.pyg'.
@@ -1268,7 +1545,7 @@ Overfull \vbox (0.54199pt too high) detected at line 580
 .pygtex)
 \openout3 = `index.pyg'.
 
-
+ [32]
 (_minted-index/C82D710E82479BC68A05DDB14EEF1C1A617A6B129CDDAD4231A32FF4E86D8923
 .pygtex)
 \openout3 = `index.pyg'.
@@ -1280,35 +1557,210 @@ Overfull \vbox (0.54199pt too high) detected at line 580
 
 
 (_minted-index/AC82F35A28D42A710CD5163DECF65764617A6B129CDDAD4231A32FF4E86D8923
-.pygtex) [37] [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
- [39
+.pygtex)
+Overfull \vbox (1.6119pt too high) detected at line 766
+ []
+
+[33]
+<figure/connexion_admin.png, id=492, 1029.09468pt x 556.32843pt>
+File: figure/connexion_admin.png Graphic file (type png)
+<use figure/connexion_admin.png>
+Package pdftex.def Info: figure/connexion_admin.png  used on input line 777.
+(pdftex.def)             Requested size: 514.54608pt x 278.16353pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 777--778
+ [][] 
+ []
+
+[34]
+<figure/creation_compte_bake.png, id=499, 1029.09468pt x 556.32843pt>
+File: figure/creation_compte_bake.png Graphic file (type png)
+<use figure/creation_compte_bake.png>
+Package pdftex.def Info: figure/creation_compte_bake.png  used on input line 78
+4.
+(pdftex.def)             Requested size: 514.54608pt x 278.16353pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 784--784
+ [][] 
+ []
+
+<figure/retour_compte_cree.png, id=500, 1029.09468pt x 556.32843pt>
+File: figure/retour_compte_cree.png Graphic file (type png)
+<use figure/retour_compte_cree.png>
+Package pdftex.def Info: figure/retour_compte_cree.png  used on input line 785.
+
+(pdftex.def)             Requested size: 514.54608pt x 278.16353pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 785--786
+ [][] 
+ []
+
+[35 <./figure/connexion_admin.png>]
+<figure/connexion_bake_large_screen.png, id=508, 1029.09468pt x 556.32843pt>
+File: figure/connexion_bake_large_screen.png Graphic file (type png)
+<use figure/connexion_bake_large_screen.png>
+Package pdftex.def Info: figure/connexion_bake_large_screen.png  used on input 
+line 796.
+(pdftex.def)             Requested size: 514.54608pt x 278.16353pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 796--797
+ [][] 
+ []
+
+[36 <./figure/creation_compte_bake.png> <./figure/retour_compte_cree.png>]
+<figure/bake_send_mail_to_toto1.png, id=516, 1029.09468pt x 556.32843pt>
+File: figure/bake_send_mail_to_toto1.png Graphic file (type png)
+<use figure/bake_send_mail_to_toto1.png>
+Package pdftex.def Info: figure/bake_send_mail_to_toto1.png  used on input line
+ 802.
+(pdftex.def)             Requested size: 514.54608pt x 278.16353pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 802--803
+ [][] 
+ []
+
+<figure/toto_see_mail_from_bake1.png, id=517, 1029.09468pt x 502.87875pt>
+File: figure/toto_see_mail_from_bake1.png Graphic file (type png)
+<use figure/toto_see_mail_from_bake1.png>
+Package pdftex.def Info: figure/toto_see_mail_from_bake1.png  used on input lin
+e 809.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 809--809
+ [][] 
+ []
+
+<figure/toto_reply_to_bake1.png, id=518, 1029.09468pt x 502.87875pt>
+File: figure/toto_reply_to_bake1.png Graphic file (type png)
+<use figure/toto_reply_to_bake1.png>
+Package pdftex.def Info: figure/toto_reply_to_bake1.png  used on input line 810
+.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 810--811
+ [][] 
+ []
+
+[37 <./figure/connexion_bake_large_screen.png> <./figure/bake_send_mail_to_toto
+1.png>]
+File: figure/toto_see_mail_from_bake1.png Graphic file (type png)
+<use figure/toto_see_mail_from_bake1.png>
+Package pdftex.def Info: figure/toto_see_mail_from_bake1.png  used on input lin
+e 818.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 818--818
+ [][] 
+ []
+
+File: figure/toto_reply_to_bake1.png Graphic file (type png)
+<use figure/toto_reply_to_bake1.png>
+Package pdftex.def Info: figure/toto_reply_to_bake1.png  used on input line 819
+.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 819--820
+ [][] 
+ []
+
+[38 <./figure/toto_see_mail_from_bake1.png> <./figure/toto_reply_to_bake1.png>]
+<figure/admin_delete_bereke_acount1.png, id=531, 1029.09468pt x 502.87875pt>
+File: figure/admin_delete_bereke_acount1.png Graphic file (type png)
+<use figure/admin_delete_bereke_acount1.png>
+Package pdftex.def Info: figure/admin_delete_bereke_acount1.png  used on input 
+line 826.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 826--826
+ [][] 
+ []
+
+<figure/admin_delete_bereke_acount2.png, id=532, 1029.09468pt x 465.99094pt>
+File: figure/admin_delete_bereke_acount2.png Graphic file (type png)
+<use figure/admin_delete_bereke_acount2.png>
+Package pdftex.def Info: figure/admin_delete_bereke_acount2.png  used on input 
+line 827.
+(pdftex.def)             Requested size: 514.54608pt x 232.99489pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 827--828
+ [][] 
+ []
+
+[39]
+<figure/admin_verify_state_of_service.png, id=537, 1029.09468pt x 502.87875pt>
+File: figure/admin_verify_state_of_service.png Graphic file (type png)
+<use figure/admin_verify_state_of_service.png>
+Package pdftex.def Info: figure/admin_verify_state_of_service.png  used on inpu
+t line 836.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 836--837
+ [][] 
+ []
+
+[40 <./figure/admin_delete_bereke_acount1.png> <./figure/admin_delete_bereke_ac
+ount2.png>]
+<figure/admin_stop_service_mail.png, id=544, 1029.09468pt x 502.87875pt>
+File: figure/admin_stop_service_mail.png Graphic file (type png)
+<use figure/admin_stop_service_mail.png>
+Package pdftex.def Info: figure/admin_stop_service_mail.png  used on input line
+ 843.
+(pdftex.def)             Requested size: 514.54608pt x 251.43875pt.
+
+Overfull \hbox (30.84921pt too wide) in paragraph at lines 843--844
+ [][] 
+ []
+
+[41 <./figure/admin_verify_state_of_service.png> <./figure/admin_stop_service_m
+ail.png>] (index.bbl [42
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 878.
+ [43
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 878.
  (index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 636.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 878.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 878.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 520D913F7F4C32BAE8BC66796BD2ACB6;2773.
+(rerunfilecheck)             Checksum: 080B60E61C427F20A23CF0DA652B261F;3108.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 runsystem(del index.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 636.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 878.
  ) 
 Here is how much of TeX's memory you used:
- 14039 strings out of 492450
- 238928 string characters out of 3129713
- 398321 words of memory out of 3000000
- 17904 multiletter control sequences out of 15000+200000
- 74304 words of font info for 56 fonts, out of 3000000 for 9000
+ 26465 strings out of 492450
+ 483704 string characters out of 3129713
+ 619340 words of memory out of 3000000
+ 30222 multiletter control sequences out of 15000+200000
+ 598827 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,10n,44p,1159b,692s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
-st, replaced by a fixed one
+ 52i,10n,71p,1188b,709s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
 , replaced by a fixed one
@@ -1335,15 +1787,15 @@ enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/lm/lmtti10.pfb>
-Output written on index.pdf (40 pages, 460905 bytes).
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmtti10.pfb>
+Output written on index.pdf (50 pages, 2064768 bytes).
 PDF statistics:
- 485 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
+ 456 words of extra memory for PDF output out of 10000 (max. 10000000)
 

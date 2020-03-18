@@ -1,0 +1,19 @@
+# LaTeX stuffs:
+*.aux
+*.ist
+*.log
+*.out
+*.pdf
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.gz
+*.thm
+*.toc
+*.xdy
+*.listing
+.idea
+_minted*
+*converted-to*
+*.splr
