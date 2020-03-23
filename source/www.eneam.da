@@ -1,0 +1,35 @@
+upstream backend_jenkins {
+	server 127.0.0.1:8080;
+}
+upstream backend_apache {
+	server 127.0.0.1:7443;
+}
+server {
+	listen 80;
+	server_name www.eneam.da eneam.da;
+	return 301 https://$host$request_uri;
+}
+
+server {
+	listen 443 ssl;
+	server_name www.eneam.da eneam.da ;
+	ssl_certificate /etc/ssl/certs/nginx-autosigne.crt;
+	ssl_certificate_key /etc/ssl/private/nginx-autosigne.key;
+
+	location /jenkins {
+		include proxy_params;
+		proxy_pass http://backend_jenkins;
+	}
+	location /{
+		include proxy_params;
+		proxy_pass https://backend_apache ;
+	}
+	#Empecher l'acces au dossier de configuration par les utilisateurs du web
+	location ^~ /data {
+		deny all ;
+	}
+
+}
+
+
+

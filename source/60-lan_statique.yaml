@@ -1,0 +1,14 @@
+network:
+    renderer: networkd
+    ethernets:
+        ens33:
+            dhcp4: no
+            dhcp6: no
+            gateway4: 192.168.0.254
+            addresses: [192.168.0.1/24]
+            nameservers:
+                    search: [eneam.da]
+                    addresses: [192.168.0.5,8.8.8.8]
+        ens34:
+            dhcp4: true      
+    version: 2

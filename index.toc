@@ -1,12 +1,12 @@
 \babel@toc {french}{}
 \contentsline {chapter}{Dédicaces}{i}{chapter*.1}%
 \contentsline {chapter}{Remerciements}{ii}{chapter*.2}%
-\contentsline {chapter}{Sigle et Abréviation}{iii}{chapter*.3}%
+\contentsline {chapter}{Sigles et Abréviations}{iii}{chapter*.3}%
 \contentsline {chapter}{Table des matières}{v}{chapter*.4}%
 \contentsline {chapter}{Introduction}{1}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Cadre de l'étude}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Présentation du bureau d'étude JScom}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Presentation générale}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Présentation générale}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Situation géographique}{2}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Démarche méthodologique}{3}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Cadre théorique et méthodologique}{4}{chapter.2}%
@@ -25,32 +25,37 @@
 \contentsline {subsection}{\numberline {2.4.6}Programmation}{8}{subsection.2.4.6}%
 \contentsline {subsubsection}{HTML, CSS, PHP, JAVASCRIPT, JQUERY, BASH}{8}{subsubsection*.11}%
 \contentsline {paragraph}{HTML}{8}{paragraph*.12}%
-\contentsline {paragraph}{PHP}{8}{paragraph*.13}%
-\contentsline {paragraph}{BASH}{8}{paragraph*.14}%
+\contentsline {paragraph}{CSS}{8}{paragraph*.13}%
+\contentsline {paragraph}{PHP}{8}{paragraph*.14}%
+\contentsline {paragraph}{JAVACRIPT ET JQUERY :}{9}{paragraph*.15}%
+\contentsline {paragraph}{BASH}{9}{paragraph*.16}%
 \contentsline {subsection}{\numberline {2.4.7}FTP}{9}{subsection.2.4.7}%
 \contentsline {subsection}{\numberline {2.4.8}Fonctionnement du mail}{9}{subsection.2.4.8}%
-\contentsline {subsubsection}{SMTP}{9}{subsubsection*.15}%
-\contentsline {subsubsection}{ IMAP}{10}{subsubsection*.17}%
+\contentsline {subsubsection}{SMTP}{9}{subsubsection*.17}%
+\contentsline {subsubsection}{ IMAP}{10}{subsubsection*.19}%
 \contentsline {subsection}{\numberline {2.4.9}Sécurité}{12}{subsection.2.4.9}%
-\contentsline {subsubsection}{firewall}{12}{subsubsection*.20}%
+\contentsline {subsubsection}{Firewall}{12}{subsubsection*.22}%
 \contentsline {chapter}{\numberline {3}Implémentation du projet}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Monter le serveur Linux}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Installation du serveur}{14}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.1}Installation du serveur}{14}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Gestion du stockage de fichier}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Systeme de fichier}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Système de fichier}{15}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Ajout de disque dur au serveur}{15}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Configurer le LAMP}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Modélisation de l'architecture réseau avec GNS3}{18}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Description du schéma}{19}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Configuration des equipements}{21}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Installation Postfix}{21}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Création de la base de donnée des tables}{26}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Installation de Dovecot}{26}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Installation du client mail}{29}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Spamassassin}{32}{section.3.8}%
-\contentsline {section}{\numberline {3.9} Sécurité}{33}{section.3.9}%
-\contentsline {section}{\numberline {3.10}Cas concret}{34}{section.3.10}%
-\contentsline {subsection}{\numberline {3.10.1}Enoncé}{34}{subsection.3.10.1}%
-\contentsline {subsection}{\numberline {3.10.2}Pratique}{34}{subsection.3.10.2}%
-\contentsline {chapter}{Conclusion}{42}{chapter*.33}%
-\contentsline {chapter}{Bibliographie}{43}{chapter*.34}%
+\contentsline {subsection}{\numberline {3.3.1}Gestion de Apache}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Gestion de Nginx}{20}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Modélisation de l'architecture réseau avec GNS3}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Description du schéma}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Configuration des équipements}{27}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Installation Postfix}{27}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Installation de Dovecot}{31}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Installation du client mail}{34}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Le site d'administration}{36}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Configuration du FTP avec vsftpd}{40}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Spamassassin}{42}{section.3.10}%
+\contentsline {section}{\numberline {3.11}La base de donnée MariaDB}{43}{section.3.11}%
+\contentsline {section}{\numberline {3.12} Sécurité}{48}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Cas concret}{49}{section.3.13}%
+\contentsline {subsection}{\numberline {3.13.1}Enoncé}{49}{subsection.3.13.1}%
+\contentsline {subsection}{\numberline {3.13.2}Pratique}{49}{subsection.3.13.2}%
+\contentsline {chapter}{Conclusion}{57}{chapter*.37}%
+\contentsline {chapter}{Bibliographie}{58}{chapter*.38}%

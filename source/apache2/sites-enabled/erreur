@@ -1,0 +1,2868 @@
+-- Logs begin at Wed 2019-12-25 12:07:51 WAT, end at Wed 2020-02-05 13:49:17 WAT. --
+févr. 05 10:17:24 serveur kernel: e1000 0000:02:02.0 ens34: renamed from eth1
+févr. 05 10:17:24 serveur kernel: raid6: sse2x1   gen()  1701 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: sse2x1   xor()  1665 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: sse2x2   gen()  2263 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: sse2x2   xor()  2197 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: sse2x4   gen()  2850 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: sse2x4   xor()  2155 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: avx2x1   gen()  3881 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: avx2x1   xor()  2589 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: avx2x2   gen()  3181 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: avx2x2   xor()  2661 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: avx2x4   gen()  4676 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: avx2x4   xor()  2517 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: using algorithm avx2x4 gen() 4676 MB/s
+févr. 05 10:17:24 serveur kernel: raid6: .... xor() 2517 MB/s, rmw enabled
+févr. 05 10:17:24 serveur kernel: raid6: using avx2x2 recovery algorithm
+févr. 05 10:17:24 serveur kernel: xor: automatically using best checksumming function   avx       
+févr. 05 10:17:24 serveur kernel: async_tx: api initialized (async)
+févr. 05 10:17:24 serveur kernel: Btrfs loaded, crc32c=crc32c-intel
+févr. 05 10:17:24 serveur kernel: random: crng init done
+févr. 05 10:17:24 serveur kernel: random: 7 urandom warning(s) missed due to ratelimiting
+févr. 05 10:17:24 serveur kernel: EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+févr. 05 10:17:24 serveur kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+févr. 05 10:17:24 serveur systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+févr. 05 10:17:24 serveur systemd[1]: Detected virtualization vmware.
+févr. 05 10:17:24 serveur systemd[1]: Detected architecture x86-64.
+févr. 05 10:17:24 serveur systemd[1]: Set hostname to <serveur>.
+févr. 05 10:17:24 serveur systemd[1]: Created slice User and Session Slice.
+févr. 05 10:17:24 serveur systemd[1]: Created slice System Slice.
+févr. 05 10:17:24 serveur systemd[1]: Listening on Network Service Netlink Socket.
+févr. 05 10:17:24 serveur systemd[1]: Created slice system-postfix.slice.
+févr. 05 10:17:24 serveur systemd[1]: Listening on udev Control Socket.
+févr. 05 10:17:24 serveur systemd[1]: Listening on Journal Audit Socket.
+févr. 05 10:17:24 serveur kernel: EXT4-fs (sda2): re-mounted. Opts: (null)
+févr. 05 10:17:24 serveur kernel: Loading iSCSI transport class v2.0-870.
+févr. 05 10:17:24 serveur kernel: iscsi: registered transport (tcp)
+févr. 05 10:17:24 serveur kernel: iscsi: registered transport (iser)
+févr. 05 10:17:24 serveur kernel: Adding 1362940k swap on /swap.img.  Priority:-2 extents:3 across:1502204k FS
+févr. 05 10:17:24 serveur systemd[1]: Mounting Mount unit for core, revision 7270...
+févr. 05 10:17:24 serveur systemd[1]: Mounting Mount unit for core, revision 8268...
+févr. 05 10:17:24 serveur systemd[1]: Mounted Mount unit for core, revision 7270.
+févr. 05 10:17:24 serveur systemd[1]: Mounted Mount unit for core, revision 8268.
+févr. 05 10:17:24 serveur systemd[1]: Started udev Coldplug all Devices.
+févr. 05 10:17:24 serveur systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+févr. 05 10:17:24 serveur systemd[1]: Reached target Local Encrypted Volumes.
+févr. 05 10:17:24 serveur systemd-journald[500]: Journal started
+-- Subject: Le journal a été démarré
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Le processus du journal système a démarré, ouvert ses fichiers en écriture
+-- et est prêt à traiter les requêtes.
+févr. 05 10:17:24 serveur systemd-journald[500]: Runtime journal (/run/log/journal/ba0adea28838484992b0075e1a7dbf2c) is 2.5M, max 6.6M, 4.1M free.
+-- Subject: Espace disque utilisé par le journal
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: man:journald.conf(5)
+-- 
+-- Runtime journal (/run/log/journal/ba0adea28838484992b0075e1a7dbf2c) utilise actuellement 2.5M.
+-- Le maximum autorisé est défini à 6.6M.
+-- Au moins 9.9M doivent être laissés libres
+-- (sur 63.4M d'espace disque actuellement libre).
+-- La limite appliquée est donc 6.6M, dont 4.1M
+-- sont toujours disponibles.
+-- 
+-- Les limites définissant la quantité d'espace disque que peut utiliser le
+-- journal peuvent être configurées avec les paramètres SystemMaxUse=,
+-- SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+-- RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+-- Voir journald.conf(5) pour plus de détails.
+févr. 05 10:17:24 serveur systemd[1]: Started Journal Service.
+févr. 05 10:17:24 serveur systemd-modules-load[502]: Inserted module 'iscsi_tcp'
+févr. 05 10:17:19 serveur systemd-modules-load[502]: Inserted module 'ib_iser'
+févr. 05 10:17:24 serveur systemd[1]: Starting Flush Journal to Persistent Storage...
+-- Subject: L'unité (unit) systemd-journal-flush.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-journal-flush.service a commencé à démarrer.
+févr. 05 10:17:24 serveur lvm[507]:   1 logical volume(s) in volume group "raid-volume" monitored
+févr. 05 10:17:24 serveur systemd-journald[500]: Time spent on flushing to /var is 375.280ms for 1626 entries.
+févr. 05 10:17:24 serveur systemd-journald[500]: System journal (/var/log/journal/ba0adea28838484992b0075e1a7dbf2c) is 280.0M, max 3.9G, 3.6G free.
+-- Subject: Espace disque utilisé par le journal
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: man:journald.conf(5)
+-- 
+-- System journal (/var/log/journal/ba0adea28838484992b0075e1a7dbf2c) utilise actuellement 280.0M.
+-- Le maximum autorisé est défini à 3.9G.
+-- Au moins 4.0G doivent être laissés libres
+-- (sur 31.3G d'espace disque actuellement libre).
+-- La limite appliquée est donc 3.9G, dont 3.6G
+-- sont toujours disponibles.
+-- 
+-- Les limites définissant la quantité d'espace disque que peut utiliser le
+-- journal peuvent être configurées avec les paramètres SystemMaxUse=,
+-- SystemKeepFree=, SystemMaxFileSize=, RuntimeMaxUse=, RuntimeKeepFree=,
+-- RuntimeMaxFileSize= dans le fichier /etc/systemd/journald.conf.
+-- Voir journald.conf(5) pour plus de détails.
+févr. 05 10:17:24 serveur systemd[1]: Started Flush Journal to Persistent Storage.
+-- Subject: L'unité (unit) systemd-journal-flush.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-journal-flush.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:26 serveur kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+févr. 05 10:17:26 serveur kernel: vmw_vmci 0000:00:07.7: Found VMCI PCI device at 0x11080, irq 16
+févr. 05 10:17:26 serveur kernel: vmw_vmci 0000:00:07.7: Using capabilities 0x8000000c
+févr. 05 10:17:26 serveur kernel: Guest personality initialized and is active
+févr. 05 10:17:26 serveur kernel: VMCI host device registered (name=vmci, major=10, minor=55)
+févr. 05 10:17:26 serveur kernel: Initialized host personality
+févr. 05 10:17:27 serveur systemd-udevd[532]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+févr. 05 10:17:27 serveur systemd-udevd[539]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+févr. 05 10:17:27 serveur kernel: Bluetooth: Core ver 2.22
+févr. 05 10:17:27 serveur kernel: NET: Registered protocol family 31
+févr. 05 10:17:27 serveur kernel: Bluetooth: HCI device and connection manager initialized
+févr. 05 10:17:27 serveur kernel: Bluetooth: HCI socket layer initialized
+févr. 05 10:17:27 serveur kernel: Bluetooth: L2CAP socket layer initialized
+févr. 05 10:17:27 serveur kernel: Bluetooth: SCO socket layer initialized
+févr. 05 10:17:27 serveur kernel: usbcore: registered new interface driver btusb
+févr. 05 10:17:31 serveur kernel: RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 10737418240 ms ovfl timer
+févr. 05 10:17:31 serveur kernel: RAPL PMU: hw unit of domain pp0-core 2^-0 Joules
+févr. 05 10:17:31 serveur kernel: RAPL PMU: hw unit of domain package 2^-0 Joules
+févr. 05 10:17:31 serveur kernel: RAPL PMU: hw unit of domain dram 2^-0 Joules
+févr. 05 10:17:31 serveur kernel: RAPL PMU: hw unit of domain pp1-gpu 2^-0 Joules
+févr. 05 10:17:31 serveur kernel: RAPL PMU: hw unit of domain psys 2^-0 Joules
+févr. 05 10:17:31 serveur systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+-- Subject: L'unité (unit) systemd-rfkill.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-rfkill.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:31 serveur systemd[1]: Starting Load/Save RF Kill Switch Status...
+-- Subject: L'unité (unit) systemd-rfkill.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-rfkill.service a commencé à démarrer.
+févr. 05 10:17:31 serveur systemd-udevd[535]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+févr. 05 10:17:32 serveur systemd[1]: Reached target Bluetooth.
+-- Subject: L'unité (unit) bluetooth.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) bluetooth.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:32 serveur systemd[1]: Started Load/Save RF Kill Switch Status.
+-- Subject: L'unité (unit) systemd-rfkill.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-rfkill.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:32 serveur systemd[1]: Reached target Sound Card.
+-- Subject: L'unité (unit) sound.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sound.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:34 serveur systemd[1]: Found device /dev/raid-volume/data.
+-- Subject: L'unité (unit) dev-raid\x2dvolume-data.device a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dev-raid\x2dvolume-data.device a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:34 serveur systemd[1]: Mounting /externe...
+-- Subject: L'unité (unit) externe.mount a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) externe.mount a commencé à démarrer.
+févr. 05 10:17:34 serveur kernel: EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+févr. 05 10:17:34 serveur systemd[1]: Mounted /externe.
+-- Subject: L'unité (unit) externe.mount a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) externe.mount a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:34 serveur systemd[1]: Reached target Local File Systems.
+-- Subject: L'unité (unit) local-fs.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) local-fs.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:34 serveur systemd[1]: Starting AppArmor initialization...
+-- Subject: L'unité (unit) apparmor.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apparmor.service a commencé à démarrer.
+févr. 05 10:17:34 serveur systemd[1]: Starting Set console font and keymap...
+-- Subject: L'unité (unit) console-setup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) console-setup.service a commencé à démarrer.
+févr. 05 10:17:34 serveur systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: L'unité (unit) plymouth-read-write.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a commencé à démarrer.
+févr. 05 10:17:34 serveur systemd[1]: Starting ebtables ruleset management...
+-- Subject: L'unité (unit) ebtables.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ebtables.service a commencé à démarrer.
+févr. 05 10:17:34 serveur systemd[1]: Starting Create Volatile Files and Directories...
+-- Subject: L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup.service a commencé à démarrer.
+févr. 05 10:17:34 serveur systemd[1]: Created slice system-lvm2\x2dpvscan.slice.
+-- Subject: L'unité (unit) system-lvm2\x2dpvscan.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) system-lvm2\x2dpvscan.slice a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:35 serveur systemd[1]: Starting LVM2 PV scan on device 9:0...
+-- Subject: L'unité (unit) lvm2-pvscan@9:0.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-pvscan@9:0.service a commencé à démarrer.
+févr. 05 10:17:35 serveur systemd[1]: Started MD array monitor.
+-- Subject: L'unité (unit) mdmonitor.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mdmonitor.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:35 serveur systemd[1]: Started Set console font and keymap.
+-- Subject: L'unité (unit) console-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) console-setup.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:35 serveur systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: L'unité (unit) plymouth-read-write.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-read-write.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:35 serveur apparmor[715]:  * Starting AppArmor profiles
+févr. 05 10:17:35 serveur systemd[1]: Started ebtables ruleset management.
+-- Subject: L'unité (unit) ebtables.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ebtables.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:35 serveur lvm[723]:   1 logical volume(s) in volume group "raid-volume" now active
+févr. 05 10:17:35 serveur systemd[1]: Started LVM2 PV scan on device 9:0.
+-- Subject: L'unité (unit) lvm2-pvscan@9:0.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lvm2-pvscan@9:0.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:36 serveur systemd[1]: Started Create Volatile Files and Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-setup.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:36 serveur systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+-- Subject: L'unité (unit) systemd-update-utmp.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp.service a commencé à démarrer.
+févr. 05 10:17:36 serveur systemd[1]: Starting Network Time Synchronization...
+-- Subject: L'unité (unit) systemd-timesyncd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-timesyncd.service a commencé à démarrer.
+févr. 05 10:17:36 serveur systemd[1]: Started Update UTMP about System Boot/Shutdown.
+-- Subject: L'unité (unit) systemd-update-utmp.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.858:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.858:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-cgns" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.858:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-mounting" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.858:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-nesting" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[809]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[809]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-cgns" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[809]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-mounting" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[809]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-nesting" pid=809 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[810]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[810]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[810]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur audit[810]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.994:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.994:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.994:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=810 comm="apparmor_parser"
+févr. 05 10:17:36 serveur kernel: audit: type=1400 audit(1580894256.994:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=810 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[811]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/lxc-start" pid=811 comm="apparmor_parser"
+févr. 05 10:17:37 serveur kernel: audit: type=1400 audit(1580894257.034:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/lxc-start" pid=811 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[812]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=812 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[812]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=812 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[812]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=812 comm="apparmor_parser"
+févr. 05 10:17:37 serveur kernel: audit: type=1400 audit(1580894257.090:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=812 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[813]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=813 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[813]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=813 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[814]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/chronyd" pid=814 comm="apparmor_parser"
+févr. 05 10:17:37 serveur systemd[1]: Started Network Time Synchronization.
+-- Subject: L'unité (unit) systemd-timesyncd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-timesyncd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:37 serveur audit[815]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/dhcpd" pid=815 comm="apparmor_parser"
+févr. 05 10:17:37 serveur systemd[1]: Reached target System Time Synchronized.
+-- Subject: L'unité (unit) time-sync.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) time-sync.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:37 serveur audit[818]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/named" pid=818 comm="apparmor_parser"
+févr. 05 10:17:37 serveur apparmor[715]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+févr. 05 10:17:37 serveur audit[820]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/slapd" pid=820 comm="apparmor_parser"
+févr. 05 10:17:37 serveur apparmor[715]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.squid
+févr. 05 10:17:37 serveur audit[822]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=822 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[836]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/8268/usr/lib/snapd/snap-confine" pid=836 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[836]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/8268/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=836 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[837]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.core.hook.configure" pid=837 comm="apparmor_parser"
+févr. 05 10:17:37 serveur audit[839]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.core" pid=839 comm="apparmor_parser"
+févr. 05 10:17:37 serveur apparmor[715]:    ...done.
+févr. 05 10:17:37 serveur systemd[1]: Started AppArmor initialization.
+-- Subject: L'unité (unit) apparmor.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apparmor.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:37 serveur systemd[1]: Started Authentication service for virtual machines hosted on VMware.
+-- Subject: L'unité (unit) vgauth.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vgauth.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:38 serveur systemd[1]: Started Service for virtual machines hosted on VMware.
+-- Subject: L'unité (unit) open-vm-tools.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) open-vm-tools.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:38 serveur systemd[1]: Starting Initial cloud-init job (pre-networking)...
+-- Subject: L'unité (unit) cloud-init-local.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-init-local.service a commencé à démarrer.
+févr. 05 10:17:38 serveur VGAuthService[840]: Pref_Init: Using '/etc/vmware-tools/vgauth.conf' as preferences filepath
+févr. 05 10:17:38 serveur VGAuthService[840]: Core dump limit set to -1
+févr. 05 10:17:38 serveur VGAuthService[840]: Cannot load message catalog for domain 'VGAuthService', language 'fr', catalog dir '/etc/vmware-tools'.
+févr. 05 10:17:38 serveur VGAuthService[840]: INIT SERVICE
+févr. 05 10:17:38 serveur kernel: NET: Registered protocol family 40
+févr. 05 10:17:38 serveur VGAuthService[840]: SendRpciPacket: RPC unknown or disabled
+févr. 05 10:17:38 serveur VGAuthService[840]: Using '/var/lib/vmware/VGAuth/aliasStore' for alias store root directory
+févr. 05 10:17:38 serveur VGAuthService[840]: LoadCatalogAndSchema: Using '/etc/vmware-tools/vgauth/schemas' for SAML schemas
+févr. 05 10:17:38 serveur VGAuthService[840]: LoadPrefs: Allowing 300 of clock skew for SAML date validation
+févr. 05 10:17:38 serveur VGAuthService[840]: SAML_Init: Using xmlsec1 1.2.25 for XML signature support
+févr. 05 10:17:38 serveur VGAuthService[840]: ServiceNetworkCreateSocketDir: Created socket directory '/var/run/vmware'
+févr. 05 10:17:38 serveur VGAuthService[840]: BEGIN SERVICE
+févr. 05 10:17:43 serveur cloud-init[843]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~18.04.1 running 'init-local' at Wed, 05 Feb 2020 09:17:42 +0000. Up 41.96 seconds.
+févr. 05 10:17:43 serveur systemd[1]: Started Initial cloud-init job (pre-networking).
+-- Subject: L'unité (unit) cloud-init-local.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-init-local.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:43 serveur systemd[1]: Reached target Network (Pre).
+-- Subject: L'unité (unit) network-pre.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network-pre.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:43 serveur systemd[1]: Starting Network Service...
+-- Subject: L'unité (unit) systemd-networkd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a commencé à démarrer.
+févr. 05 10:17:44 serveur systemd-networkd[935]: Enumeration completed
+févr. 05 10:17:44 serveur systemd[1]: Started Network Service.
+-- Subject: L'unité (unit) systemd-networkd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:44 serveur systemd-networkd[935]: ens33: Link is not managed by us
+févr. 05 10:17:44 serveur systemd[1]: Starting Network Name Resolution...
+-- Subject: L'unité (unit) systemd-resolved.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-resolved.service a commencé à démarrer.
+févr. 05 10:17:44 serveur systemd-networkd[935]: lo: Link is not managed by us
+févr. 05 10:17:44 serveur systemd[1]: Starting Wait for Network to be Configured...
+-- Subject: L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd-wait-online.service a commencé à démarrer.
+févr. 05 10:17:44 serveur kernel: e1000: ens34 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+févr. 05 10:17:44 serveur kernel: IPv6: ADDRCONF(NETDEV_UP): ens34: link is not ready
+févr. 05 10:17:44 serveur kernel: IPv6: ADDRCONF(NETDEV_CHANGE): ens34: link becomes ready
+févr. 05 10:17:44 serveur systemd-networkd[935]: lo: Link is not managed by us
+févr. 05 10:17:44 serveur kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+févr. 05 10:17:44 serveur kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+févr. 05 10:17:44 serveur systemd-networkd[935]: ens34: Gained carrier
+févr. 05 10:17:44 serveur systemd-resolved[945]: Positive Trust Anchors:
+févr. 05 10:17:44 serveur systemd-resolved[945]: . IN DS 19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+févr. 05 10:17:44 serveur systemd-resolved[945]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+févr. 05 10:17:44 serveur systemd-resolved[945]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa corp home internal intranet lan local private test
+févr. 05 10:17:44 serveur systemd-resolved[945]: Using system hostname 'serveur'.
+févr. 05 10:17:44 serveur systemd[1]: Started Network Name Resolution.
+-- Subject: L'unité (unit) systemd-resolved.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-resolved.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:44 serveur systemd[1]: Reached target Host and Network Name Lookups.
+-- Subject: L'unité (unit) nss-lookup.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nss-lookup.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:44 serveur systemd[1]: Reached target Network.
+-- Subject: L'unité (unit) network.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:45 serveur kernel: IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+févr. 05 10:17:45 serveur systemd-networkd[935]: ens33: Gained carrier
+févr. 05 10:17:45 serveur systemd-timesyncd[786]: Network configuration changed, trying to establish connection.
+févr. 05 10:17:45 serveur systemd-networkd[935]: ens34: DHCPv4 address 192.168.172.133/24
+févr. 05 10:17:45 serveur systemd-timesyncd[786]: Network configuration changed, trying to establish connection.
+févr. 05 10:17:45 serveur systemd-timesyncd[786]: Network configuration changed, trying to establish connection.
+févr. 05 10:17:45 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 10:17:45 serveur systemd-networkd[935]: ens34: Gained IPv6LL
+févr. 05 10:17:45 serveur systemd-networkd[935]: ens34: Configured
+févr. 05 10:17:45 serveur systemd-timesyncd[786]: Network configuration changed, trying to establish connection.
+févr. 05 10:17:45 serveur systemd-networkd-wait-online[946]: managing: ens34
+févr. 05 10:17:45 serveur systemd-networkd-wait-online[946]: ignoring: lo
+févr. 05 10:17:46 serveur systemd-networkd[935]: ens33: Gained IPv6LL
+févr. 05 10:17:46 serveur systemd-networkd[935]: ens33: Configured
+févr. 05 10:17:46 serveur systemd-timesyncd[786]: Network configuration changed, trying to establish connection.
+févr. 05 10:17:46 serveur systemd-networkd-wait-online[946]: managing: ens34
+févr. 05 10:17:46 serveur systemd-networkd-wait-online[946]: ignoring: lo
+févr. 05 10:17:46 serveur systemd-networkd-wait-online[946]: managing: ens33
+févr. 05 10:17:46 serveur systemd[1]: Started Wait for Network to be Configured.
+-- Subject: L'unité (unit) systemd-networkd-wait-online.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-networkd-wait-online.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:46 serveur systemd[1]: Starting Initial cloud-init job (metadata service crawler)...
+-- Subject: L'unité (unit) cloud-init.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-init.service a commencé à démarrer.
+févr. 05 10:17:48 serveur cloud-init[965]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~18.04.1 running 'init' at Wed, 05 Feb 2020 09:17:48 +0000. Up 47.59 seconds.
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: | Device |  Up  |           Address           |      Mask     | Scope  |     Hw-Address    |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: | ens33  | True |         192.168.0.1         | 255.255.255.0 | global | 00:0c:29:0d:23:01 |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: | ens33  | True | fe80::20c:29ff:fe0d:2301/64 |       .       |  link  | 00:0c:29:0d:23:01 |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: | ens34  | True |       192.168.172.133       | 255.255.255.0 | global | 00:0c:29:0d:23:0b |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: | ens34  | True | fe80::20c:29ff:fe0d:230b/64 |       .       |  link  | 00:0c:29:0d:23:0b |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: |   lo   | True |          127.0.0.1          |   255.0.0.0   |  host  |         .         |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: |   lo   | True |           ::1/128           |       .       |  host  |         .         |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +++++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++++
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +-------+---------------+---------------+---------------+-----------+-------+
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: | Route |  Destination  |    Gateway    |    Genmask    | Interface | Flags |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +-------+---------------+---------------+---------------+-----------+-------+
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: |   0   |    0.0.0.0    | 192.168.0.254 |    0.0.0.0    |   ens33   |   UG  |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: |   1   |  192.168.0.0  |    0.0.0.0    | 255.255.255.0 |   ens33   |   U   |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: |   2   | 192.168.172.0 |    0.0.0.0    | 255.255.255.0 |   ens34   |   U   |
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +-------+---------------+---------------+---------------+-----------+-------+
+févr. 05 10:17:48 serveur cloud-init[965]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: +-------+-------------+---------+-----------+-------+
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: +-------+-------------+---------+-----------+-------+
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: |   1   |  fe80::/64  |    ::   |   ens34   |   U   |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: |   2   |  fe80::/64  |    ::   |   ens33   |   U   |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: |   4   |    local    |    ::   |   ens33   |   U   |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: |   5   |    local    |    ::   |   ens34   |   U   |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: |   6   |   ff00::/8  |    ::   |   ens34   |   U   |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: |   7   |   ff00::/8  |    ::   |   ens33   |   U   |
+févr. 05 10:17:49 serveur cloud-init[965]: ci-info: +-------+-------------+---------+-----------+-------+
+févr. 05 10:17:49 serveur systemd[1]: Started Initial cloud-init job (metadata service crawler).
+-- Subject: L'unité (unit) cloud-init.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-init.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Reached target Network is Online.
+-- Subject: L'unité (unit) network-online.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) network-online.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Reached target Remote File Systems (Pre).
+-- Subject: L'unité (unit) remote-fs-pre.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) remote-fs-pre.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Reached target Remote File Systems.
+-- Subject: L'unité (unit) remote-fs.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) remote-fs.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Starting Availability of block devices...
+-- Subject: L'unité (unit) blk-availability.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) blk-availability.service a commencé à démarrer.
+févr. 05 10:17:49 serveur systemd[1]: Reached target System Initialization.
+-- Subject: L'unité (unit) sysinit.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sysinit.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Starting LXD - unix socket.
+-- Subject: L'unité (unit) lxd.socket a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lxd.socket a commencé à démarrer.
+févr. 05 10:17:49 serveur systemd[1]: Started Clean PHP session files every 30 mins.
+-- Subject: L'unité (unit) phpsessionclean.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.timer a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Started Daily Cleanup of Temporary Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-clean.timer a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Started Daily apt download activities.
+-- Subject: L'unité (unit) apt-daily.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apt-daily.timer a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: L'unité (unit) apt-daily-upgrade.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apt-daily-upgrade.timer a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Listening on UUID daemon activation socket.
+-- Subject: L'unité (unit) uuidd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) uuidd.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Listening on D-Bus System Message Bus Socket.
+-- Subject: L'unité (unit) dbus.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dbus.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Starting Socket activation for snappy daemon.
+-- Subject: L'unité (unit) snapd.socket a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) snapd.socket a commencé à démarrer.
+févr. 05 10:17:49 serveur systemd[1]: Started Discard unused blocks once a week.
+-- Subject: L'unité (unit) fstrim.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.timer a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Started Message of the Day.
+-- Subject: L'unité (unit) motd-news.timer a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.timer a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Reached target Timers.
+-- Subject: L'unité (unit) timers.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) timers.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Started ACPI Events Check.
+-- Subject: L'unité (unit) acpid.path a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) acpid.path a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Reached target Paths.
+-- Subject: L'unité (unit) paths.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) paths.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Listening on Open-iSCSI iscsid Socket.
+-- Subject: L'unité (unit) iscsid.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) iscsid.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Listening on ACPID Listen Socket.
+-- Subject: L'unité (unit) acpid.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) acpid.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:49 serveur systemd[1]: Reached target Cloud-config availability.
+-- Subject: L'unité (unit) cloud-config.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-config.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Started Availability of block devices.
+-- Subject: L'unité (unit) blk-availability.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) blk-availability.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Listening on LXD - unix socket.
+-- Subject: L'unité (unit) lxd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lxd.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Listening on Socket activation for snappy daemon.
+-- Subject: L'unité (unit) snapd.socket a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) snapd.socket a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Reached target Sockets.
+-- Subject: L'unité (unit) sockets.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sockets.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Reached target Basic System.
+-- Subject: L'unité (unit) basic.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) basic.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Starting Message of the Day...
+-- Subject: L'unité (unit) motd-news.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.service a commencé à démarrer.
+févr. 05 10:17:50 serveur systemd[1]: Started FUSE filesystem for LXC.
+-- Subject: L'unité (unit) lxcfs.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lxcfs.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:50 serveur systemd[1]: Starting LSB: automatic crash report generation...
+-- Subject: L'unité (unit) apport.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apport.service a commencé à démarrer.
+févr. 05 10:17:50 serveur systemd[1]: Started Regular background program processing daemon.
+-- Subject: L'unité (unit) cron.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cron.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:51 serveur systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+-- Subject: L'unité (unit) networkd-dispatcher.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networkd-dispatcher.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol)...
+-- Subject: L'unité (unit) slapd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) slapd.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting Postfix Mail Transport Agent (instance -)...
+-- Subject: L'unité (unit) postfix@-.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) postfix@-.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting Snappy daemon...
+-- Subject: L'unité (unit) snapd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) snapd.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 10:17:51 serveur cron[1023]: (CRON) INFO (pidfile fd = 3)
+févr. 05 10:17:51 serveur systemd[1]: Starting Accounts Service...
+-- Subject: L'unité (unit) accounts-daemon.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) accounts-daemon.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting Discard unused blocks...
+-- Subject: L'unité (unit) fstrim.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Started ISC DHCP IPv6 server.
+-- Subject: L'unité (unit) isc-dhcp-server6.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) isc-dhcp-server6.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:51 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting LSB: Record successful boot for GRUB...
+-- Subject: L'unité (unit) grub-common.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-common.service a commencé à démarrer.
+févr. 05 10:17:51 serveur cron[1023]: (CRON) INFO (Running @reboot jobs)
+févr. 05 10:17:51 serveur systemd[1]: Starting System Logging Service...
+-- Subject: L'unité (unit) rsyslog.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsyslog.service a commencé à démarrer.
+févr. 05 10:17:52 serveur kernel: new mount options do not match the existing superblock, will be ignored
+févr. 05 10:17:51 serveur systemd[1]: Starting LXD - container startup/shutdown...
+-- Subject: L'unité (unit) lxd-containers.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lxd-containers.service a commencé à démarrer.
+févr. 05 10:17:52 serveur lxcfs[1017]: mount namespace: 5
+févr. 05 10:17:52 serveur lxcfs[1017]: hierarchies:
+févr. 05 10:17:52 serveur lxcfs[1017]:   0: fd:   6: hugetlb
+févr. 05 10:17:52 serveur lxcfs[1017]:   1: fd:   7: cpuset
+févr. 05 10:17:52 serveur lxcfs[1017]:   2: fd:   8: memory
+févr. 05 10:17:52 serveur lxcfs[1017]:   3: fd:   9: rdma
+févr. 05 10:17:52 serveur lxcfs[1017]:   4: fd:  10: devices
+févr. 05 10:17:52 serveur lxcfs[1017]:   5: fd:  11: blkio
+févr. 05 10:17:52 serveur lxcfs[1017]:   6: fd:  12: pids
+févr. 05 10:17:52 serveur lxcfs[1017]:   7: fd:  13: net_cls,net_prio
+févr. 05 10:17:52 serveur lxcfs[1017]:   8: fd:  14: freezer
+févr. 05 10:17:52 serveur lxcfs[1017]:   9: fd:  15: cpu,cpuacct
+févr. 05 10:17:52 serveur lxcfs[1017]:  10: fd:  16: perf_event
+févr. 05 10:17:52 serveur lxcfs[1017]:  11: fd:  17: name=systemd
+févr. 05 10:17:52 serveur lxcfs[1017]:  12: fd:  18: unified
+févr. 05 10:17:51 serveur systemd[1]: Starting LSB: Start Tomcat....
+-- Subject: L'unité (unit) tomcat8.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) tomcat8.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting LSB: Fast standalone full-text SQL search engine...
+-- Subject: L'unité (unit) sphinxsearch.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sphinxsearch.service a commencé à démarrer.
+févr. 05 10:17:52 serveur sphinxsearch[1051]: To enable sphinxsearch, edit /etc/default/sphinxsearch and set START=yes
+févr. 05 10:17:51 serveur systemd[1]: Starting OpenBSD Secure Shell server...
+-- Subject: L'unité (unit) ssh.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting Permit User Sessions...
+-- Subject: L'unité (unit) systemd-user-sessions.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-user-sessions.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Starting Thermal Daemon Service...
+-- Subject: L'unité (unit) thermald.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) thermald.service a commencé à démarrer.
+févr. 05 10:17:51 serveur systemd[1]: Started D-Bus System Message Bus.
+-- Subject: L'unité (unit) dbus.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dbus.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur dbus-daemon[1058]: dbus[1058]: Unknown group "power" in message bus configuration file
+févr. 05 10:17:53 serveur rsyslogd[1045]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.32.0]
+févr. 05 10:17:53 serveur rsyslogd[1045]: rsyslogd's groupid changed to 106
+févr. 05 10:17:53 serveur rsyslogd[1045]: rsyslogd's userid changed to 102
+févr. 05 10:17:53 serveur rsyslogd[1045]:  [origin software="rsyslogd" swVersion="8.32.0" x-pid="1045" x-info="http://www.rsyslog.com"] start
+févr. 05 10:17:53 serveur dhcpd[1038]: Internet Systems Consortium DHCP Server 4.3.5
+févr. 05 10:17:53 serveur sh[1038]: Internet Systems Consortium DHCP Server 4.3.5
+févr. 05 10:17:53 serveur sh[1038]: Copyright 2004-2016 Internet Systems Consortium.
+févr. 05 10:17:53 serveur sh[1038]: All rights reserved.
+févr. 05 10:17:53 serveur sh[1038]: For info, please visit https://www.isc.org/software/dhcp/
+févr. 05 10:17:53 serveur dhcpd[1038]: Copyright 2004-2016 Internet Systems Consortium.
+févr. 05 10:17:53 serveur dhcpd[1038]: All rights reserved.
+févr. 05 10:17:53 serveur dhcpd[1038]: For info, please visit https://www.isc.org/software/dhcp/
+févr. 05 10:17:53 serveur dbus-daemon[1058]: [system] AppArmor D-Bus mediation is enabled
+févr. 05 10:17:53 serveur systemd[1]: Starting Login Service...
+-- Subject: L'unité (unit) systemd-logind.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-logind.service a commencé à démarrer.
+févr. 05 10:17:53 serveur systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: L'unité (unit) nginx.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nginx.service a commencé à démarrer.
+févr. 05 10:17:53 serveur systemd[1]: Started Dovecot IMAP/POP3 email server.
+-- Subject: L'unité (unit) dovecot.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) dovecot.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started irqbalance daemon.
+-- Subject: L'unité (unit) irqbalance.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) irqbalance.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur thermald[1055]: NO RAPL sysfs present
+févr. 05 10:17:53 serveur thermald[1055]: 22 CPUID levels; family:model:stepping 0x6:4e:3 (6:78:3)
+févr. 05 10:17:53 serveur thermald[1055]: Polling mode is enabled: 4
+févr. 05 10:17:53 serveur thermald[1055]: Thermal DTS: No coretemp sysfs found
+févr. 05 10:17:53 serveur systemd[1]: Started ISC DHCP IPv4 server.
+-- Subject: L'unité (unit) isc-dhcp-server.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) isc-dhcp-server.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Starting MariaDB 10.1.43 database server...
+-- Subject: L'unité (unit) mariadb.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a commencé à démarrer.
+févr. 05 10:17:53 serveur systemd[1]: Started Deferred execution scheduler.
+-- Subject: L'unité (unit) atd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) atd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Starting The PHP 7.2 FastCGI Process Manager...
+-- Subject: L'unité (unit) php7.2-fpm.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) php7.2-fpm.service a commencé à démarrer.
+févr. 05 10:17:53 serveur systemd[1]: Started System Logging Service.
+-- Subject: L'unité (unit) rsyslog.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) rsyslog.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started Discard unused blocks.
+-- Subject: L'unité (unit) fstrim.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) fstrim.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started LSB: Fast standalone full-text SQL search engine.
+-- Subject: L'unité (unit) sphinxsearch.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) sphinxsearch.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started Permit User Sessions.
+-- Subject: L'unité (unit) systemd-user-sessions.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-user-sessions.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started Thermal Daemon Service.
+-- Subject: L'unité (unit) thermald.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) thermald.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Starting Hold until boot process finishes up...
+-- Subject: L'unité (unit) plymouth-quit-wait.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit-wait.service a commencé à démarrer.
+févr. 05 10:17:53 serveur systemd[1]: Starting Terminate Plymouth Boot Screen...
+-- Subject: L'unité (unit) plymouth-quit.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit.service a commencé à démarrer.
+févr. 05 10:17:54 serveur thermald[1055]: Thermal DTS or hwmon: No Zones present Need to configure manually
+févr. 05 10:17:54 serveur thermald[1055]: No thermal sensors found
+févr. 05 10:17:54 serveur thermald[1055]: THD engine start failed
+févr. 05 10:17:53 serveur systemd[1]: Started Terminate Plymouth Boot Screen.
+-- Subject: L'unité (unit) plymouth-quit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:53 serveur systemd[1]: Started Hold until boot process finishes up.
+-- Subject: L'unité (unit) plymouth-quit-wait.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) plymouth-quit-wait.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur grub-common[1042]:  * Recording successful boot for GRUB
+févr. 05 10:17:53 serveur systemd[1]: Starting Set console scheme...
+-- Subject: L'unité (unit) setvtrgb.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) setvtrgb.service a commencé à démarrer.
+févr. 05 10:17:54 serveur systemd[1]: Started Set console scheme.
+-- Subject: L'unité (unit) setvtrgb.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) setvtrgb.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur systemd[1]: Created slice system-getty.slice.
+-- Subject: L'unité (unit) system-getty.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) system-getty.slice a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur systemd[1]: Started Getty on tty1.
+-- Subject: L'unité (unit) getty@tty1.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty@tty1.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur systemd[1]: Reached target Login Prompts.
+-- Subject: L'unité (unit) getty.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) getty.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur apport[1018]:  * Starting automatic crash report generation: apport
+févr. 05 10:17:54 serveur slapd[1027]:  * Starting OpenLDAP slapd
+févr. 05 10:17:54 serveur /usr/sbin/irqbalance[1108]: Balancing is ineffective on systems with a single cpu.  Shutting down
+févr. 05 10:17:54 serveur sshd[1115]: Server listening on 0.0.0.0 port 22.
+févr. 05 10:17:54 serveur sshd[1115]: Server listening on :: port 22.
+févr. 05 10:17:54 serveur systemd[1]: Started OpenBSD Secure Shell server.
+-- Subject: L'unité (unit) ssh.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) ssh.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur grub-common[1042]:    ...done.
+févr. 05 10:17:54 serveur systemd[1]: Started LSB: Record successful boot for GRUB.
+-- Subject: L'unité (unit) grub-common.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) grub-common.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur apport[1018]:    ...done.
+févr. 05 10:17:54 serveur tomcat8[1049]:  * Starting Tomcat servlet engine tomcat8
+févr. 05 10:17:54 serveur rsyslogd[1045]: file '/var/log/tomcat8/catalina.out': open error: Permission denied [v8.32.0 try http://www.rsyslog.com/e/2433 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur systemd[1]: Started LSB: automatic crash report generation.
+-- Subject: L'unité (unit) apport.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apport.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' resumed (module 'builtin:omfile') [v8.32.0 try http://www.rsyslog.com/e/2359 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), retry 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur rsyslogd[1045]: action 'action 8' suspended (module 'builtin:omfile'), next retry is Wed Feb  5 10:18:24 2020, retry nbr 0. There should be messages before this one giving the reason for suspension. [v8.32.0 try http://www.rsyslog.com/e/2007 ]
+févr. 05 10:17:54 serveur dhcpd[1109]: Internet Systems Consortium DHCP Server 4.3.5
+févr. 05 10:17:54 serveur dhcpd[1109]: Copyright 2004-2016 Internet Systems Consortium.
+févr. 05 10:17:54 serveur sh[1109]: Internet Systems Consortium DHCP Server 4.3.5
+févr. 05 10:17:54 serveur sh[1109]: Copyright 2004-2016 Internet Systems Consortium.
+févr. 05 10:17:54 serveur sh[1109]: All rights reserved.
+févr. 05 10:17:54 serveur sh[1109]: For info, please visit https://www.isc.org/software/dhcp/
+févr. 05 10:17:54 serveur dhcpd[1109]: All rights reserved.
+févr. 05 10:17:54 serveur systemd[1]: Starting Authorization Manager...
+-- Subject: L'unité (unit) polkit.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) polkit.service a commencé à démarrer.
+févr. 05 10:17:54 serveur dhcpd[1109]: For info, please visit https://www.isc.org/software/dhcp/
+févr. 05 10:17:54 serveur dbus-daemon[1058]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.4' (uid=0 pid=1035 comm="/usr/lib/accountsservice/accounts-daemon " label="unconfined")
+févr. 05 10:17:55 serveur systemd-logind[1104]: New seat seat0.
+-- Subject: Un nouveau poste (seat) seat0 est disponible
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Un nouveau poste (seat) seat0 a été configuré et est maintenant
+-- disponible.
+févr. 05 10:17:55 serveur systemd-logind[1104]: Watching system buttons on /dev/input/event0 (Power Button)
+févr. 05 10:17:55 serveur systemd-logind[1104]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+févr. 05 10:17:55 serveur systemd[1]: Started Login Service.
+-- Subject: L'unité (unit) systemd-logind.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-logind.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:55 serveur systemd[1]: Started Unattended Upgrades Shutdown.
+-- Subject: L'unité (unit) unattended-upgrades.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) unattended-upgrades.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:55 serveur dhcpd[1038]: Config file: /etc/dhcp/dhcpd6.conf
+févr. 05 10:17:55 serveur sh[1038]: Config file: /etc/dhcp/dhcpd6.conf
+févr. 05 10:17:55 serveur sh[1038]: Database file: /var/lib/dhcp/dhcpd6.leases
+févr. 05 10:17:55 serveur sh[1038]: PID file: /run/dhcp-server/dhcpd6.pid
+févr. 05 10:17:55 serveur dhcpd[1038]: Database file: /var/lib/dhcp/dhcpd6.leases
+févr. 05 10:17:55 serveur dhcpd[1038]: PID file: /run/dhcp-server/dhcpd6.pid
+févr. 05 10:17:56 serveur polkitd[1148]: started daemon version 0.105 using authority implementation `local' version `0.105'
+févr. 05 10:17:56 serveur dhcpd[1109]: Config file: /etc/dhcp/dhcpd.conf
+févr. 05 10:17:56 serveur sh[1109]: Config file: /etc/dhcp/dhcpd.conf
+févr. 05 10:17:56 serveur dhcpd[1109]: Database file: /var/lib/dhcp/dhcpd.leases
+févr. 05 10:17:56 serveur sh[1109]: Database file: /var/lib/dhcp/dhcpd.leases
+févr. 05 10:17:56 serveur dhcpd[1109]: PID file: /run/dhcp-server/dhcpd.pid
+févr. 05 10:17:56 serveur sh[1109]: PID file: /run/dhcp-server/dhcpd.pid
+févr. 05 10:17:56 serveur dbus-daemon[1058]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+févr. 05 10:17:56 serveur systemd[1]: Started Authorization Manager.
+-- Subject: L'unité (unit) polkit.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) polkit.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:56 serveur accounts-daemon[1035]: started daemon version 0.6.45
+févr. 05 10:17:56 serveur systemd[1]: Started Accounts Service.
+-- Subject: L'unité (unit) accounts-daemon.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) accounts-daemon.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:56 serveur sh[1038]: Wrote 0 NA, 0 TA, 0 PD leases to lease file.
+févr. 05 10:17:56 serveur dhcpd[1038]: Wrote 0 NA, 0 TA, 0 PD leases to lease file.
+févr. 05 10:17:56 serveur dhcpd[1109]: Wrote 0 leases to leases file.
+févr. 05 10:17:56 serveur sh[1109]: Wrote 0 leases to leases file.
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1038]: No subnet6 declaration for ens34 (fe80::20c:29ff:fe0d:230b).
+févr. 05 10:17:56 serveur sh[1038]: No subnet6 declaration for ens34 (fe80::20c:29ff:fe0d:230b).
+févr. 05 10:17:56 serveur dhcpd[1038]: ** Ignoring requests on ens34.  If this is not what
+févr. 05 10:17:56 serveur sh[1038]: ** Ignoring requests on ens34.  If this is not what
+févr. 05 10:17:56 serveur dhcpd[1038]:    you want, please write a subnet6 declaration
+févr. 05 10:17:56 serveur sh[1038]:    you want, please write a subnet6 declaration
+févr. 05 10:17:56 serveur sh[1038]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur sh[1038]:    to which interface ens34 is attached. **
+févr. 05 10:17:56 serveur sh[1038]: No subnet6 declaration for ens33 (fe80::20c:29ff:fe0d:2301).
+févr. 05 10:17:56 serveur dhcpd[1038]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur sh[1109]: No subnet declaration for ens34 (192.168.172.133).
+févr. 05 10:17:56 serveur sh[1109]: ** Ignoring requests on ens34.  If this is not what
+févr. 05 10:17:56 serveur sh[1109]:    you want, please write a subnet declaration
+févr. 05 10:17:56 serveur sh[1109]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur sh[1109]:    to which interface ens34 is attached. **
+févr. 05 10:17:56 serveur sh[1109]: No subnet declaration for ens33 (192.168.0.1).
+févr. 05 10:17:56 serveur sh[1109]: ** Ignoring requests on ens33.  If this is not what
+févr. 05 10:17:56 serveur sh[1109]:    you want, please write a subnet declaration
+févr. 05 10:17:56 serveur sh[1109]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur sh[1109]:    to which interface ens33 is attached. **
+févr. 05 10:17:56 serveur sh[1109]: Not configured to listen on any interfaces!
+févr. 05 10:17:56 serveur sh[1109]: If you think you have received this message due to a bug rather
+févr. 05 10:17:56 serveur sh[1109]: than a configuration issue please read the section on submitting
+févr. 05 10:17:56 serveur sh[1109]: bugs on either our web page at www.isc.org or in the README file
+févr. 05 10:17:56 serveur sh[1109]: before submitting a bug.  These pages explain the proper
+févr. 05 10:17:56 serveur sh[1109]: process and the information we find helpful for debugging..
+févr. 05 10:17:56 serveur sh[1109]: exiting.
+févr. 05 10:17:56 serveur sh[1038]: ** Ignoring requests on ens33.  If this is not what
+févr. 05 10:17:56 serveur sh[1038]:    you want, please write a subnet6 declaration
+févr. 05 10:17:56 serveur sh[1038]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur sh[1038]:    to which interface ens33 is attached. **
+févr. 05 10:17:56 serveur sh[1038]: Not configured to listen on any interfaces!
+févr. 05 10:17:56 serveur sh[1038]: If you think you have received this message due to a bug rather
+févr. 05 10:17:56 serveur sh[1038]: than a configuration issue please read the section on submitting
+févr. 05 10:17:56 serveur sh[1038]: bugs on either our web page at www.isc.org or in the README file
+févr. 05 10:17:56 serveur sh[1038]: before submitting a bug.  These pages explain the proper
+févr. 05 10:17:56 serveur sh[1038]: process and the information we find helpful for debugging..
+févr. 05 10:17:56 serveur sh[1038]: exiting.
+févr. 05 10:17:56 serveur dhcpd[1038]:    to which interface ens34 is attached. **
+févr. 05 10:17:56 serveur systemd[1]: isc-dhcp-server6.service: Main process exited, code=exited, status=1/FAILURE
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur systemd[1]: isc-dhcp-server6.service: Failed with result 'exit-code'.
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur systemd[1]: isc-dhcp-server.service: Main process exited, code=exited, status=1/FAILURE
+févr. 05 10:17:56 serveur dhcpd[1038]: No subnet6 declaration for ens33 (fe80::20c:29ff:fe0d:2301).
+févr. 05 10:17:56 serveur systemd[1]: isc-dhcp-server.service: Failed with result 'exit-code'.
+févr. 05 10:17:56 serveur dhcpd[1038]: ** Ignoring requests on ens33.  If this is not what
+févr. 05 10:17:56 serveur dhcpd[1038]:    you want, please write a subnet6 declaration
+févr. 05 10:17:56 serveur dhcpd[1038]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur dhcpd[1038]:    to which interface ens33 is attached. **
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur dhcpd[1038]: Not configured to listen on any interfaces!
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur dhcpd[1038]: If you think you have received this message due to a bug rather
+févr. 05 10:17:56 serveur dhcpd[1038]: than a configuration issue please read the section on submitting
+févr. 05 10:17:56 serveur dhcpd[1038]: bugs on either our web page at www.isc.org or in the README file
+févr. 05 10:17:56 serveur dhcpd[1038]: before submitting a bug.  These pages explain the proper
+févr. 05 10:17:56 serveur dhcpd[1038]: process and the information we find helpful for debugging..
+févr. 05 10:17:56 serveur dhcpd[1038]: 
+févr. 05 10:17:56 serveur dhcpd[1038]: exiting.
+févr. 05 10:17:56 serveur dhcpd[1109]: No subnet declaration for ens34 (192.168.172.133).
+févr. 05 10:17:56 serveur dhcpd[1109]: ** Ignoring requests on ens34.  If this is not what
+févr. 05 10:17:56 serveur dhcpd[1109]:    you want, please write a subnet declaration
+févr. 05 10:17:56 serveur dhcpd[1109]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur dhcpd[1109]:    to which interface ens34 is attached. **
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: No subnet declaration for ens33 (192.168.0.1).
+févr. 05 10:17:56 serveur dhcpd[1109]: ** Ignoring requests on ens33.  If this is not what
+févr. 05 10:17:56 serveur dhcpd[1109]:    you want, please write a subnet declaration
+févr. 05 10:17:56 serveur dhcpd[1109]:    in your dhcpd.conf file for the network segment
+févr. 05 10:17:56 serveur dhcpd[1109]:    to which interface ens33 is attached. **
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: Not configured to listen on any interfaces!
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: If you think you have received this message due to a bug rather
+févr. 05 10:17:56 serveur dhcpd[1109]: than a configuration issue please read the section on submitting
+févr. 05 10:17:56 serveur dhcpd[1109]: bugs on either our web page at www.isc.org or in the README file
+févr. 05 10:17:56 serveur dhcpd[1109]: before submitting a bug.  These pages explain the proper
+févr. 05 10:17:56 serveur dhcpd[1109]: process and the information we find helpful for debugging..
+févr. 05 10:17:56 serveur dhcpd[1109]: 
+févr. 05 10:17:56 serveur dhcpd[1109]: exiting.
+févr. 05 10:17:56 serveur slapd[1150]: @(#) $OpenLDAP: slapd  (Ubuntu) (Aug  8 2019 18:08:36) $
+                                                Debian OpenLDAP Maintainers <pkg-openldap-devel@lists.alioth.debian.org>
+févr. 05 10:17:57 serveur dovecot[1107]: master: Dovecot v2.3.9.2 (cf2918cac) starting up for imap, lmtp, pop3 (core dumps disabled)
+févr. 05 10:17:58 serveur snapd[1032]: AppArmor status: apparmor is enabled and all features are available
+févr. 05 10:17:58 serveur apachectl[1039]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 10:17:58 serveur systemd[1]: Started LXD - container startup/shutdown.
+-- Subject: L'unité (unit) lxd-containers.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) lxd-containers.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:58 serveur slapd[1257]: slapd starting
+févr. 05 10:17:59 serveur slapd[1027]:    ...done.
+févr. 05 10:17:59 serveur systemd[1]: Started LSB: OpenLDAP standalone server (Lightweight Directory Access Protocol).
+-- Subject: L'unité (unit) slapd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) slapd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:59 serveur systemd[1]: Started The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:17:59 serveur networkd-dispatcher[1026]: No valid path found for iwconfig
+févr. 05 10:18:00 serveur systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: L'unité (unit) nginx.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) nginx.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:01 serveur tomcat8[1049]:    ...done.
+févr. 05 10:18:01 serveur systemd[1]: Started LSB: Start Tomcat..
+-- Subject: L'unité (unit) tomcat8.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) tomcat8.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:02 serveur mysqld[1384]: 2020-02-05 10:18:02 139820209417344 [Note] /usr/sbin/mysqld (mysqld 10.1.43-MariaDB-0ubuntu0.18.04.1) starting as process 1384 ...
+févr. 05 10:18:02 serveur systemd[1]: Started Dispatcher daemon for systemd-networkd.
+-- Subject: L'unité (unit) networkd-dispatcher.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) networkd-dispatcher.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:03 serveur systemd[1]: Started The PHP 7.2 FastCGI Process Manager.
+-- Subject: L'unité (unit) php7.2-fpm.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) php7.2-fpm.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:07 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:09 serveur /etc/mysql/debian-start[1558]: Upgrading MySQL tables if necessary.
+févr. 05 10:18:09 serveur systemd[1]: Started MariaDB 10.1.43 database server.
+-- Subject: L'unité (unit) mariadb.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:10 serveur /etc/mysql/debian-start[1564]: /usr/bin/mysql_upgrade: the '--basedir' option is always ignored
+févr. 05 10:18:10 serveur /etc/mysql/debian-start[1564]: Looking for 'mysql' as: /usr/bin/mysql
+févr. 05 10:18:10 serveur /etc/mysql/debian-start[1564]: Looking for 'mysqlcheck' as: /usr/bin/mysqlcheck
+févr. 05 10:18:10 serveur /etc/mysql/debian-start[1564]: This installation of MySQL is already upgraded to 10.1.43-MariaDB, use --force if you still need to run mysql_upgrade
+févr. 05 10:18:10 serveur /etc/mysql/debian-start[1594]: Checking for insecure root accounts.
+févr. 05 10:18:10 serveur /etc/mysql/debian-start[1608]: Triggering myisam-recover for all MyISAM tables and aria-recover for all Aria tables
+févr. 05 10:18:10 serveur postfix/postfix-script[1630]: starting the Postfix mail system
+févr. 05 10:18:11 serveur postfix/master[1635]: daemon started -- version 3.3.0, configuration /etc/postfix
+févr. 05 10:18:11 serveur systemd[1]: Started Postfix Mail Transport Agent (instance -).
+-- Subject: L'unité (unit) postfix@-.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) postfix@-.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:11 serveur systemd[1]: Starting Postfix Mail Transport Agent...
+-- Subject: L'unité (unit) postfix.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) postfix.service a commencé à démarrer.
+févr. 05 10:18:11 serveur systemd[1]: Started Postfix Mail Transport Agent.
+-- Subject: L'unité (unit) postfix.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) postfix.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:12 serveur snapd[1032]: AppArmor status: apparmor is enabled and all features are available
+févr. 05 10:18:13 serveur snapd[1032]: daemon.go:346: started snapd/2.42.5 (series 16; classic) ubuntu/18.04 (amd64) linux/4.15.0-76-generic.
+févr. 05 10:18:13 serveur snapd[1032]: daemon.go:439: adjusting startup timeout by 35s (pessimistic estimate of 30s plus 5s per snap)
+févr. 05 10:18:14 serveur systemd[1]: Started Snappy daemon.
+-- Subject: L'unité (unit) snapd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) snapd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:14 serveur systemd[1]: Starting Wait until snapd is fully seeded...
+-- Subject: L'unité (unit) snapd.seeded.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) snapd.seeded.service a commencé à démarrer.
+févr. 05 10:18:14 serveur systemd[1]: Started Wait until snapd is fully seeded.
+-- Subject: L'unité (unit) snapd.seeded.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) snapd.seeded.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:14 serveur systemd[1]: Reached target Multi-User System.
+-- Subject: L'unité (unit) multi-user.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) multi-user.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:14 serveur systemd[1]: Reached target Graphical Interface.
+-- Subject: L'unité (unit) graphical.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) graphical.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:14 serveur systemd[1]: Starting Update UTMP about System Runlevel Changes...
+-- Subject: L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp-runlevel.service a commencé à démarrer.
+févr. 05 10:18:14 serveur systemd[1]: Starting Apply the settings specified in cloud-config...
+-- Subject: L'unité (unit) cloud-config.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-config.service a commencé à démarrer.
+févr. 05 10:18:14 serveur systemd[1]: Started Update UTMP about System Runlevel Changes.
+-- Subject: L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-update-utmp-runlevel.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:23 serveur cloud-init[1731]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~18.04.1 running 'modules:config' at Wed, 05 Feb 2020 09:18:22 +0000. Up 81.75 seconds.
+févr. 05 10:18:23 serveur systemd[1]: Started Apply the settings specified in cloud-config.
+-- Subject: L'unité (unit) cloud-config.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-config.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:23 serveur systemd[1]: Starting Execute cloud user/final scripts...
+-- Subject: L'unité (unit) cloud-final.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-final.service a commencé à démarrer.
+févr. 05 10:18:29 serveur cloud-init[1764]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~18.04.1 running 'modules:final' at Wed, 05 Feb 2020 09:18:28 +0000. Up 87.66 seconds.
+févr. 05 10:18:29 serveur cloud-init[1764]: Cloud-init v. 19.3-41-gc4735dd3-0ubuntu1~18.04.1 finished at Wed, 05 Feb 2020 09:18:29 +0000. Datasource DataSourceNoCloud [seed=/var/lib/cloud/seed/nocloud-net][dsmode=net].  Up 88.80 seconds
+févr. 05 10:18:29 serveur systemd[1]: Started Execute cloud user/final scripts.
+-- Subject: L'unité (unit) cloud-final.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-final.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:29 serveur systemd[1]: Starting Daily apt download activities...
+-- Subject: L'unité (unit) apt-daily.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apt-daily.service a commencé à démarrer.
+févr. 05 10:18:29 serveur systemd[1]: Reached target Cloud-init target.
+-- Subject: L'unité (unit) cloud-init.target a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) cloud-init.target a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:18:54 serveur snapd[1032]: autorefresh.go:390: Cannot prepare auto-refresh change: cannot refresh snap-declaration for "core": Get https://api.snapcraft.io/api/v1/snaps/assertions/snap-declaration/16/99T7MUlRhtI3U0QFgl5mXXESAiSwt776?max-format=3: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+févr. 05 10:19:05 serveur systemd[1]: Started Message of the Day.
+-- Subject: L'unité (unit) motd-news.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) motd-news.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:34 serveur snapd[1032]: stateengine.go:150: state ensure error: cannot refresh snap-declaration for "core": Get https://api.snapcraft.io/api/v1/snaps/assertions/snap-declaration/16/99T7MUlRhtI3U0QFgl5mXXESAiSwt776?max-format=3: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+févr. 05 10:19:48 serveur login[1124]: pam_unix(login:session): session opened for user picasso by LOGIN(uid=0)
+févr. 05 10:19:48 serveur systemd[1]: Created slice User Slice of picasso.
+-- Subject: L'unité (unit) user-1000.slice a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) user-1000.slice a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:48 serveur systemd[1]: Starting User Manager for UID 1000...
+-- Subject: L'unité (unit) user@1000.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) user@1000.service a commencé à démarrer.
+févr. 05 10:19:48 serveur systemd[1]: Started Session 1 of user picasso.
+-- Subject: L'unité (unit) session-1.scope a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) session-1.scope a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:48 serveur systemd-logind[1104]: New session 1 of user picasso.
+-- Subject: Une nouvelle session 1 a été créée pour l'utilisateur picasso
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Une nouvelle session a été créée pour l'utilisateur picasso avec
+-- l'identifiant (ID) 1.
+-- 
+-- Le processus maître de la session est 1124.
+févr. 05 10:19:48 serveur systemd[2030]: pam_unix(systemd-user:session): session opened for user picasso by (uid=0)
+févr. 05 10:19:49 serveur systemd[2030]: Listening on GnuPG cryptographic agent and passphrase cache.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Listening on GnuPG network certificate management daemon.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Listening on REST API socket for snapd user session agent.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Reached target Timers.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Reached target Sockets.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Reached target Paths.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Reached target Basic System.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[1]: Started User Manager for UID 1000.
+-- Subject: L'unité (unit) user@1000.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) user@1000.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Reached target Default.
+-- Subject: L'unité (unit) UNIT a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) UNIT a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:19:49 serveur systemd[2030]: Startup finished in 1.150s.
+-- Subject: Le démarrage du gestionnaire utilisateur est terminé
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'instance du gestionnaire d'utilisateurs pour l'utilisateur 1000 a été démarrée.
+-- Tous les services en file d'attente pour démarrer ont été lancés.
+-- Notez que des services peuvent être encore en train de démarrer,
+-- ou d'autres être lancés à tout moment ultérieur.
+-- 
+-- Le démarrage du gestionnaire a nécéssité 1150684 microsecondes.
+févr. 05 10:20:30 serveur sshd[2069]: Accepted password for picasso from 192.168.172.1 port 59547 ssh2
+févr. 05 10:20:30 serveur sshd[2069]: pam_unix(sshd:session): session opened for user picasso by (uid=0)
+févr. 05 10:20:30 serveur systemd[1]: Started Session 3 of user picasso.
+-- Subject: L'unité (unit) session-3.scope a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) session-3.scope a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:20:30 serveur systemd-logind[1104]: New session 3 of user picasso.
+-- Subject: Une nouvelle session 3 a été créée pour l'utilisateur picasso
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Une nouvelle session a été créée pour l'utilisateur picasso avec
+-- l'identifiant (ID) 3.
+-- 
+-- Le processus maître de la session est 2069.
+févr. 05 10:20:35 serveur kernel: hrtimer: interrupt took 16286615 ns
+févr. 05 10:23:01 serveur sudo[2170]:  picasso : TTY=pts/0 ; PWD=/home/picasso ; USER=root ; COMMAND=/bin/su
+févr. 05 10:23:01 serveur sudo[2170]: pam_unix(sudo:session): session opened for user root by picasso(uid=0)
+févr. 05 10:23:01 serveur su[2172]: Successful su for root by root
+févr. 05 10:23:01 serveur su[2172]: + /dev/pts/0 root:root
+févr. 05 10:23:01 serveur su[2172]: pam_unix(su:session): session opened for user root by picasso(uid=0)
+févr. 05 10:23:01 serveur su[2172]: pam_systemd(su:session): Cannot create session: Already running in a session
+févr. 05 10:24:56 serveur systemd[1]: Started Daily apt download activities.
+-- Subject: L'unité (unit) apt-daily.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apt-daily.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:24:56 serveur systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: L'unité (unit) apt-daily-upgrade.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apt-daily-upgrade.service a commencé à démarrer.
+févr. 05 10:26:12 serveur kernel: SGI XFS with ACLs, security attributes, realtime, no debug enabled
+févr. 05 10:26:12 serveur kernel: JFS: nTxBlock = 5329, nTxLock = 42637
+févr. 05 10:26:12 serveur kernel: ntfs: driver 2.1.32 [Flags: R/O MODULE].
+févr. 05 10:26:12 serveur kernel: QNX4 filesystem 0.2.3 registered.
+févr. 05 10:26:13 serveur os-prober[3840]: debug: running /usr/lib/os-probes/50mounted-tests on /dev/sda1
+févr. 05 10:26:15 serveur 50mounted-tests[3848]: debug: /dev/sda1 type not recognised; skipping
+févr. 05 10:26:15 serveur os-prober[3849]: debug: os detected by /usr/lib/os-probes/50mounted-tests
+févr. 05 10:26:16 serveur os-prober[3878]: debug: running /usr/lib/os-probes/mounted/05efi on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:16 serveur 05efi[3880]: debug: Not on UEFI platform
+févr. 05 10:26:16 serveur os-prober[3881]: debug: running /usr/lib/os-probes/mounted/10freedos on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:16 serveur 10freedos[3883]: debug: /dev/mapper/raid--volume-data is not a FAT partition: exiting
+févr. 05 10:26:16 serveur os-prober[3884]: debug: running /usr/lib/os-probes/mounted/10qnx on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:16 serveur 10qnx[3886]: debug: /dev/mapper/raid--volume-data is not a QNX4 partition: exiting
+févr. 05 10:26:16 serveur os-prober[3887]: debug: running /usr/lib/os-probes/mounted/20macosx on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:16 serveur macosx-prober[3889]: debug: /dev/mapper/raid--volume-data is not an HFS+ partition: exiting
+févr. 05 10:26:16 serveur os-prober[3890]: debug: running /usr/lib/os-probes/mounted/20microsoft on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:16 serveur 20microsoft[3892]: debug: /dev/mapper/raid--volume-data is not a MS partition: exiting
+févr. 05 10:26:16 serveur os-prober[3893]: debug: running /usr/lib/os-probes/mounted/30utility on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:16 serveur 30utility[3895]: debug: /dev/mapper/raid--volume-data is not a FAT partition: exiting
+févr. 05 10:26:16 serveur os-prober[3896]: debug: running /usr/lib/os-probes/mounted/40lsb on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:17 serveur os-prober[3898]: debug: running /usr/lib/os-probes/mounted/70hurd on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:17 serveur os-prober[3900]: debug: running /usr/lib/os-probes/mounted/80minix on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:17 serveur os-prober[3902]: debug: running /usr/lib/os-probes/mounted/83haiku on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:17 serveur 83haiku[3904]: debug: /dev/mapper/raid--volume-data is not a BeFS partition: exiting
+févr. 05 10:26:17 serveur os-prober[3905]: debug: running /usr/lib/os-probes/mounted/90linux-distro on mounted /dev/mapper/raid--volume-data
+févr. 05 10:26:17 serveur os-prober[3909]: debug: running /usr/lib/os-probes/mounted/90solaris on mounted /dev/mapper/raid--volume-data
+févr. 05 10:28:44 serveur systemd[1]: Started Daily apt upgrade and clean activities.
+-- Subject: L'unité (unit) apt-daily-upgrade.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apt-daily-upgrade.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:28:44 serveur systemd[1]: Startup finished in 16.119s (kernel) + 11min 27.555s (userspace) = 11min 43.674s.
+-- Subject: Le démarrage du système est terminé
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- Tous les services nécessaires au démarrage du système ont été lancés.
+-- Notez que cela ne signifie pas que le système est maintenant au repos,
+-- car des services peuvent encore être en train de terminer leur démarrage.
+-- 
+-- Le chargement du noyau a nécessité 16119729 microsecondes.
+-- 
+-- Le chargement du « RAM disk » initial a nécessité INITRD_USEC microsecondes.
+-- 
+-- Le chargement de l'espace utilisateur a nécessité 687555237 microsecondes.
+févr. 05 10:32:04 serveur systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: L'unité (unit) systemd-tmpfiles-clean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-clean.service a commencé à démarrer.
+févr. 05 10:32:05 serveur systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: L'unité (unit) systemd-tmpfiles-clean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) systemd-tmpfiles-clean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:32:30 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 10:32:30 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 10:32:30 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 10:32:30 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:32:45 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 10:39:01 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 10:39:01 serveur CRON[4127]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 10:39:01 serveur CRON[4134]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+févr. 05 10:39:01 serveur CRON[4127]: pam_unix(cron:session): session closed for user root
+févr. 05 10:39:02 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:43:49 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 10:43:49 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 10:43:49 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 10:43:49 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 10:47:45 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 10:51:18 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 10:51:18 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 10:51:18 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 10:51:18 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:02:45 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 11:07:14 serveur systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à s'arrêter.
+févr. 05 11:07:14 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:07:14 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:07:14 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:07:14 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:07:15 serveur apachectl[4308]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 11:07:15 serveur systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a terminé son arrêt.
+févr. 05 11:07:15 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 11:07:16 serveur apachectl[4326]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 11:07:16 serveur systemd[1]: Started The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:09:01 serveur CRON[4416]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 11:09:01 serveur CRON[4417]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+févr. 05 11:09:01 serveur CRON[4416]: pam_unix(cron:session): session closed for user root
+févr. 05 11:09:04 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 11:09:05 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:17:01 serveur CRON[4511]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 11:17:01 serveur CRON[4512]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+févr. 05 11:17:01 serveur CRON[4511]: pam_unix(cron:session): session closed for user root
+févr. 05 11:17:37 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:17:37 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:17:37 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:17:37 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:17:44 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 11:18:01 serveur CRON[4540]: pam_unix(cron:session): session opened for user www-data by (uid=0)
+févr. 05 11:18:01 serveur CRON[4541]: (www-data) CMD (/externe/www/roundcubemail/bin/cleandb.sh)
+févr. 05 11:18:02 serveur CRON[4540]: pam_unix(cron:session): session closed for user www-data
+févr. 05 11:18:02 serveur postfix/pickup[1641]: 2DBD322016B: uid=33 from=<www-data>
+févr. 05 11:18:02 serveur postfix/cleanup[4547]: 2DBD322016B: message-id=<20200205101802.2DBD322016B@vm-serveur>
+févr. 05 11:18:02 serveur postfix/qmgr[1642]: 2DBD322016B: from=<www-data@eneam.da>, size=670, nrcpt=1 (queue active)
+févr. 05 11:18:02 serveur dovecot[1244]: lmtp(4552): Connect from local
+févr. 05 11:18:02 serveur postfix/lmtp[4551]: 2DBD322016B: to=<www-data@eneam.da>, orig_to=<www-data>, relay=vm-serveur[private/dovecot-lmtp], delay=0.61, delays=0.15/0.07/0.14/0.24, dsn=5.1.1, status=bounced (host vm-serveur[private/dovecot-lmtp] said: 550 5.1.1 <www-data@eneam.da> User doesn't exist: www-data@eneam.da (in reply to RCPT TO command))
+févr. 05 11:18:02 serveur dovecot[1244]: lmtp(4552): Disconnect from local: Client has quit the connection (state=READY)
+févr. 05 11:18:02 serveur postfix/cleanup[4547]: B11A32217A0: message-id=<20200205101802.B11A32217A0@vm-serveur>
+févr. 05 11:18:02 serveur postfix/qmgr[1642]: B11A32217A0: from=<>, size=2702, nrcpt=1 (queue active)
+févr. 05 11:18:02 serveur postfix/bounce[4557]: 2DBD322016B: sender non-delivery notification: B11A32217A0
+févr. 05 11:18:02 serveur postfix/qmgr[1642]: 2DBD322016B: removed
+févr. 05 11:18:02 serveur dovecot[1244]: lmtp(4552): Connect from local
+févr. 05 11:18:02 serveur postfix/lmtp[4551]: B11A32217A0: to=<www-data@eneam.da>, relay=vm-serveur[private/dovecot-lmtp], delay=0.05, delays=0.03/0.01/0.01/0.01, dsn=5.1.1, status=bounced (host vm-serveur[private/dovecot-lmtp] said: 550 5.1.1 <www-data@eneam.da> User doesn't exist: www-data@eneam.da (in reply to RCPT TO command))
+févr. 05 11:18:02 serveur postfix/qmgr[1642]: B11A32217A0: removed
+févr. 05 11:18:02 serveur dovecot[1244]: lmtp(4552): Disconnect from local: Client has quit the connection (state=READY)
+févr. 05 11:20:38 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:20:38 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:20:38 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:20:38 serveur systemd[1]: Stopping MariaDB 10.1.43 database server...
+-- Subject: L'unité (unit) mariadb.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a commencé à s'arrêter.
+févr. 05 11:20:38 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:20:41 serveur systemd[1]: Stopped MariaDB 10.1.43 database server.
+-- Subject: L'unité (unit) mariadb.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a terminé son arrêt.
+févr. 05 11:20:41 serveur systemd[1]: Starting MariaDB 10.1.43 database server...
+-- Subject: L'unité (unit) mariadb.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a commencé à démarrer.
+févr. 05 11:20:41 serveur mysqld[4663]: 2020-02-05 11:20:41 140242080472192 [Note] /usr/sbin/mysqld (mysqld 10.1.43-MariaDB-0ubuntu0.18.04.1) starting as process 4663 ...
+févr. 05 11:20:42 serveur /etc/mysql/debian-start[4696]: Upgrading MySQL tables if necessary.
+févr. 05 11:20:42 serveur systemd[1]: Started MariaDB 10.1.43 database server.
+-- Subject: L'unité (unit) mariadb.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:20:42 serveur /etc/mysql/debian-start[4700]: /usr/bin/mysql_upgrade: the '--basedir' option is always ignored
+févr. 05 11:20:42 serveur /etc/mysql/debian-start[4700]: Looking for 'mysql' as: /usr/bin/mysql
+févr. 05 11:20:42 serveur /etc/mysql/debian-start[4700]: Looking for 'mysqlcheck' as: /usr/bin/mysqlcheck
+févr. 05 11:20:42 serveur /etc/mysql/debian-start[4700]: This installation of MySQL is already upgraded to 10.1.43-MariaDB, use --force if you still need to run mysql_upgrade
+févr. 05 11:20:42 serveur /etc/mysql/debian-start[4708]: Checking for insecure root accounts.
+févr. 05 11:20:43 serveur /etc/mysql/debian-start[4712]: Triggering myisam-recover for all MyISAM tables and aria-recover for all Aria tables
+févr. 05 11:26:48 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:26:49 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:26:49 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:26:49 serveur systemd[1]: Stopping MariaDB 10.1.43 database server...
+-- Subject: L'unité (unit) mariadb.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a commencé à s'arrêter.
+févr. 05 11:26:49 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:26:50 serveur systemd[1]: Stopped MariaDB 10.1.43 database server.
+-- Subject: L'unité (unit) mariadb.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a terminé son arrêt.
+févr. 05 11:26:50 serveur systemd[1]: Starting MariaDB 10.1.43 database server...
+-- Subject: L'unité (unit) mariadb.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a commencé à démarrer.
+févr. 05 11:26:52 serveur mysqld[4917]: 2020-02-05 11:26:52 140484471454848 [Note] /usr/sbin/mysqld (mysqld 10.1.43-MariaDB-0ubuntu0.18.04.1) starting as process 4917 ...
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4950]: Upgrading MySQL tables if necessary.
+févr. 05 11:26:53 serveur systemd[1]: Started MariaDB 10.1.43 database server.
+-- Subject: L'unité (unit) mariadb.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) mariadb.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4954]: /usr/bin/mysql_upgrade: the '--basedir' option is always ignored
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4954]: Looking for 'mysql' as: /usr/bin/mysql
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4954]: Looking for 'mysqlcheck' as: /usr/bin/mysqlcheck
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4954]: This installation of MySQL is already upgraded to 10.1.43-MariaDB, use --force if you still need to run mysql_upgrade
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4962]: Checking for insecure root accounts.
+févr. 05 11:26:53 serveur /etc/mysql/debian-start[4966]: Triggering myisam-recover for all MyISAM tables and aria-recover for all Aria tables
+févr. 05 11:32:44 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:32:44 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:32:44 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:32:44 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:32:45 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 11:34:55 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:34:55 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:34:55 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:34:55 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:39:01 serveur CRON[5121]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 11:39:01 serveur CRON[5122]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+févr. 05 11:39:01 serveur CRON[5121]: pam_unix(cron:session): session closed for user root
+févr. 05 11:39:05 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 11:39:07 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:41:04 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:41:04 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:41:04 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:41:04 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:46:17 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:46:17 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:46:17 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:46:17 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:47:32 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:47:32 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:47:32 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:47:32 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:47:45 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 11:49:02 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:49:02 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:49:02 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:49:02 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:49:33 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:49:33 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:49:33 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:49:33 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:54:42 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:54:42 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:54:42 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:54:42 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:55:27 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:55:27 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:55:27 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:55:27 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:56:14 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:56:14 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:56:14 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:56:14 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:56:28 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:56:28 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:56:28 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:56:28 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 11:59:34 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 11:59:34 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 11:59:34 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 11:59:34 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:00:23 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:00:23 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:00:23 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:00:23 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:02:44 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 12:03:44 serveur audit[5513]: AVC apparmor="DENIED" operation="capable" profile="/usr/bin/man" pid=5513 comm="man" capability=2  capname="dac_read_search"
+févr. 05 12:03:44 serveur kernel: kauditd_printk_skb: 13 callbacks suppressed
+févr. 05 12:03:44 serveur kernel: audit: type=1400 audit(1580900624.894:25): apparmor="DENIED" operation="capable" profile="/usr/bin/man" pid=5513 comm="man" capability=2  capname="dac_read_search"
+févr. 05 12:03:44 serveur kernel: audit: type=1400 audit(1580900624.894:26): apparmor="DENIED" operation="capable" profile="/usr/bin/man" pid=5513 comm="man" capability=1  capname="dac_override"
+févr. 05 12:03:44 serveur audit[5513]: AVC apparmor="DENIED" operation="capable" profile="/usr/bin/man" pid=5513 comm="man" capability=1  capname="dac_override"
+févr. 05 12:06:10 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:06:10 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:06:10 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:06:10 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:09:01 serveur CRON[5566]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 12:09:01 serveur CRON[5567]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+févr. 05 12:09:01 serveur CRON[5566]: pam_unix(cron:session): session closed for user root
+févr. 05 12:09:06 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 12:09:07 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:11:59 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:11:59 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:11:59 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:11:59 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:12:49 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:12:49 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:12:49 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:12:49 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:13:29 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:13:29 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:13:29 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:13:29 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:13:31 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:13:31 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:13:31 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:13:31 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:15:44 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:15:44 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:15:44 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:15:44 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:17:01 serveur CRON[5772]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 12:17:01 serveur CRON[5773]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+févr. 05 12:17:01 serveur CRON[5772]: pam_unix(cron:session): session closed for user root
+févr. 05 12:17:43 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 12:25:49 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:25:49 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:25:49 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:25:49 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:27:05 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 12:27:05 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 12:27:05 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 12:27:05 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:32:43 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 12:39:01 serveur CRON[5889]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 12:39:01 serveur CRON[5890]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+févr. 05 12:39:01 serveur CRON[5889]: pam_unix(cron:session): session closed for user root
+févr. 05 12:39:06 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 12:39:08 serveur systemd[1]: Stopping The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à s'arrêter.
+févr. 05 12:39:09 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 12:39:09 serveur apachectl[5947]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 12:39:09 serveur apachectl[5947]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 12:39:09 serveur apachectl[5947]: AH00014: Configuration check failed
+févr. 05 12:39:09 serveur apachectl[5947]: Action 'stop' failed.
+févr. 05 12:39:09 serveur apachectl[5947]: The Apache error log may have more information.
+févr. 05 12:39:09 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 12:39:10 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 12:39:10 serveur systemd[1]: Stopped The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a terminé son arrêt.
+févr. 05 12:39:10 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 12:39:11 serveur apachectl[5993]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 12:39:11 serveur apachectl[5993]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 12:39:11 serveur apachectl[5993]: AH00014: Configuration check failed
+févr. 05 12:39:11 serveur apachectl[5993]: Action 'start' failed.
+févr. 05 12:39:11 serveur apachectl[5993]: The Apache error log may have more information.
+févr. 05 12:39:11 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 12:39:11 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 12:39:11 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 12:42:03 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 12:42:04 serveur apachectl[6031]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 12:42:04 serveur apachectl[6031]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 12:42:04 serveur apachectl[6031]: AH00014: Configuration check failed
+févr. 05 12:42:04 serveur apachectl[6031]: Action 'start' failed.
+févr. 05 12:42:04 serveur apachectl[6031]: The Apache error log may have more information.
+févr. 05 12:42:04 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 12:42:04 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 12:42:04 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 12:45:40 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 12:45:41 serveur apachectl[6062]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 12:45:41 serveur apachectl[6062]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 12:45:41 serveur apachectl[6062]: AH00014: Configuration check failed
+févr. 05 12:45:41 serveur apachectl[6062]: Action 'start' failed.
+févr. 05 12:45:41 serveur apachectl[6062]: The Apache error log may have more information.
+févr. 05 12:45:41 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 12:45:41 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 12:45:41 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 12:46:32 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 12:46:33 serveur apachectl[6092]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 12:46:33 serveur apachectl[6092]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 12:46:33 serveur apachectl[6092]: AH00014: Configuration check failed
+févr. 05 12:46:33 serveur apachectl[6092]: Action 'start' failed.
+févr. 05 12:46:33 serveur apachectl[6092]: The Apache error log may have more information.
+févr. 05 12:46:33 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 12:46:33 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 12:46:33 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 12:47:43 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 12:48:36 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 12:48:37 serveur apachectl[6124]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 12:48:37 serveur apachectl[6124]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 12:48:37 serveur apachectl[6124]: AH00014: Configuration check failed
+févr. 05 12:48:37 serveur apachectl[6124]: Action 'start' failed.
+févr. 05 12:48:37 serveur apachectl[6124]: The Apache error log may have more information.
+févr. 05 12:48:37 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 12:48:37 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 12:48:37 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:11:44 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 13:11:57 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:17:01 serveur CRON[6255]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 13:17:01 serveur CRON[6256]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+févr. 05 13:17:01 serveur CRON[6255]: pam_unix(cron:session): session closed for user root
+févr. 05 13:20:05 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 13:35:04 serveur systemd-networkd[935]: ens34: DHCP: No routes received from DHCP server: No data available
+févr. 05 13:38:53 serveur sshd[6263]: Accepted password for picasso from 192.168.172.1 port 51087 ssh2
+févr. 05 13:38:53 serveur sshd[6263]: pam_unix(sshd:session): session opened for user picasso by (uid=0)
+févr. 05 13:38:53 serveur systemd-logind[1104]: New session 13 of user picasso.
+-- Subject: Une nouvelle session 13 a été créée pour l'utilisateur picasso
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Une nouvelle session a été créée pour l'utilisateur picasso avec
+-- l'identifiant (ID) 13.
+-- 
+-- Le processus maître de la session est 6263.
+févr. 05 13:38:53 serveur systemd[1]: Started Session 13 of user picasso.
+-- Subject: L'unité (unit) session-13.scope a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) session-13.scope a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:39:01 serveur CRON[6403]: pam_unix(cron:session): session opened for user root by (uid=0)
+févr. 05 13:39:01 serveur CRON[6404]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+févr. 05 13:39:01 serveur CRON[6403]: pam_unix(cron:session): session closed for user root
+févr. 05 13:39:03 serveur sudo[6405]:  picasso : TTY=pts/1 ; PWD=/home/picasso ; USER=root ; COMMAND=/bin/su
+févr. 05 13:39:03 serveur sudo[6405]: pam_unix(sudo:session): session opened for user root by picasso(uid=0)
+févr. 05 13:39:03 serveur su[6406]: Successful su for root by root
+févr. 05 13:39:03 serveur su[6406]: + /dev/pts/1 root:root
+févr. 05 13:39:03 serveur su[6406]: pam_unix(su:session): session opened for user root by picasso(uid=0)
+févr. 05 13:39:03 serveur su[6406]: pam_systemd(su:session): Cannot create session: Already running in a session
+févr. 05 13:39:09 serveur systemd[1]: Starting Clean php session files...
+-- Subject: L'unité (unit) phpsessionclean.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a commencé à démarrer.
+févr. 05 13:39:12 serveur systemd[1]: Started Clean php session files.
+-- Subject: L'unité (unit) phpsessionclean.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) phpsessionclean.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:40:35 serveur sudo[6501]:     root : TTY=pts/1 ; PWD=/home/picasso ; USER=root ; COMMAND=/bin/su
+févr. 05 13:40:35 serveur sudo[6501]: pam_unix(sudo:session): session opened for user root by picasso(uid=0)
+févr. 05 13:40:35 serveur su[6502]: Successful su for root by root
+févr. 05 13:40:35 serveur su[6502]: + /dev/pts/1 root:root
+févr. 05 13:40:35 serveur su[6502]: pam_unix(su:session): session opened for user root by picasso(uid=0)
+févr. 05 13:40:35 serveur su[6502]: pam_systemd(su:session): Cannot create session: Already running in a session
+févr. 05 13:40:44 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:40:45 serveur apachectl[6515]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:40:45 serveur apachectl[6515]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:40:45 serveur apachectl[6515]: AH00014: Configuration check failed
+févr. 05 13:40:45 serveur apachectl[6515]: Action 'start' failed.
+févr. 05 13:40:45 serveur apachectl[6515]: The Apache error log may have more information.
+févr. 05 13:40:45 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:40:45 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:40:45 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:43:08 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 13:43:08 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 13:43:08 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 13:43:08 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:43:18 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:43:18 serveur apachectl[6550]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:43:18 serveur apachectl[6550]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:43:18 serveur apachectl[6550]: AH00014: Configuration check failed
+févr. 05 13:43:18 serveur apachectl[6550]: Action 'start' failed.
+févr. 05 13:43:18 serveur apachectl[6550]: The Apache error log may have more information.
+févr. 05 13:43:18 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:43:18 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:43:18 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:44:24 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 13:44:24 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 13:44:24 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 13:44:24 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:44:52 serveur systemd[1]: Stopping vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à s'arrêter
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à s'arrêter.
+févr. 05 13:44:52 serveur systemd[1]: Stopped vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son arrêt
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son arrêt.
+févr. 05 13:44:52 serveur systemd[1]: Starting vsftpd FTP server...
+-- Subject: L'unité (unit) vsftpd.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a commencé à démarrer.
+févr. 05 13:44:52 serveur systemd[1]: Started vsftpd FTP server.
+-- Subject: L'unité (unit) vsftpd.service a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) vsftpd.service a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:46:12 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:46:12 serveur apachectl[6647]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:46:12 serveur apachectl[6647]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:46:12 serveur apachectl[6647]: AH00014: Configuration check failed
+févr. 05 13:46:12 serveur apachectl[6647]: Action 'start' failed.
+févr. 05 13:46:12 serveur apachectl[6647]: The Apache error log may have more information.
+févr. 05 13:46:12 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:46:12 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:46:12 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:46:26 serveur sshd[6667]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.172.1  user=picasso
+févr. 05 13:46:29 serveur sshd[6667]: Failed password for picasso from 192.168.172.1 port 52882 ssh2
+févr. 05 13:46:32 serveur sshd[6667]: Accepted password for picasso from 192.168.172.1 port 52882 ssh2
+févr. 05 13:46:32 serveur sshd[6667]: pam_unix(sshd:session): session opened for user picasso by (uid=0)
+févr. 05 13:46:32 serveur systemd[1]: Started Session 15 of user picasso.
+-- Subject: L'unité (unit) session-15.scope a terminé son démarrage
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) session-15.scope a terminé son démarrage, avec le résultat RESULT.
+févr. 05 13:46:32 serveur systemd-logind[1104]: New session 15 of user picasso.
+-- Subject: Une nouvelle session 15 a été créée pour l'utilisateur picasso
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- Une nouvelle session a été créée pour l'utilisateur picasso avec
+-- l'identifiant (ID) 15.
+-- 
+-- Le processus maître de la session est 6667.
+févr. 05 13:46:38 serveur sudo[6762]:  picasso : TTY=pts/2 ; PWD=/home/picasso ; USER=root ; COMMAND=/bin/su
+févr. 05 13:46:38 serveur sudo[6762]: pam_unix(sudo:session): session opened for user root by picasso(uid=0)
+févr. 05 13:46:38 serveur su[6763]: Successful su for root by root
+févr. 05 13:46:38 serveur su[6763]: + /dev/pts/2 root:root
+févr. 05 13:46:38 serveur su[6763]: pam_unix(su:session): session opened for user root by picasso(uid=0)
+févr. 05 13:46:38 serveur su[6763]: pam_systemd(su:session): Cannot create session: Already running in a session
+févr. 05 13:47:07 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:47:07 serveur apachectl[6780]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:47:07 serveur apachectl[6780]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:47:07 serveur apachectl[6780]: AH00014: Configuration check failed
+févr. 05 13:47:07 serveur apachectl[6780]: Action 'start' failed.
+févr. 05 13:47:07 serveur apachectl[6780]: The Apache error log may have more information.
+févr. 05 13:47:07 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:47:07 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:47:07 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:47:14 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:47:14 serveur apachectl[6806]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:47:14 serveur apachectl[6806]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:47:14 serveur apachectl[6806]: AH00014: Configuration check failed
+févr. 05 13:47:14 serveur apachectl[6806]: Action 'start' failed.
+févr. 05 13:47:14 serveur apachectl[6806]: The Apache error log may have more information.
+févr. 05 13:47:14 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:47:14 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:47:14 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:47:28 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:47:28 serveur apachectl[6830]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:47:28 serveur apachectl[6830]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:47:28 serveur apachectl[6830]: AH00014: Configuration check failed
+févr. 05 13:47:28 serveur apachectl[6830]: Action 'start' failed.
+févr. 05 13:47:28 serveur apachectl[6830]: The Apache error log may have more information.
+févr. 05 13:47:28 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:47:28 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:47:29 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:47:31 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:47:31 serveur apachectl[6852]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:47:31 serveur apachectl[6852]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:47:31 serveur apachectl[6852]: AH00014: Configuration check failed
+févr. 05 13:47:31 serveur apachectl[6852]: Action 'start' failed.
+févr. 05 13:47:31 serveur apachectl[6852]: The Apache error log may have more information.
+févr. 05 13:47:31 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:47:31 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:47:31 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.
+févr. 05 13:49:17 serveur systemd[1]: Starting The Apache HTTP Server...
+-- Subject: L'unité (unit) apache2.service a commencé à démarrer
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a commencé à démarrer.
+févr. 05 13:49:17 serveur apachectl[6881]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+févr. 05 13:49:17 serveur apachectl[6881]: (2)No such file or directory: AH02291: Cannot access directory '/externe/www/html/www.admin.eneam.da./logs/' for error log of vhost defined at /etc/apache2/sites-enabled/www.admin.eneam.da.conf:13
+févr. 05 13:49:17 serveur apachectl[6881]: AH00014: Configuration check failed
+févr. 05 13:49:17 serveur apachectl[6881]: Action 'start' failed.
+févr. 05 13:49:17 serveur apachectl[6881]: The Apache error log may have more information.
+févr. 05 13:49:17 serveur systemd[1]: apache2.service: Control process exited, code=exited status=1
+févr. 05 13:49:17 serveur systemd[1]: apache2.service: Failed with result 'exit-code'.
+févr. 05 13:49:17 serveur systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: L'unité (unit) apache2.service a échoué
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- L'unité (unit) apache2.service a échoué, avec le résultat RESULT.

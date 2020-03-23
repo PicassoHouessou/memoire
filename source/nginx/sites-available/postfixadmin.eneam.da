@@ -1,0 +1,18 @@
+server {
+	listen 80;
+	server_name www.postfixadmin.eneam.da postfixadmin;
+	return 301 https://$host$request_uri;
+}
+
+server {
+	listen 443 ssl;
+	server_name www.postfixadmin.eneam.da postfixadmin
+	ssl_certificate /etc/ssl/certs/nginx-autosigne.crt;
+	ssl_certificate_key /etc/ssl/private/nginx-autosigne.key;
+
+	location /{
+		include proxy_params;
+		proxy_pass https://127.0.0.1:7443 ;
+	}
+
+}
