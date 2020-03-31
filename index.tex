@@ -25,6 +25,7 @@
 \usepackage{babel}
 \usepackage{listings}
 \usepackage{array}
+%\usepackage[backend=bibtex,autolang=french]{biblatex}
 %A revoir pour mieux personnaliser l'entete
 %\markboth{Mise en place d'une solution compte de mail}{Mise en place d'une solution compte de mail}
 \pagestyle{headings}
@@ -43,7 +44,7 @@ Ecole Nationale D'Economie Appliquée et de Management
 Par : \\[0.1cm]
 Picasso T. I. HOUESSOU-DOSSOU \\[1cm]
 Sous la supervision de :\\[0.1cm]
- Dr. Victor OYETOLA \\ [1.5cm]
+ M. Victor OYETOLA \\ [1.5cm]
  Encadreur : \\[0.1cm]
  M. Bruno Bellarmin LAWSON \\[1cm]
 %\today \\ [4cm]
@@ -205,7 +206,7 @@ L'étude dudit thème va articuler autour de trois chapitres à savoir :
 Présentons ces avantages. Une bonne application peut répondre à tous les problèmes mentionnés ci-dessus mais la conception est une tâche bien pénible surtout lorsqu'on parle de sécurité, de système multi-utilisateurs, multitâches et d'administration. Il suffit pour s'en convaincre d'observer les médias sociaux qui existent : c'est beaucoup % j'ai enlevé d'ingénieurs et 
 de technologies réunies. Nous voyons bien que cette solution bien que réalisable, pour qu'elle réponde à tous nos besoins, il faut beaucoup de ressources. Quand on dit ressources ici il y'a les ressources matérielles, humaines , le temps, etc. Au vu de tous ces disconvenues essayons de trouver une autre solution. Comme je suis un étudiant en administration réseaux, je vais essayer de parcourir parmi les solutions que proposent l'incroyable monde du réseau.
 
-	Prenons le mail. Le e-mail ou courrier électronique est un système de transmission de messages électroniques entre différents utilisateurs. Ce système acheminent les messages entre deux nœuds reliés entre eux par le réseau internet. Par message électronique, on comprend des messages textes mais aussi des messages enrichis (c'est à dire des messages formatés dans un langage de description des données : HTML \label{ref:html} ), des fichiers joints ( documents , musique , vidéo) et tout autre type de fichiers. Le mail a plusieurs avantages :
+	Prenons le mail. Le e-mail ou courrier électronique est un système de transmission de messages électroniques entre différents utilisateurs. Ce système achemine les messages entre deux nœuds reliés entre eux par le réseau internet. Par message électronique, on comprend des messages textes mais aussi des messages enrichis (c'est à dire des messages formatés dans un langage de description des données : HTML \label{ref:html} ), des fichiers joints ( documents , musique , vidéo) et tout autre type de fichiers. Le mail a plusieurs avantages :
 \begin{itemize}
 	\item C'est un réseau centralisé: les administrateurs peuvent donc surveiller le flux réseau, limiter le nombre de mails envoyés par les étudiants; ce qui empêche les apprenants d'envoyer des messages jugés inutiles ou des blagues sur le réseau. Plusieurs filtres peuvent être définis pour mieux analyser les données qui transitent sur le réseau ;
 	\item Les membres de l'administration  peuvent envoyer le programme des cours, des devoirs aux étudiants, donc tout type d'information ;
@@ -228,7 +229,7 @@ Pour cela, je vais procéder étape par étape. Je vais donc mettre en place un 
 Un serveur à généralement les caractéristiques suivantes :
 \begin{itemize}
 \item Un serveur est allumé 24h/24h ;
-\item tres souvent , il ne dispose pas d'un écran , ni d'un clavier , ni d'équipements multimédias ;
+\item Très souvent, il ne dispose pas d'un écran , ni d'un clavier , ni d'équipements multimédias ;
 \item Un serveur Linux n'a généralement pas d'interface graphique ;
 \item Un serveur utilise très souvent un système d'exploitation spécialisé.
 \end{itemize}
@@ -236,7 +237,7 @@ Un serveur à généralement les caractéristiques suivantes :
 \subsubsection{Quelques services}
 Les serveurs assurent différents services. Citons quelques uns:
 \begin{itemize}
-\item Transfert de fichier: NFS, Samba, bittorrent , FTP ;
+\item Transfert de fichier: NFS, Samba, bittorrent, FTP ;
 \item Communication : Messagerie instantanée, téléphonie par IP ;
 \item Authentification: annuire LDAP ;
 \item Web.
@@ -251,7 +252,7 @@ Les serveurs assurent différents services. Citons quelques uns:
 \end{itemize} 
 	
 \subsection{Disque dur RAID LVM}
-RAID est un ensemble de techniques qui visent à répartir le stockage de données sur plusieurs disques physiques afin d'anticiper la défaillance des disques et de limiter les risques de pertes données. Son principe est simple : on regroupe plusieurs disques pour constituer un seul disque dur visible par l'utilisateur. Ainsi lorsque l'un des disque se détériore, il suffit de le changer. On distingue plusieurs architectures RAID :
+RAID est un ensemble de techniques qui visent à répartir le stockage de données sur plusieurs disques physiques afin d'anticiper la défaillance des disques et de limiter les risques de pertes données. Son principe est simple : on regroupe plusieurs disques pour constituer un seul disque dur visible par l'utilisateur. Ainsi lorsque l'un des disques se détériore, il suffit de le changer. On distingue plusieurs architectures RAID :
 \begin{itemize}
 	\item Le RAID 0: dans cette architecture, si on prend deux disques, les deux travaillent en parallèle. Si un disque est détérioré toutes les données sont perdues ;
 	\item Le RAID 1 : Pour deux disques durs physiques A et B , les données sont écrites simultanément sur les deux disques. Ainsi si A se gâte on peut continuer à travailler sans perte de données. Il suffit après de changer le disque A détérioré par un nouvel disque C pour ne pas risquer de perdre les données définitivement au cas où le seul disque restant s'endommage ;
@@ -522,13 +523,13 @@ On va ajouter notre machine Linux \emph{\textbf{"serveur"}} de VMware pour l'uti
 
 \subsection{Description du schéma}
 \begin{figure}[H]
-\includegraphics[width=19cm]{figure/topologie_gns3.png}
+\includegraphics[width=520pt]{figure/topologie_gns3.png}
 \centering
 \caption{Topologie de notre projet dans GNS3}	
 \end{figure}	
 Nous avons opté pour un modèle générique. Le réseau est séparé en deux grandes parties: la zone A et la zone B
 \begin{itemize}
-\item La zone A : représente le réseau existant de l'ENEAM. Il est géré par \emph{\textbf{routeurEneam}} et est relié au routeur routeurMail. La configuration de cette zone ne nous intéresse pas. Elle permet de mieux comprendre l'architecture de notre projet et de comprendre que notre projet est générique car il peut s'adapter à tout type d'organisation existante sans toucher au système d'information\footnote{ Un système d'information est un ensemble de ressources matérielles, humaines qui permet de collecter , de stocker, de traiter et de diffuser l'information.} existant.
+\item La zone A : représente le réseau existant de l'ENEAM. Il est géré par \emph{\textbf{routeurEneam}} et est relié au routeur routeurMail. La configuration de cette zone ne nous intéresse pas. Elle permet de mieux comprendre l'architecture de notre projet et de comprendre que notre projet est générique car il peut s'adapter à tout type d'organisation existante sans toucher au système d'information\footnote{ Un système d'information est un ensemble de ressources matérielles, humaines qui permet de collecter, de stocker, de traiter et de diffuser l'information.} existant.
 \item La zone B: le nouveau réseau relié par le routeur routeurMail.
 L'avantage d'une telle architecture est que l'administrateur du réseau ENEAM peut communiquer avec le réseau mail à travers un tunnel (VPN) s'il est configuré.
 \item \textbf{routeurEneam} procède trois interfaces réseaux : em1 dans son réseau local, em2 qui le relie à routeurMail et em0 pour le WAN ;
@@ -781,7 +782,7 @@ Il existe des solutions gratuites pour l'administration du mail comme \emph{\tex
 \item Le bonheur de coder: on va comprendre les principes de base pour coder un site d'administration de mails et écrire des scripts bash; ce qui est très intéressant et montre qu'on arrive à combiner toutes les technologies qu'on nous à enseigner lors des cours et dont on dispose pour produire un résultat ;
 \item Postfixadmin est un outils puissant mais son interface est un peu vieillissant ;
 \item  La flexibilité: étant donné que nous codons nous allons adapter l'application à notre besoin ;
-\item Il existe des outils puissant, complet mais pas gratuit et qui contiennent des fonctionnalités dont on a pas besoin pour le moment ou pour un début.\footnote{Dans le monde professionnel, on préfèrera des solutions complètes, faciles d'utilisation et complète comme cPanel. Mais ces solutions sont à des prix très onéreux.}
+\item Il existe des outils puissant, complet mais pas gratuit et qui contiennent des fonctionnalités dont on a pas besoin.\footnote{Dans le monde professionnel, on préfèrera des solutions complètes, faciles d'utilisation comme cPanel. Mais ces solutions sont à des prix très onéreux.}
 \end{itemize}
 
 L'administrateur du système va exécuter des instructions depuis l'interface web et pour communiquer avec la machine \textbf{serveur} via l'interface web, il va appeler des scripts bash. Nous avons un script bash pour créer le répertoire d'un utilisateur, un autre pour supprimer un répertoire lors de la suppression d'un compte, un autre pour connaître l'état d'un service, un pour arrêter ou redémarrer un service. Voici le contenu du script qui redémarre un service 
