@@ -1,4 +1,9 @@
 # LaTeX stuffs:
+*.docx
+*.doc
+*.fdb_latexmk
+*.fls
+*.fdb
 *.aux
 *.ist
 *.log
