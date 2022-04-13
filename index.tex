@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt,french]{report} % Document mémoire 
 % Pour les puces
 %\usepackage{tcolorbox}
-%\usepackage[standard]{ntheorem}
+\usepackage[standard]{ntheorem}
 \usepackage{enumitem}
 \usepackage{pifont}
 %\usepackage{adjustbox}
@@ -15,6 +15,7 @@
 \usepackage{hyphenat}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{titlesec}
+\usepackage{wrapfig}
 \usepackage[colorlinks=true,linkcolor=black]{hyperref}
 \usepackage{makeidx}
 \usepackage{layout}
@@ -23,6 +24,8 @@
 \usepackage{lmodern} % Pour changer le pack de police.
 \usepackage{graphicx}
 \usepackage{mdframed}
+%\usepackage{minted}
+\usepackage[outputdir=build,cachedir=/mintedcache]{minted}
 \usepackage{minted}
 \usepackage{blindtext}
 \usepackage{caption}
@@ -32,34 +35,109 @@
 %\usepackage[backend=bibtex,autolang=french]{biblatex}
 %A revoir pour mieux personnaliser l'entete
 %\markboth{Mise en place d'une solution compte de mail}{Mise en place d'une solution compte de mail}
-\pagestyle{headings}
+%\markboth{
+\pagestyle{plain}
+\usepackage[Lenny]{fncychap}%pour de jolis titres de chapitres voir la doc pour d'autres styles.
+
+\usepackage{fancyhdr}%pour les entêtes et pieds de pages
+	\setlength{\headheight}{14.2pt}% hauteur de l'entête
+
+%%%%%%%%%%%%%%%%%%%style front%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\fancypagestyle{front}{%
+  		\fancyhf{}%on vide les entêtes
+  		\fancyfoot[C]{page \thepage}%
+  		\renewcommand{\headrulewidth}{0pt}%trait horizontal pour l'entête
+  		\renewcommand{\footrulewidth}{0.4pt}%trait horizontal pour les pieds de pages
+		}
+
+
+%%%%%%%%%%%%%%%%%%%style main%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\fancypagestyle{main}{%
+		\fancyhf{}
+  		\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ ##1}{}}% redéfintion pour avoir ici les titres des chapitres des sections en minuscules
+  		\renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1}}
+		\fancyhead[c]{}
+		\fancyhead[RO,LE]{\rightmark}%
+  		\fancyhead[LO,RE]{\leftmark}
+		\fancyfoot[C]{}
+		\fancyfoot[RO,LE]{page \thepage}%
+  		\fancyfoot[LO,RE]{Mon rapport}
+  		}
+
+%%%%%%%%%%%%%%%%%%%style back%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\fancypagestyle{back}{%
+  		\fancyhf{}%on vide les entêtes
+  		\fancyfoot[C]{page \thepage}%
+  		\renewcommand{\headrulewidth}{0pt}%trait horizontal pour l'entête
+  		\renewcommand{\footrulewidth}{0.4pt}%trait horizontal pour les pieds de pages
+		}
+
 \begin{document}
+\pagestyle{front}
 %\setmainfont{SourceSansPro-Regular.otf}[
-%Path= source-sans-pro/ ,
+%Path= source-sans-pro/
 %BoldFont = SourceSansPro-Bold.otf ,
 %ItalicFont = SourceSansPro-It.otf ,
 %BoldItalicFont = SourceSansPro-BoldIt.otf]
 %PAGE DE GARDE
 \begin{titlepage}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+	%\begin{figure}[Hl]	
+	%		\includegraphics[scale=0.5]{figure/uac-logo.png} \\[0.5cm]	
+%	 \end{figure}
+	
+
+	\center
+	{ \huge \LARGE République du Bénin \\[0.5cm]} 
+	{\huge \LARGE Ministère de l'Enseignement Supérieur et de la Recherche Scientifique (MESRS)\\[0.5cm]}
+	{ \huge \LARGE Université d'Abomey Calavi \\[0.5cm] }
+	\textsc{\LARGE
+	\'Ecole Nationale D'\'Economie Appliquée et   de Management
+	} \\[1cm]
+	\begin{center}
+		\includegraphics[scale=0.5]{figure/eneam-logo.png} \\[0.5cm]	
+	\end{center}
+	Rapport de fin de stage pour l'obtention de la licence professionnelle
+	
+	\HRule \\[0.4cm]
+	{ \huge \bfseries Mise en place d'une solution complète d'administration de messagerie \\[0.15cm] }
+	\HRule \\[1.2cm]
+	Filière : Informatique de Gestion \\[0.4cm]
+	Option : Administration des Réseaux Informatiques \\[0.8cm]
+	Par : \\[0.1cm]
+	Picasso T. I. HOUESSOU-DOSSOU \\[1cm]
+	Sous la supervision de :\\[0.1cm]
+	 M. Victor OYETOLA \\ [1.3cm]
+	 Encadreur : \\[0.1cm] 
+	 M. Bruno Bellarmin LAWSON \\[1.4cm]
+	%\today \\ [4cm]
+	\textbf{Année académique :} 2018-2019 
+\end{titlepage}
+
+\begin{comment}
+\begin{titlepage}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \center
+{ \huge \LARGE République du Bénin \\[0.5cm]}
 \textsc{\LARGE
 \'Ecole Nationale D'\'Economie Appliquée et de Management
 } \\[1cm]
-\includegraphics[scale=1]{figure/eneam-logo.png} \\[1cm]
+\includegraphics[scale=1]{figure/eneam-logo.png} \\[0.5cm]
 \HRule \\[0.4cm]
 { \huge \bfseries Mise en place d'une solution complète d'administration de messagerie \\[0.15cm] }
-\HRule \\[1.5cm]
+\HRule \\[1.2cm]
+Filière : Informatique de Gestion \\[0.4cm]
+Option : Administration des Réseaux Informatiques \\[0.8cm]
 Par : \\[0.1cm]
 Picasso T. I. HOUESSOU-DOSSOU \\[1cm]
 Sous la supervision de :\\[0.1cm]
  M. Victor OYETOLA \\ [1.5cm]
- Encadreur : \\[0.1cm]
- M. Bruno Bellarmin LAWSON \\[1cm]
+ Encadreur : \\[0.1cm] 
+ M. Bruno Bellarmin LAWSON \\[2.3cm]
 %\today \\ [4cm]
-\textbf{Année :} 2019-2020 \\ [3cm]
-République du Bénin
-\end{titlepage}
+\textbf{Année académique :} 2018-2019 
+\end{comment}
+
 %FIN PAGE DE GARDE
 
 %DEFINITION DES COULEURS ET ENVIRONNEMENT ET COMMANDE
@@ -87,7 +165,7 @@ République du Bénin
 \pagenumbering{roman}
 
 %CHAPITRE DEDICACES
-\chapter*{Dédicaces}
+\chapter*{Dédicace}
 Je dédie le présent document :
 \begin{itemize}
 \item[•] A ma mère, qui m'a toujours apporté son amour, son soutien inconditionnel, sa patience, sa générosité et pour tous les efforts consentis en ma faveur.
@@ -123,8 +201,9 @@ Picasso Houessou
 \item[] \textbf{IMAP} : Internet Message Access Protocol.
 \item[] \textbf{LTS} : Long Term Support.
 \item[] \textbf{LVM} :  Logical Volume Management. %\pageref{ref:lvm}
-\item[] \textbf{LTS} : Transport Layer Security.
+\item[] \textbf{TLS} : Transport Layer Security.
 \item[] \textbf{OSI} : Open Systems Interconnection.
+\item[] \textbf{UML} : Unified Modeling Language 
 \item[] \textbf{RAID} : Redundant Array of Independent Disks. %\pageref{ref:raid} 
 \item[] \textbf{SMTP} : Simple Mail Transfer Protocol.
 \end{itemize}
@@ -137,13 +216,23 @@ Picasso Houessou
 \addcontentsline{toc}{chapter}{Table des matières}
 %Liste ou tables des figures
 \listoffigures
+
+
+\chapter*{Résumé}
+Une bonne communication et un accès facile et rapide aux informations qui circulent à l'école sont  essentiels au bon déroulement des activités scolaires. Cependant, certains étudiants par inadvertance ne sont pas au courant de toutes ces informations. Ainsi, lors de mon stage, j'ai eu à travailler sur l'installation et la configuration d'un serveur de messagerie pour le compte de mon école. L'objectif de ce serveur est de compléter les moyens traditionnels de diffusion d'informations au sein de l'école. L'intérêt est de fournir un canal d'accès rapide, sécurisé et instantané par lequel l'administration et les professeurs peuvent communiquer les informations aux étudiants de façon générale et atteindre chaque étudiant de façon spécifique. Ce rapport est un compte rendu des activités menées au cours du stage. Après avoir présenté le cadre de l'étude, ce document décrit le cadre théorique et méthodologique, ensuite il sera question de déployer un serveur de messagerie et de développer une application web pour la gestion des différentes tâches d'administration liées au serveur.
+\addcontentsline{toc}{chapter}{Résumé}
+
+\chapter*{Abstract}
+Good communication and easy and quick access to information circulating in school are essential for the smooth running of school activities. However, some students are inadvertently unaware of all of this information. Thus, during my internship, I had to work on the installation and configuration of a mail server on behalf of my school. The objective of this server is to supplement the traditional means of disseminating information within the school. The point is to provide a fast, secure and instant access channel through which administration and professors can communicate information to students in general and reach each student in a specific way. This report is an account of the activities carried out during the internship. After presenting the framework of the study, this document describes the theoretical and methodological framework, then it will be a question of deploying a mail server and developing a web application for the management of the various administration tasks linked to the server.
+\addcontentsline{toc}{chapter}{Abstract}
+
 \onehalfspacing % Pour augmenter les interlignes
 \clearpage
 %On remet la numérotation en chiffre 
 \pagenumbering{arabic}
 \nocesure
 \chapter*{Introduction}
-L’école est un lieu d’enseignement de connaissances générales ou de connaissances particulières nécessaires à l’exercice d’un métier, d’une profession. C’est également l’ensemble des élèves et professeurs qui fréquentent cet établissement. L’apprentissage est donné par la communication. Une bonne communication et une rigueur des apprenants sont primordiales à leur réussite scolaire. La communication désigne l’ensemble des moyens qui permet pour à sujet, de transmettre une information à un autre sujet : communication verbale, écrite, par les affiches, par les signes. Des difficultés de communication sont préjudiciables au bon déroulement des activités de l’école.
+L’école est un lieu d’enseignement de connaissances générales ou de connaissances particulières nécessaires à l’exercice d’un métier, d’une profession. C’est également l’ensemble des élèves et professeurs qui fréquentent cet établissement. L’apprentissage est donné par la communication. Une bonne communication et une rigueur des apprenants sont primordiales à leur réussite scolaire. La communication désigne l’ensemble des moyens qui permet à un sujet de transmettre une information à un autre sujet : communication verbale, écrite, par les affiches, par les signes. Des difficultés de communication sont préjudiciables au bon déroulement des activités de l’école.
 
 En particulier, en tant qu’étudiant à l’ENEAM nous avons rencontré des obstacles dans le processus de communication de la programmation des cours. En effet, une bonne programmation des cours nécessite souvent de la part de l’administration et des professeurs de faire face à des contraintes de dernières minutes qui obligent un réajustement de l’horaire des cours  et d’informer les étudiants des nouveaux horaires. Toutefois, certains étudiants par inadvertance, d’autres par manque de communication entre eux, ne sont pas informés de ces modifications. Il est donc impératif que nous avons besoin d’un moyen de communication sûr, efficace, centralisé, sécurisé pour discuter et pour s’échanger les informations qui circulent au sein de l’école. Ce moyen va servir non seulement aux étudiants mais va aussi constituer un outil essentiel que l’administration et les professeurs peuvent utiliser pour les échanges en milieu
 scolaire. Quel facteur peut améliorer la communication au sein de l’ENEAM ?
@@ -165,7 +254,7 @@ Durant mon parcours à l'ENEAM, mes camarades et moi avons passé de bons moment
 	
 Il est donc impératif que nous avons besoin d'un moyen de communication sûr, efficace, centralisé, sécurisé pour discuter et pour s'échanger les informations qui circulent au sein de l'école. Ce moyen devra servir non seulement aux étudiants mais va aussi constituer un moyen très efficace dont disposera l'administration et le corps enseignant pour les échanges en milieu scolaire. 
 % Ce moyen devra servir non seulement aux étudiants mais va aussi permettre à l'adminsitration et aux ensiegnants de communiquer avec les étudiants. 
-L'objectif est donc de proposer un essai de solution pour aider et faciliter la communication au sein de l'ENEAM. La communication regroupe toutes informations utiles que l'école peut mettre à disposition des étudiants, que les professeurs peuvent échanger avec leurs apprenants, de même que les apprenants peuvent s'échanger entre eux. Je me propose de répondre à cette problématique par la mise en place d'une solution complète de messagerie électronique au sein de mon école.
+L'objectif est donc de proposer un essai de solution pour aider et faciliter la communication au sein de l'ENEAM. La communication regroupe toutes informations utiles que l'école peut mettre à disposition des étudiants, que les professeurs peuvent échanger avec leurs apprenants, de même que les apprenants peuvent s'échanger entre eux. Nous proposons de répondre à cette problématique par la mise en place d'une solution complète de messagerie électronique au sein de l'école.
  %C'est ainsi qu'en tant qu'étudiant en informatique de gestion à l'ENEAM, je me propose de répondre à cette problématique par la mise en place d'une solution complète de messagerie électronique au sein de mon école. \\
 % Par communication, nous entendons toutes informations utiles que l'école peut mettre à disposition des étudiants, mais aussi que les professeurs peuvent échanger avec leurs apprenants, de même que les apprenants peuvent s'échanger entre eux. C'est ainsi qu'en tant qu'étudiant en informatique de gestion à l'ENEAM, je me propose de répondre à cette problématique par la mise en place d'une solution complète de messagerie électronique au sein de mon école. \\
 
@@ -182,19 +271,32 @@ L'étude dudit thème va articuler autour de trois chapitres à savoir :
 
 \section{Présentation du bureau d'étude JScom}
 	\subsection{Présentation générale}
-	JSCOM BENIN Sarl est une société béninoise économiquement autonome. Elle fait partie d'un réseau d'ingénieurs présents en France et aux États-Unis spécialisés en système d'information et en nouvelles technologies de l'information et de la communication. Aujourd'hui JSCOM BENIN avec ses partenaires en France et dans la sous-région, met son expérience au service de l'informatisation d'entreprise et de la mise en place d'un intranet/Internet dans les administrations et les entreprises.
+	JSCOM BENIN Sarl est une société béninoise économiquement autonome. Elle fait partie d'un réseau d'ingénieurs présents en France et aux États-Unis spécialisés en système d'information et en nouvelles technologies de l'information et de la communication. Aujourd'hui JSCOM BENIN avec ses partenaires en France et dans la sous-région, met son expérience au service de l'informatisation d'entreprise et de la mise en place d'un intranet/Internet dans les administrations et les entreprises. Elle est dirigée par M. Bruno Bellarmin LAWSON
 
-	JSCOM-Bénin est spécialisée, entre autre activités de mise en place des systèmes d'information structurée en entreprise en administration, dans l'implémentation des solutions électroniques de déclaration fiscale, du contrôle fiscal et de la facturation électronique normalisée et certifiée.
-		
 	\subsection{Situation géographique}
-		Voici la figure illustrant la situation géographique de JSCom. 
+		La société JSCom BENIN a son siège situé dans le quartier Arrondissement, Commune de Cotonou, Carré , maison . 
+		La figure ci-dessous illustre le plan de la situation géographique de JSCom. 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{figure/jscom-map.png}		
-	\caption{Situation géographique de JScom, source Google maps.}		
+	\caption{Situation géographique de JScom, source Google Maps}		
 	\label{Situation géographique de JScom}
 	\end{figure}
 		
+	\subsection{Organisation}
+	La société JSCOM dispose d'un peronnel très dynamique. Ce personnel sous la direction de son directeur lui a permis de gagner la confiance de ces clients. Cette confiance est fondée sur la qualité de ses prestations et le respect de ces engagements.
+	
+	\subsection{Domaine d'intervention}
+	La société JSCOM intervient dans les domaines suivants :
+	\begin{itemize}
+		\item Développement de site web ;
+		\item Développement d'application mobile et de bureau ;
+		\item Mise en place des systèmes d'information structurée en entreprise ;
+		\item L'implémentation des solutions électroniques de déclaration fiscale, du contrôle fiscal et de la facturation électronique normalisée et certifiée ;
+		\item Formation en Windev
+
+	\end{itemize}
+
 	 %\subsection{Domaine d'intervention}
 		%JScom intervient :
 	%\begin{itemize}
@@ -208,13 +310,9 @@ L'étude dudit thème va articuler autour de trois chapitres à savoir :
 	\begin{itemize}
 		\item Faire une revue littéraire sur les notions du réseau informatique ;
 		\item Prendre connaissance de la tâche à effectuer ;
-		\item Me référer à mes connaissances reçues en classe ;
+		\item Nous référer aux connaissances reçues en classe ;
 		\item Effectuer les opérations sur le terrain ;
 		\item Faire le traitement au bureau ;
-		\item Faire des recherches sur le net  ;
-		\item Faire des recherches documentaires ;
-		\item Lire beaucoup de cours ;
-		\item Surtout pratiquer.
 	\end{itemize}
 			
 \chapter{Cadre théorique et méthodologique}
@@ -234,7 +332,7 @@ Quel facteur pourrait améliorer la communication à l’ENEAM ?
 \end{comment}
 
 \section{Enoncé du problème}
-La communication est importante dans toute société car elle met en relation les hommes. Ainsi, la communication est au c\oe{}ur de toutes les activités menées à l’école. A l’école, la communication regroupe toutes informations utiles que l'administration peut mettre à disposition des étudiants, que les professeurs peuvent échanger avec leurs apprenants, de même que les apprenants peuvent s'échanger entre eux. Une bonne communication en milieu scolaire est donc essentiels à la réussite des apprenants. Cependant, durant nos années études à ENEAM, nous avons rencontré plusieurs obstacles dans la communication :
+La communication est importante dans toute société car elle met en relation les hommes. Ainsi, la communication est au c\oe{}ur de toutes les activités menées à l’école. A l’école, la communication regroupe toutes informations utiles que l'administration peut mettre à disposition des étudiants, que les professeurs peuvent échanger avec leurs apprenants, de même que les apprenants peuvent s'échanger entre eux. Une bonne communication en milieu scolaire est donc essentielle à la réussite des apprenants. Cependant, durant nos années études à l'ENEAM, nous avons rencontré plusieurs obstacles dans la communication :
 \begin{itemize}
 	\item Le manque de communication entre étudiant des changements dans les horaires des cours ; 
 	\item Le manque d’échanges entre étudiants sur les notions reçues ; 
@@ -244,7 +342,7 @@ La communication est importante dans toute société car elle met en relation le
 	\item La véracité de certaines informations en général diffusées par les étudiants.
 	%\item Les difficultés de communication lors des activités de groupe entre étudiants.	
 \end{itemize}
-	
+	En effet, l'administration dispose de courriels pour échanger en interne. En ce qui concerne les étudiants, les informations sont collées au tableau ou  relayées par les responsables de classe. De même, il est courant que les professeurs procèdent au réajustement de l'horaire des cours, or dans ces circonstances les étudiants ne sont pas tous informés des changements effectués. Il y'a dans ces conditions un déséquilibre dans la communication qui porte à réflexion.\\
 Nous avons donc éprouvé le besoin de rechercher les facteurs d'amélioration de la qualité de la communication à l'école de façon spécifique à l'ENEAM. D'où la question fondamentale de recherche : \\
 Quel facteur peut contribuer à améliorer la communication entre étudiants au sein de l'ENEAM?
 	%Quel facteur pourrait contribuer à améliorer la communication  au sein de l'ENEAM?
@@ -276,7 +374,7 @@ Quel facteur contribuerait à améliorer la communication au sein de l’ENEAM ?
 Présentons ces avantages. Une bonne application peut répondre à tous les problèmes mentionnés ci-dessus mais la conception est une tâche bien pénible surtout lorsqu'on parle de sécurité, de système multi-utilisateurs, multitâches et d'administration. Il suffit pour s'en convaincre d'observer les médias sociaux qui existent : c'est beaucoup % j'ai enlevé d'ingénieurs et 
 de technologies réunies. Nous voyons bien que cette solution bien que réalisable, pour qu'elle réponde à tous nos besoins, il faut beaucoup de ressources. Quand on dit ressources ici il y a les ressources matérielles, humaines, le temps, etc. Au vu de toutes ces disconvenues essayons de trouver une autre solution. Comme je suis un étudiant en administration réseaux, je vais essayer de parcourir parmi les solutions que proposent l'incroyable monde du réseau.
 
-Prenons le mail. L'e-mail ou courrier électronique est un système de transmission de messages électroniques entre différents utilisateurs. Ce système achemine les messages entre deux nœuds reliés entre eux par le réseau internet. Par message électronique, on comprend des messages textes mais aussi des messages enrichis (c'est à dire des messages formatés dans un langage de description des données : HTML \label{ref:html} ), des fichiers joints ( documents, musique, vidéo) et tout autre type de fichiers. Le mail a plusieurs avantages :
+Prenons le mail. L'e-mail ou courrier électronique est un système de transmission de messages électroniques entre différents utilisateurs. Ce système achemine les messages entre deux nœuds reliés entre eux par le réseau internet. Par message électronique, on comprend des messages textes mais aussi des messages enrichis (c'est-à-dire des messages formatés dans un langage de description des données : HTML \label{ref:html} ), des fichiers joints ( documents, musique, vidéo) et tout autre type de fichiers. Le mail a plusieurs avantages :
 \begin{itemize}
 	\item C'est un réseau centralisé: les administrateurs peuvent donc surveiller le flux réseau, limiter le nombre de mails envoyés par les étudiants; ce qui empêche les apprenants d'envoyer des messages jugés inutiles ou des blagues sur le réseau. Plusieurs filtres peuvent être définis pour mieux analyser les données qui transitent sur le réseau ;
 	\item Les membres de l'administration  peuvent envoyer le programme des cours, des devoirs aux étudiants, donc tout type d'information ;
@@ -301,13 +399,13 @@ Pour cela, je vais procéder étape par étape. Je vais donc mettre en place un 
 Un serveur à généralement les caractéristiques suivantes :
 \begin{itemize}
 \item Un serveur est allumé 24h/24h ;
-\item Très souvent, il ne dispose pas d'un écran, ni d'un clavier, ni d'équipements multimédias. Un serveur peut avoir ;
+\item Très souvent, il ne dispose pas d'un écran, ni d'un clavier, ni d'équipements multimédias; % Un serveur peut avoir ;
 \item Un serveur Linux n'a généralement pas d'interface graphique. Comme un serveur n'est pas souvent connecté à un écran, on préfère ne pas installer un environnement graphique ;
 \item Un serveur utilise très souvent un système d'exploitation spécialisé.
 \end{itemize}
 
 \subsubsection{Quelques services}
-Les serveurs assurent différents services. Parmi lesquels, nous pouvons citer :
+Les serveurs assurent différents services parmi lesquels, nous pouvons citer :
 \begin{itemize}
 \item Transfert de fichier: NFS, Samba, FTP ;
 \item Communication : Messagerie instantanée, téléphonie par IP ;
@@ -324,7 +422,7 @@ Les serveurs assurent différents services. Parmi lesquels, nous pouvons citer :
 	\item Ils peuvent gérer des ressources physiques énormes par rapport à un ordinateur personnel. Une machine serveur peut par exemple être dotée de plus 200 gigas (200 Go) de mémoires RAM. Il existe des services de support payants pour les entreprises.
 \end{itemize} 
 	
-\subsection{Disque dur RAID LVM}
+\subsection{Disque dur RAID et LVM}
 RAID est un ensemble de techniques qui visent à répartir le stockage de données sur plusieurs disques physiques afin d'anticiper la défaillance des disques et de limiter les risques de pertes de données. Son principe est simple : on regroupe plusieurs disques pour constituer un seul disque dur visible par l'utilisateur. Ainsi lorsque l'un des disques se détériore, le disque endommagé peut être remplacé sans risque de perte de données. On distingue plusieurs architectures RAID :
 \begin{itemize}
 	\item Le RAID 0: dans cette architecture, si on prend deux disques, les deux travaillent en parallèle. Si un disque est détérioré toutes les données sont perdues ;
@@ -350,10 +448,10 @@ Les données des utilisateurs doivent être stockées dans une base de données.
  \end{itemize}
  
 \subsection{Modélisation avec GNS3}
-La mise en place du projet nécessite de faire de la modélisation, c'est à dire représenter l'architecture réseau du projet de façon visuelle pour avoir un modèle, un plan représentatif de la solution à déployer. GNS3 est un logiciel libre qui permet de modéliser des architectures réseaux, de simuler des architectures réseaux, de visualiser et de tester le résultat grâce à la virtualisation.
-%Pour mettre en place notre projet il va falloir le modéliser, c'est à dire représenter toute notre architecture réseau de façon visuelle pour avoir un modèle, un plan représentatif de la solution à déployer. GNS3 est un logiciel libre qui permet de modéliser des architectures réseaux, de simuler des architectures réseaux, de visualiser et de tester le résultat grâce à la virtualisation.
+La mise en place du projet nécessite de faire de la modélisation, c'est-à-dire représenter l'architecture réseau du projet de façon visuelle pour avoir un modèle, un plan représentatif de la solution à déployer. GNS3 est un logiciel libre qui permet de modéliser des architectures réseaux, de simuler des architectures réseaux, de visualiser et de tester le résultat grâce à la virtualisation.
+%Pour mettre en place notre projet il va falloir le modéliser, c'est-à-dire représenter toute notre architecture réseau de façon visuelle pour avoir un modèle, un plan représentatif de la solution à déployer. GNS3 est un logiciel libre qui permet de modéliser des architectures réseaux, de simuler des architectures réseaux, de visualiser et de tester le résultat grâce à la virtualisation.
 \subsection{Programmation}
-%Un ordinateur ne comprend que le langage binaire, c'est à dire  1 et 0. Pour pouvoir donc donner une instruction à un ordinateur, il va falloir lui parler son langage qu'il comprend (le binaire). Comme le binaire n'est pas un langage accessible aux humains, on a créé les langages de programmation qui sont des instructions écrites dans un langage accessible à l'homme et qui seront ensuite soient lues, soient compilées, soient interprétées par des programmes spécifiques pour permettre à l'ordinateur de comprendre et donc de réaliser une tâche.
+%Un ordinateur ne comprend que le langage binaire, c'est-à-dire  1 et 0. Pour pouvoir donc donner une instruction à un ordinateur, il va falloir lui parler son langage qu'il comprend (le binaire). Comme le binaire n'est pas un langage accessible aux humains, on a créé les langages de programmation qui sont des instructions écrites dans un langage accessible à l'homme et qui seront ensuite soient lues, soient compilées, soient interprétées par des programmes spécifiques pour permettre à l'ordinateur de comprendre et donc de réaliser une tâche.
 Les langages de programmation sont des instructions écrites dans un langage accessible à l'homme et qui sont ensuite soient lues, soient compilées, soient interprétées par des programmes spécifiques pour permettre à l'ordinateur de réaliser une tâche.
 \subsubsection{HTML, CSS, PHP, JAVASCRIPT, JQUERY, BASH}
 Les langages de programmation  web sont des langages de programmation qui interviennent dans le web. Il s'agit d'un ensemble de technologies qui permettent de créer des pages web dynamiques.
@@ -377,14 +475,14 @@ Le serveur SMTP permet d'envoyer un mail. A titre d'exemple, si Toto (qui a pour
 	\item Toto va se connecter depuis son poste (ordinateur, téléphone portable) à son serveur SMTP, rédiger le mail et l'envoyer ;
 	\item Le serveur SMTP de Toto (Toto est l'émetteur ou expéditeur) avant  d'envoyer le mail, va vérifier  si le destinataire du mail (dans notre cas Baké) est sur le même serveur. En d'autres termes, il vérifie si l'expéditeur et le destinataire sont sur le même serveur. Il se sert de la partie nom de domaine de l'adresse email pour la vérification. Dans notre cas le serveur SMTP de Toto vérifie si Baké appartient à ce même serveur. La partie nom de domaine de toto est \textbf{toto.com} et de baké est \textbf{gmail.com} . Les deux ne sont pas identiques donc Toto et Baké sont sur deux serveurs SMTP différents ;
 	\item Dans le cas où le destinataire appartient au serveur SMTP de l'émetteur, le serveur SMTP de l'émetteur va enregistrer directement le mail dans le dossier de réception des mails du destinataire qui est situé sur ce même serveur ;
-	\item Dans le cas où l'expéditeur et le destinataire sont sur différents serveurs, le serveur SMTP de l'expéditeur va transmettre le mail à un autre serveur SMTP. Ce serveur va ensuite vérifier si le courriel lui est destiné. Si le courriel ne lui est pas destiné,  il va à son tour router le mail, c'est-a-dire envoyer le courriel à un autre serveur SMTP. Le mail sera routé jusqu'à arriver sur le serveur SMTP du destinataire. Le serveur du destinataire va stocker le mail dans le répertoire de réception du destinataire. Très souvent, il n'a pas de routage des mails et le serveur SMTP de l'expéditeur envoie directement le message au serveur SMTP du destinataire. Pour notre illustration, le serveur SMTP du domaine eneam.da va transmettre le mail au serveur SMTP du domaine gmail.com. Le serveur SMTP de gmail.com va réceptionner le mail dans le répertoire de Baké.
+	\item Dans le cas où l'expéditeur et le destinataire sont sur différents serveurs, le serveur SMTP de l'expéditeur va transmettre le mail à un autre serveur SMTP. Ce serveur va ensuite vérifier si le courriel lui est destiné. Si le courriel ne lui est pas destiné,  il va à son tour router le mail, c'est-à-dire envoyer le courriel à un autre serveur SMTP. Le mail sera routé jusqu'à arriver sur le serveur SMTP du destinataire. Le serveur du destinataire va stocker le mail dans le répertoire de réception du destinataire. Très souvent, il n'a pas de routage des mails et le serveur SMTP de l'expéditeur envoie directement le message au serveur SMTP du destinataire. Pour notre illustration, le serveur SMTP du domaine eneam.da va transmettre le mail au serveur SMTP du domaine gmail.com. Le serveur SMTP de gmail.com va réceptionner le mail dans le répertoire de Baké.
 	%\item Dans le cas où l'expéditeur et le destinataire sont sur différents serveurs, le serveur SMTP de l'expéditeur va transmettre le mail au serveur SMTP du destinataire. Le serveur du destinataire va stocker le mail dans le répertoire du destinataire. Pour notre illustration, le serveur SMTP du domaine eneam.da va transmettre le mail au serveur SMTP du domaine gmail.com. Le serveur SMTP de gmail.com va réceptionner le mail dans le répertoire de Baké.
 	%\item Le serveur SMTP de Baké va recevoir le mail de Toto et le stocker dans le répertoire personnel de Toto.	   
 \end{itemize}
 \begin{comment}
 \begin{itemize}
 	\item Toto va envoyer le mail depuis son poste à son serveur SMTP. 
-	\item Le serveur SMTP de Toto va réceptionner le mail et vérifier s'il lui est destiné (il va vérifier si le destinataire du mail est sur ce serveur, c'est à dire si Baké appartient à ce serveur. toto@toto.com a pour domaine toto.com. et bake@gmail.com a pour domaine gmail.com. toto.com est différent de gmail.com donc les deux comptes mail ne sont pas sur le même serveur ). Si cette condition est vérifiée, il va enregistrer le mail dans le répertoire de réception des mails de Baké sinon il va relayer le mail vers le serveur SMTP de Baké. 
+	\item Le serveur SMTP de Toto va réceptionner le mail et vérifier s'il lui est destiné (il va vérifier si le destinataire du mail est sur ce serveur, c'est-à-dire si Baké appartient à ce serveur. toto@toto.com a pour domaine toto.com. et bake@gmail.com a pour domaine gmail.com. toto.com est différent de gmail.com donc les deux comptes mail ne sont pas sur le même serveur ). Si cette condition est vérifiée, il va enregistrer le mail dans le répertoire de réception des mails de Baké sinon il va relayer le mail vers le serveur SMTP de Baké. 
 	\item Le serveur SMTP de Baké va recevoir le mail de Toto et le stocker dans le répertoire personnel de Toto.	   
 \end{itemize}
 \end{comment}
@@ -404,9 +502,9 @@ La lecture des mails se fait par l'établissement d'une connexion au serveur. On
 \caption{Réception d'un mail en IMAP}
 \label{Reception d'un mail en IMAP}
 \end{figure}
-Lorsqu’un compte mail est configuré avec IMAP, le client email établit une connexion avec le serveur avant chaque consultation. On accède donc aux dossiers et emails dont le contenu sera chargé directement depuis le serveur sur demande. Avec ce protocole tous les messages peuvent être enregistrés sur le serveur et donc être accessibles jusqu’à leur suppression définitive. IMAP permet de ce fait la consultation des messages depuis n’importe quel ordinateur ou client connecté à internet. IMAP utilise le port TCP 143 et permet avec la TLS (Transport Layer Security) de fournir un accès sécurisé au serveur. Il est aussi possible d’avoir un accès sécurisé en SSL via le port 993 mais ceci est déconseillé par la RFC 2595.
+Lorsqu’un compte mail est configuré avec IMAP, le client email établit une connexion avec le serveur avant chaque consultation. On accède donc aux dossiers et mails dont le contenu sera chargé directement depuis le serveur sur demande. Avec ce protocole tous les messages peuvent être enregistrés sur le serveur et donc être accessibles jusqu’à leur suppression définitive. IMAP permet de ce fait la consultation des messages depuis n’importe quel ordinateur ou client connecté à internet. IMAP utilise le port TCP 143 et permet avec la TLS (Transport Layer Security) de fournir un accès sécurisé au serveur. Il est aussi possible d’avoir un accès sécurisé en SSL via le port 993.
 \subsubsection{POP}
-Avec le protocole POP (Post Office Protocol), le client de messagerie se connecte au serveur, copie tous les nouveaux messages présents sur sa boîte mail vers le disque dur de son ordinateur puis les courriels sont supprimés du serveur. Certains logiciels de courriel peuvent être configurés pour permettre de garder une copie des courriels sur le serveur. Grâce à POP on peut donc se connecter et récupérer ses messages vers son poste. En cas d’interruption de la connexion la gestion des mails se fait en hors-ligne. De plus, le protocole POP fournit un accès bloqué à la boite mail c’est-à-dire qu’aucune autre connexion n’est permise en même temps que la connexion déjà en cours.% Les clients POP ont recours au port 110. Depuis la version 3 de POP il est possible de configurer un serveur POP qu’il fonctionne comme de l’IMAP.
+Avec le protocole POP (Post Office Protocol), le client de messagerie se connecte au serveur, copie tous les nouveaux messages présents sur sa boîte mail vers le disque dur de son ordinateur puis les courriels sont supprimés du serveur. Certains logiciels de courriel peuvent être configurés pour permettre de garder une copie des courriels sur le serveur. En cas d’interruption de la connexion, la gestion des mails se fait en hors-ligne. De plus, le protocole POP fournit un accès bloqué à la boîte mail c’est-à-dire qu’aucune autre connexion n’est permise en même temps que la connexion déjà en cours.% Les clients POP ont recours au port 110. Depuis la version 3 de POP il est possible de configurer un serveur POP qu’il fonctionne comme de l’IMAP.
 
 \subsubsection{Différences entre IMAP et POP}
 \cesure
@@ -420,7 +518,7 @@ Avec le protocole POP (Post Office Protocol), le client de messagerie se connect
 	\hline	
 	Connexion persistante (durable) & Connexion lors de l'extraction d'emails uniquement \\
 	\hline
-	Les emails sont conservés sur le serveur & Les emails sont supprimés immédiatement après avoir été téléchargés avec succèss \\
+	Les emails sont conservés sur le serveur & Les emails sont supprimés immédiatement après avoir été téléchargés avec succès \\
 	\hline
 	Il est possible de charger les mails sur plusieurs clients & Un courriel ne peut être chargé que sur un seul client \\
 	\hline
@@ -430,7 +528,7 @@ Avec le protocole POP (Post Office Protocol), le client de messagerie se connect
 \end{table}
 \nocesure
 
-Il est conseillé de préférer le protocole IMAP au protocole POP car en plus de permettre l'accès multiple au serveur, le protocole IMAP rend possible le changement de client de messagerie sans risque de perte de données. De même IMAP synchronise automatiquement les messages.
+Il est conseillé de préférer le protocole IMAP au protocole POP car en plus de permettre l'accès multiple au serveur, le protocole IMAP rend possible le changement de client de messagerie sans risque de perte de données. De même IMAP synchronise automatiquement les messages et permet de gérer les dossiers du type \textbf{\og messages envoyés, spams, brouillons \fg{}}.
 
 \begin{comment}
 \subsubsection{IMAP}
@@ -479,9 +577,9 @@ Le firewall (pare-feu en français) est l'instrument qui va permettre de protég
 \subsection*{Conclusion}
 Nous allons installer un serveur Linux Ubuntu qui va contenir un certain nombre de services :
 \begin{itemize}
-	\item  Un serveur SMTP et IMAP pour l'envoi et la réception des mails ;
-	\item  Un serveur web pour envoyer les mails depuis une application web (un webmail) ;
-	\item  Un site web d'administration pour créer des comptes mails et réaliser quelques tâches d'administration ;
+	\item Un serveur SMTP et IMAP pour l'envoi et la réception des mails ;
+	\item Un serveur web pour envoyer les mails depuis une application web (un webmail) ;
+	\item Un site web d'administration pour créer des comptes mails et réaliser quelques tâches d'administration ;
 	\item Une base de données pour sauvegarder les informations d'authentification ; 
 	\item Un serveur FTP pour envoyer les données du site d'administration sur le serveur ;
 	\item Un site web d'administration développé en PHP et en javascript ; 
@@ -512,6 +610,7 @@ Nous utilisons comme OS \href{https://ubuntu-fr.org/telechargement?variante=serv
 %L'avantage est qu'on ne va pas s'embêter avec des mises régulières comme avec un OS standard. Le choix de l'hyperviseur VMware est axé sur le fait qu'il supporte une meilleure intégration avec l'émulateur d'architectures réseaux GNS3.%\footnote{Sera détaillé dans la suite}. 
 %\subsection{Installation du serveur}
 
+Nous suivons à ce niveau les instructions de Lavanant dans son cours \textbf{montez un serveur de fichiers sous linux}.
 La première étape est l'installation de l'hyperviseur VMware workstation. Pour cela,  il faut :
 \begin{itemize}
 	\item Se rendre sur le site de VMware en  utilisant le lien \url{https://www.vmware.com} ; % cliquant \href{https://my.vmware.com/en/web/vmware/free}{ici} ;
@@ -552,10 +651,10 @@ La configuration du réseau nécessite d'avoir d'interfaces réseaux dans la mac
 	% Nous allons configurer un disque dur spécial pour les données liées aux mails que le serveur va contenir.
 \subsection{Système de fichier}
 Un fichier est un contenu (ou un conteneur de données) binaire qui porte un nom et a souvent une extension qui permet de le distinguer. Ainsi, il est facile de reconnaître une image par son extension jpeg ou un document word par docx. Les fichiers sont stockés sur un support de masse (disque dur, carte mémoire). Un système de fichier est un index qui définit comment les fichiers sont stockés et organisés sur un disque afin de permettre et de faciliter l'accès aux différents fichiers. On distingue différents systèmes de fichiers FAT32, NTFS, EXT3, EXT4. EXT4 est l'actuel système de fichier qui est utilisé sur Linux. Il n'est pas compatible Windows (Windows ne supporte pas nativement le système de fichier EXT4). Donc pour stocker des informations sur un disque dur, il faut d'abord le préparer par la création du système de fichier et le formatage du disque. % Cela se fait par la création du système de fichier et le formatage du disque dur.
-%	Toutes les données contenues dans un ordinateur sont du binaires( suite de 0 et 1). Il n'a aucun moyen pour un homme de distinguer alors les données. Pour cela on a créé les fichiers. Un fichier est alors un contenu (ou un conteneur de données) binaire qui porte un nom et a une extension qui permet de le distinguer. Ainsi, il est facile pour un homme de reconnaître une image par son extension jpeg ou un document word par docx. Les fichiers sont stockés sur un stockage de masse (disque dur, carte mémoire). Un système de fichier est un index qui définit comment les fichiers sont stockés et organisés sur le stockage afin de permettre et faciliter l'accès aux différents fichiers. On distingue différents systèmes de fichiers fat32, NTFS, ext3, ext4. EXT4 est l'actuel système de fichier qui est utilisé sur Linux. Il n'est pas compatible Windows, c'est à dire que Windows ne supporte pas le système de fichier EXT4. Donc pour pouvoir stockés des informations sur un disque dur, il faut d'abord le préparer. Cela se fait en créant le système de fichier puis en formatant le disque dur.
+%	Toutes les données contenues dans un ordinateur sont du binaires( suite de 0 et 1). Il n'a aucun moyen pour un homme de distinguer alors les données. Pour cela on a créé les fichiers. Un fichier est alors un contenu (ou un conteneur de données) binaire qui porte un nom et a une extension qui permet de le distinguer. Ainsi, il est facile pour un homme de reconnaître une image par son extension jpeg ou un document word par docx. Les fichiers sont stockés sur un stockage de masse (disque dur, carte mémoire). Un système de fichier est un index qui définit comment les fichiers sont stockés et organisés sur le stockage afin de permettre et faciliter l'accès aux différents fichiers. On distingue différents systèmes de fichiers fat32, NTFS, ext3, ext4. EXT4 est l'actuel système de fichier qui est utilisé sur Linux. Il n'est pas compatible Windows, c'est-à-dire que Windows ne supporte pas le système de fichier EXT4. Donc pour pouvoir stockés des informations sur un disque dur, il faut d'abord le préparer. Cela se fait en créant le système de fichier puis en formatant le disque dur.
 \subsection{Ajout de disque dur au serveur}	
 \begin{itemize}
-	\item Eteindre le serveur s'il est allumé. Dans les paramètres de la machine virtuelle, nous ajoutons trois disques de 2 giga configurés en SCSI\footnote{Est une spécification matérielle des disques.};
+	\item Eteindre le serveur s'il est allumé. Dans les paramètres de la machine virtuelle, nous ajoutons trois disques de 2 giga ;
 	\item Redémarrer la machine et exécuter la commande :
 	\begin{exempleConsole}
 		ls -la /dev/sd* 
@@ -630,7 +729,9 @@ Un fichier est un contenu (ou un conteneur de données) binaire qui porte un nom
 %On redémarre la machine ensuite on exécute les instructions suivantes : \\
 %On affiche la liste des disques durs. 
 \section{Configurer le LAMP}
-Dans cette section, Nous allons installer PHP, MariaDB qui est un fork\footnote{C'est quand des développeurs d'un logiciel en général libre n'étant plus d'accord pour continuer le projet se séparent et créent leur propre version du logiciel à partir du code source de départ.} de MySQL.
+
+Dans cette section, Nous allons installer PHP, MariaDB qui est un fork\footnote{C'est quand des développeurs d'un logiciel en général libre n'étant plus d'accord pour continuer le projet se séparent et créent leur propre version du logiciel à partir du code source de départ.} de MySQL. Le cours  \textbf{gérez votre serveur linux et ses services de Lavanant
+} dont nous allons nous inspiré traite correctement de la configuration du LAMP.
 %On va installer PHP, MariaDB qui est un fork\footnote{C'est quand des développeurs d'un logiciel en général libre n'étant plus d'accord pour continuer le projet se séparent et créent leur propre version du logiciel à partir du code source de départ.} de MySQL.
 \begin{exempleConsole}
 sudo su
@@ -647,7 +748,7 @@ sudo systemctl restart apache2
 \subsection{Gestion de Apache}
 Nous changeons les ports sur lesquels écoute Apache httpd et il écoutera en local (l'interface localhost) sur 7080 pour le HTTP et 7443 pour le HTTPS. L'avantage est que notre serveur apache n'est pas exposé à l'extérieur. On verra seulement notre reverse-proxy Nginx de l'extérieur. Nous modifions le fichier /etc/apache2/ports.conf
 \exempleConsoleFileBash{source/apache-ports.conf}
-Nous allons configurer les virtualhosts (c'est à dire les deux sites web qui seront hébergés sur le serveur). Ces sites seront sécurisés avec des certificats auto-signés\footnote{Un certificat auto-signé est un certificat qui n'est pas créé par une autorité de certification.}.\label{ref:rainloop}
+Nous allons configurer les virtualhosts (c'est-à-dire les deux sites web qui seront hébergés sur le serveur). Ces sites seront sécurisés avec des certificats auto-signés\footnote{Un certificat auto-signé est un certificat qui n'est pas créé par une autorité de certification.}.\label{ref:rainloop}
 Nous créons le fichier /etc/apache2/site-available/www.eneam.da.conf ; il est associé au client webmail qui va lire les courriers.
 \cesure
 \exempleConsoleFile{source/www.eneam.da.conf}
@@ -667,10 +768,11 @@ Nous n'activons pas ces virtualhosts pour éviter une erreur d'Apache puisque le
 sudo apt-get install nginx libapache2-mod-rpaf
 \end{exempleConsole}
 
-Il faut créer les  \textbf{server blocs}\footnote{Dans Nginx, les virtualhosts sont appelés des servers blocs.} associés à nos virtualhosts. Pour le premier /etc/nginx/site-available/www.admin.eneam.da .
+Il faut créer les  \textbf{server blocs}\footnote{Dans Nginx, les virtualhosts sont appelés des servers blocs.} associés à nos virtualhosts. Pour le premier /etc/nginx/site-available/www.admin.eneam.da :
 \exempleConsoleFileBash{source/www.admin.eneam.da}
-Le fichier /etc/nginx/site-available/www.eneam.da .
+Le fichier /etc/nginx/site-available/www.eneam.da :
 \exempleConsoleFileBash{source/www.eneam.da}
+
 \subsection*{Résumé}
 En somme, nous avons configuré un serveur web Nginx accessible depuis l'extérieur. Lorsqu'on va se connecter aux différents sites depuis un navigateur, les requêtes (HTTP et HTTPS pour être précis) sont envoyées à Nginx. Nginx filtre  ces requêtes et va ensuite rediriger les requêtes en interne vers Apache. Apache en traitant ses requêtes, va déléguer la gestion des scripts PHP au processus FastCGI \emph{\textbf{PHP-FPM}}. Tout ceci se fait de façon transparente pour l'utilisateur.
 \begin{figure}[H]
@@ -679,6 +781,7 @@ En somme, nous avons configuré un serveur web Nginx accessible depuis l'extéri
 	\caption{Résumé du fonctionnement web du réseau \textbf{projetmail}}
 \end{figure}
 \section{Modélisation de l'architecture réseau avec GNS3}
+Pour cette étape, nous suivons les instructions de Motta dans son cours simulez des architectures réseaux avec gns3.
 Il faut: 
 \begin{itemize}
 	\item Télécharger les logiciels GNS3  et GNS3 VM sur le site officiel de GNS3 et installer GNS3 ;
@@ -701,9 +804,9 @@ Il faut:
 Le réseau est séparé en deux grandes parties: la zone A et la zone B
 %Nous avons opté pour un modèle générique. Le réseau est séparé en deux grandes parties: la zone A et la zone B
 \begin{itemize}
-\item La zone A : représente le réseau existant de l'ENEAM. Il est géré par \emph{\textbf{routeurEneam}} et est relié au routeur routeurMail. La configuration de cette zone ne nous intéresse pas. Elle permet de mieux comprendre l'architecture du projet et de comprendre que le projet est générique car il peut s'adapter à tout type d'organisation existante sans toucher au système d'information\footnote{Un système d'information est un ensemble de ressources matérielles, humaines qui permet de collecter, de stocker, de traiter et de diffuser l'information.} existant ;
+\item La zone A : représente le réseau existant de l'ENEAM. Il est géré par \emph{\textbf{routeurEneam}} et est relié au routeur routeurMail. La configuration de cette zone ne nous intéresse pas. Elle permet de mieux comprendre l'architecture du projet. En effet, le projet est générique car il peut s'adapter à tout type d'organisation existante sans toucher au système d'information\footnote{Un système d'information est un ensemble de ressources matérielles, humaines qui permet de collecter, de stocker, de traiter et de diffuser l'information.} existant ;% Elle permet de mieux comprendre l'architecture du projet et de comprendre que le projet est générique car il peut s'adapter à tout type d'organisation existante sans toucher au système d'information\footnote{Un système d'information est un ensemble de ressources matérielles, humaines qui permet de collecter, de stocker, de traiter et de diffuser l'information.} existant ;
 \item La zone B: le nouveau réseau relié par le routeur routeurMail ;
-L'avantage d'une telle architecture est que l'administrateur du réseau ENEAM peut communiquer avec le réseau mail à travers un tunnel (VPN) s'il est configuré ;
+L'avantage d'une telle architecture est que l'administrateur du réseau de l'ENEAM peut communiquer avec le réseau mail à travers un tunnel (VPN) s'il est configuré ;
 \item \textbf{routeurEneam} procède trois interfaces réseaux : em1 dans son réseau local, em2 qui le relie à routeurMail et em0 pour le WAN ;
 \item \textbf{routeurMail} de même à trois interfaces ;
 \item \textbf{dns1} est un docker\footnote{Est un conteneur qui contient un service et toutes les dépendances de ce dernier. Il permet d'isoler le service qu'on veut déployer (ici DNS) sans avoir à s'encombrer d'autres services dont on n'a pas besoin. Sans un docker, on aurait à installer un autre serveur Linux juste pour le DNS mais qui contient déjà plein de programmes dont nous n'avons  pas besoin. En somme un docker contient le strict minimum.} qui contient un petit serveur DNS qui va servir à la résolution dynamique des noms de domaine au sein du réseau local ;
@@ -769,7 +872,7 @@ network:
 \section{Installation Postfix}
 L'installation du serveur SMTP Postfix va se faire toujours avec notre gestionnaire de paquet apt
 \begin{exempleConsole}
-apt-get install postfix  postfix-mysql #et on reponds aux boites de dialogues qui s'affiche
+apt-get install postfix  postfix-mysql #et on reponds aux boîtes de dialogues qui s'affiche
 \end{exempleConsole}
 
 Les fichiers de configuration de postfix sont dans le dossier /etc/postfix/.
@@ -786,7 +889,7 @@ Dans ce fichier :
 	\item Toujours pour la sécurité nous utilisons des certificats auto-signés ; 
 	\item La propriété virtual\_mailbox\_domains = mysql:/etc/postfix/sql/mysql-virtual-mailbox-domains.cf définit le fichier qui va contenir la directive de connexion à notre base de données MySQL plus précisément MariaDB ;
 	%\item virtual\_mailbox\_maps = mysql:/etc/postfix/sql/mysql-virtual-mailbox-maps.cf.	
-	\item La partie utilisation de boite virtuelle va permettre d'utiliser les virtualhosts ; c'est à dire des comptes mails virtuels qui ne représentent pas les mails des utilisateurs réels de la machine \textbf{serveur}. L'utilisateur vhosts est créé par la commande
+	\item La partie utilisation de boîte virtuelle va permettre d'utiliser les virtualhosts ; c'est-à-dire des comptes mails virtuels qui ne représentent pas les mails des utilisateurs réels de la machine \textbf{serveur}. L'utilisateur vhosts est créé par la commande
 	\begin{exempleConsole}
 	groupadd -g 5000 vhosts 
 	useradd -g vhosts -u 5000 vhosts -d /externe/mail/vhosts -s /bin/false -m
@@ -796,7 +899,7 @@ Dans ce fichier :
 Le fichier mysql-virtual-mailbox-domains.cf contient :
 \begin{exempleConsole}
 user = messagerieUser
-password = isidore
+password = amettre
 hosts = 127.0.0.1
 dbname = messagerie
 query = SELECT 1 FROM virtual_domains WHERE name='%s'
@@ -819,11 +922,13 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/dov
 Nous modifions le fichier master.cf. Il va permettre de renforcer la sécurité et d'obliger le serveur à accepter que des connexions sécurisées.
 \cesure
 \exempleConsoleFile{source/postfix-master.cf}
+
 Les directives spamassassin permettent d'indiquer à Postfix d'utiliser spamassassin comme filtre anti spam.
 %\subsection{Création de la base de données des tables}
 
 \section{Installation de Dovecot}
 Dovecot est un serveur IMAP et POP.
+Le gestionnaire de paquet d'Ubuntu propose l'installation d'une ancienne version de Dovecot. Pour avoir la dernière version, nous suivons les instructions données par la documentation officielle de Dovecot \cite{ref1}.
 \begin{exempleConsole}
 # Le package dovecot qui est dans linux 
 curl https://repo.dovecot.org/DOVECOT-REPO-GPG | gpg --import
@@ -835,7 +940,7 @@ apt-get install dovecot-core dovecot-imapd dovecot-mysql dovecot-lmtpd dovecot-p
 \end{exempleConsole}
 
 Nous allons dans le dossier de configuration de dovecot /etc/dovecot/ .
-Nous modifions le fichier /etc/dovecot/conf.d/10-mail.conf dans lequel nous allons éditer deux lignes :
+Nous modifions le fichier /etc/dovecot/conf.d/10-mail.conf dans lequel nous allons éditer quelques lignes :
 \begin{exempleConsole}
 mail_location = maildir:/externe/mail/vhosts/%d/%n
 mail_uid = vhosts
@@ -843,6 +948,8 @@ mail_gid = vhosts
 mail_privileged_group = mail
 first_valid_uid = 5000
 last_valid_uid = 5000
+#Nous activons les plugins dont on aura besoin
+mail_plugins = quota acl 
 \end{exempleConsole}
 
 Nous modifions le fichier /etc/dovecot/conf.d/10-auth.conf .
@@ -852,7 +959,7 @@ auth_mechanisms = plain login
 !include auth-sql.conf.ext
 \end{exempleConsole}
 
-Le fichier /etc/dovecot/conf.d/auth-sql.conf.ext contient
+Le fichier /etc/dovecot/conf.d/auth-sql.conf.ext contient :
 \begin{exempleConsole}
 passdb {
   driver = sql
@@ -864,12 +971,12 @@ userdb {
 }
 \end{exempleConsole}
 
-Le fichier /etc/dovecot/dovecot-sql.conf.ext 
+Le fichier /etc/dovecot/dovecot-sql.conf.ext :
 \begin{exempleConsole}
 driver = mysql 
 default_pass_scheme = ARGON2I
 connect = host=127.0.0.1 dbname=messagerie user=messagerieUser password=AMETTRE
-password_query = SELECT email as user, password FROM virtual_users WHERE email='%u' WHERE state=TRUE
+password_query = SELECT email as user, password FROM virtual_users WHERE email='%u'AND state=TRUE
 \end{exempleConsole}
 
 Le fichier 10-master.conf
@@ -965,10 +1072,64 @@ Nous créons le fichier /etc/dovecot/dovecot-sql-master.conf.ext
 driver = mysql
 connect = host=127.0.0.1 dbname=messagerie user=messagerieUser password=amettre	
 default_pass_scheme = ARGON2I
-password_query = SELECT email as user , password FROM admin WHERE email='%u'
+password_query = SELECT email as user , password FROM admin WHERE email='%u' AND `state`=TRUE
+\end{exempleConsole}
+\nocesure
+Les administrateurs seront autorisés uniquement à lire les mails des utilisateurs. Pour cela, nous utilisons le plugin ACL ( Access Control List) de Dovecot et nous éditons le fichier /etc/dovecot/conf.d/90-acl.conf .
+\begin{exempleConsole}
+plugin {
+	acl = vfile:/etc/dovecot/global-acls:cache_secs=5
+	acl_user= %u
+	master_user= %u
+	acl_globals_only = yes
+}	
+\end{exempleConsole}
+
+Le fichier /etc/dovecot/global-acls contient :
+\begin{exempleConsole}
+* user=masteruser lr	
+\end{exempleConsole}
+
+\subsection*{Limiter la taille des boîtes aux lettres}
+Le plugin quota permet de limiter la taille des boîtes aux letres des utilsateurs. Il est permet aussi d'envoyer des messages d'alertes aux utilisateurs lorsqu'un quota est atteint. La taille des boîtes aux lettres sera limitée à 1 giga. 
+Nous éditons le fichier /etc/dovecot/conf.d/90-quota.conf .
+\begin{exempleConsole}
+plugin {
+	quota_rule = *:storage=1G	 
+	# Quota plugin can also limit the maximum accepted mail size.
+	quota_max_mail_size = 100M
+}
+plugin {
+  quota_warning = storage=95%% quota-warning 95 %u
+  quota_warning2 = storage=80%% quota-warning 80 %u
+}
+#Alerte automtiquement les utilisateur lorsque leur boîte est pleine
+service quota-warning {
+  executable = script /usr/local/bin/quota-warning.sh
+  user = dovecot
+  unix_listener quota-warning {
+    mode = 0660
+    user = vhosts
+    group = vhosts
+  }
+}		  
+\end{exempleConsole}
+
+Le contenu du fichier /usr/local/bin/quota-warning.sh est :
+\begin{exempleConsole}
+#!/bin/sh
+PERCENT=$1
+USER=$2
+cat << EOF | /usr/lib/dovecot/dovecot-lda -d $USER -o "plugin/quota=dict:User quota::noenforcing:proxy::sqlquota"
+From: master@eneam.da
+Subject: Alerte boîte de messagerie pleine
+Votre boîte de messagerie est à $PERCENT% pleine. Veuillez envisager de supprimer vos messages.
+Ceci est un message automatique. Ne répondez pas.
+EOF
 \end{exempleConsole}
 
 \section{Installation du client mail}
+Nous suivons la méthode d'installation recommandée par la documentation officielle de Rainloop.
 \begin{exempleConsole}
 mkdir -p /externe/www/rainloop/public_html /externe/www/rainloop/logs 
 cd /var/www/rainloop/public_html 
@@ -1013,13 +1174,22 @@ Il existe des solutions gratuites pour l'administration du mail comme \textbf{po
 %\subsection*{Pourquoi n'ai-je pas utilisé une solution existante ?}
 \begin{itemize}
 \item Les solutions existantes contiennent beaucoup de fonctionnalités que nous avons jugé inutile dans notre contexte. Par exemple nous n'avons pas besoin des alias. Nous ne voulons pas qu'un utilisateur soit en mesure d'accéder à son compte avec différents adresse mails.
-%Prenons les alias. On conçoit difficilement qu'il puisse avoir d'alias de comptes (c'est à dire un alias d'un email ou un étudiant possédant plusieurs comptes).
+%Prenons les alias. On conçoit difficilement qu'il puisse avoir d'alias de comptes (c'est-à-dire un alias d'un email ou un étudiant possédant plusieurs comptes).
 \item L'apprentissage : nous allons comprendre les principes de base pour développer un site web d'administration de mails et écrire des scripts bash. Nous allons combiner toutes les technologies reçues lors de notre apprentissage pour produire un résultat.
 %\item Le bonheur de coder: on va comprendre les principes de base pour coder un site d'administration de mails et écrire des scripts bash; ce qui est très intéressant et montre qu'on arrive à combiner toutes les technologies qu'on nous à enseigner lors des cours et dont on dispose pour produire un résultat ;
 \item Postfixadmin est un outil puissant mais son interface est un peu vieillissant.
 \item La flexibilité: étant donné que nous codons, nous allons adapter l'application à notre besoin.
 \item Il existe des outils efficaces, complets mais pas gratuits et qui contiennent des fonctionnalités qui ne sont pas nécessaire pour nos besoins.\footnote{Beaucoup d'entreprises préfèrent souvent des solutions complètes, faciles d'utilisation comme cPanel. Mais ces outils sont à des prix très onéreux.}
 \end{itemize}
+
+\subsection*{Entités manipulés}
+Nous utilisons le diagramme de classe du langage UML pour représenter les entités qui interagissent.
+En effet, les utilisateurs virtuels représentent les utilisateurs de la messagerie et la classe Admin les adminitrateurs du système. Ces administrateurs sont des rôles et sont responsables de la gestion des utilisateurs.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{figure/diagram-class.png}
+	\caption{Diagramme de Classe UML du site d'administration}
+\end{figure}
 \subsection*{Configuration}
 L'administrateur du système va exécuter des instructions depuis l'interface web et pour communiquer avec la machine \textbf{serveur} via l'interface web, il va appeler des scripts bash. Nous avons un script bash pour créer le répertoire d'un utilisateur, un autre pour supprimer un répertoire lors de la suppression d'un compte, un autre pour connaître l'état d'un service, un pour arrêter ou redémarrer un service. Voici le contenu du script qui redémarre un service :
 \exempleConsoleFileBash{source/restartOrStopService.sh}
@@ -1043,18 +1213,19 @@ Le fichier de configuration de vsftpd /etc/vsftpd.conf
 
 Nous créons le dossier /etc/vsftpd/ puis le fichier /etc/vsftpd/programmeur qui va contenir les directives pour connecter l'utilisateur virtuel \textbf{programmeur} au serveur FTP :
 \exempleConsoleFile{source/programmeur}
+
 \section{Spamassassin}
 Spamassassin est un anti spam. Il va lire dans les logs et vérifier le nombre de tentatives de connexion échouée ou autres paramètres. Si on atteint ou dépasse un seuil, il bloque les connexions du client au serveur. Ce qui empêche les spammeurs d'utiliser le serveur pour envoyer du spam\footnote{Contenu, mail indésirable.}. Plus les règles établies sont strictes, plus les mails seront rejetés. 
 \begin{exempleConsole}
 apt-get install spamassassin
 \end{exempleConsole}
 
-Nous créons un utilisateur propre à spamassassin
+Nous créons un utilisateur propre à spamassassin.
 \begin{exempleConsole}
-sudo adduser spamd --disabled-login
+adduser spamd --disabled-login
 \end{exempleConsole}
 
-Le fichier /etc/default/spamassassin sera modifié
+Le fichier /etc/default/spamassassin sera modifié.
 \begin{exempleConsole}
 ENABLED =1
 OPTIONS="--create-prefs --max-children 5 --username spamd --helper-home-dir /home/spamd/ -s /home/spamd/spamd.log"
@@ -1074,8 +1245,90 @@ Voici le script SQL complet qui gère notre domaine
 \cesure
 \exempleConsoleFileSQL{source/script-database-creation.sql}
 \nocesure
+
 \section{ Sécurité}
-Nous allons écrire des règles iptables 
+Nous allons écrire des règles iptables. La partie 2 du cours sécurisez votre réseau grâce aux VPN et firewall de Motta  \cite{ref17} traite du sujet. Nous créons le fichier /etc/init.d/regle-firewall :
+%\exempleConsoleFile{"source/reglefirewall"}
+\begin{exempleConsole}
+#!/bin/sh
+iptables-restore < /etc/iptables.test.rules
+# On vide les règles déjà existantes
+iptables -t filter -F
+iptables -t filter -X
+
+# On refuse toutes les connexions
+iptables --policy FORWARD DROP
+iptables --policy INPUT  DROP
+iptables --policy OUTPUT  DROP
+echo "On interdit tout"
+
+
+# On autorise les connexions déjà établie
+#iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+#iptables -A OUTPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+# On autorise le loop-back (localhost)
+iptables -t filter -A INPUT -i lo -j ACCEPT
+iptables -t filter -A OUTPUT -o lo -j ACCEPT
+echo "On autorise le localhost"
+
+#FTP
+iptables -A INPUT -p tcp --dport 20 -j ACCEPT
+iptables -A INPUT -p tcp --dport 21 -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 20 -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 21 -j ACCEPT
+iptables -A INPUT -p tcp --dport 20000:20050 -j ACCEPT 
+iptables -A OUTPUT -p tcp --sport 20000:20050 -j ACCEPT
+echo "On autorise le FTP"
+
+#SSH
+iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 22 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+echo "On autorise le SSH"
+
+#SMTP et SMTPS, SMTP sur STARTLS
+iptables -A INPUT -p tcp --dport 25 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -p tcp --dport 465 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -p tcp --dport 587 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 25 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 465 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 587 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+echo "On autorise le SMTP"
+
+#HTTP et HTTPS
+iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -p tcp --dport 443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+#iptables -A INPUT -p tcp --dport 7080 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+#iptables -A INPUT -p tcp --dport 7443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 80 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 443 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+#iptables -A INPUT -p tcp --sport 7443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+echo "On autorise le HTTP "
+
+#IMAP
+iptables -A INPUT -p tcp --dport 143 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -p tcp --dport 993 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A OUUTPUT -p tcp --sport 143 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 993 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+echo "On autorise le IMAP"
+
+## POP3
+iptables -A INPUT -p tcp --dport 110 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -p tcp --dport 995 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 110 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 995 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+echo "On autorise le POP"
+
+# NTP (pour avoir un serveur à l'heure)
+iptables -t filter -A OUTPUT -p udp --dport 123 -j ACCEPT
+
+# On autorise le ping
+iptables -t filter -A INPUT -p icmp -j ACCEPT
+iptables -t filter -A OUTPUT -p icmp -j ACCEPT
+echo "On autorise le ping"
+
+\end{exempleConsole}
+\begin{comment}
 \begin{exempleConsole}
 iptables --policy FORWARD DROP
 iptables --policy INPUT  DROP
@@ -1099,17 +1352,59 @@ iptables --append INPUT --protocol tcp --dport 993 -m conntrack --ctstate NEW,ES
 #MYSQL
 iptables --append INPUT --protocol tcp --dport 3306 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 \end{exempleConsole}
+\end{comment}
+
+Pour activer les règles iptables au démarrage du serveur nous créons le fichier /lib/systemd/system/firewall.service :
+\begin{exempleConsole}
+[Unit]
+Description=Firewall
+Requires=network-online.target
+After=network-online.target
+[Service]
+User=root
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/etc/init.d/regle-firewall.sh start
+ExecStop=/etc/init.d/regle-firewall.sh stop
+[Install]
+WantedBy=multi-user.target	
+\end{exempleConsole}
 
 \section{Cas concret}\label{ref:casConret}
 Nous allons illustrer l'utilisation du système par un exemple pratique. Voici l'énoncé.
 
 \subsection{Enoncé}
-Baké et Toto sont deux nouveaux étudiants de ENEAM. L'administrateur va créer leur comptes emails respectifs. Pour cela, il se connecte à la plateforme www.admin.eneam.da. Une fois les comptes créés, Baké va se connecter par le webmail et va ensuite envoyer un message à Toto. Toto va lui aussi se connecter et répondre au mail reçu. L'administrateur va envoyer aussi un mail de convocation à Toto qui est le responsable de la IG1. Ensuite il va supprimer le compte de Béréké. De même, il va consulter la liste des services et arrêter temporairement le service mail pour raison de maintenance.
+%L'administrateur maître (master@eneam.da) va créer le compte administrateur admin@eneam.da.
+Baké et Toto sont deux nouveaux étudiants de l'ENEAM. L'administrateur maître (master@eneam.da) va créer le compte administrateur \textbf{admin} (le login est admin@eneam.da et le mot de passe est \textbf{\_Admin229@}). L'administrateur \textbf{admin} va créer les comptes emails de Baké et Toto. Pour cela, il se connecte à la plateforme www.admin.eneam.da. Une fois les comptes créés, Baké va se connecter par le webmail et va ensuite envoyer un message à Toto. Toto va lui aussi se connecter et répondre au mail reçu. L'administrateur \textbf{admin} va supprimer le compte de Béréké. De même, il va consulter la liste des services et arrêter temporairement le service mail pour raison de maintenance.
 
 \subsection{Pratique}
 \begin{itemize}
+\item L'administrateur maître se connecte au site d'administration \textbf{admin.eneam.da} et renseigne son mot de passe.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=483pt]{figure/connexion_master_admin.png}
+	\caption{Connexion de l'administrateur master au site d'administration}
+\end{figure}
+\item Une fois connecté, il clique sur l'icône représentant l'utilisateur qui est située à l'extrême droite de l'écran et il choisit  le l'option "Gérer les administrateurs". 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=483pt]{figure/gestion_administrateur_compte.png}
+	\caption{Clic sur l'option Gérer les administrateurs}
+\end{figure}
+\item Il remplit le formulaire d'ajout d'un compte administrateur pour créer l'administrateur admin@eneam.da.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=483pt]{figure/master_creation_admin_compte.png}
+	\caption{Création du compte administrateur admin}
+\end{figure}
+\item Il clique sur le bouton Créer le compte, ensuite le système renvoie un message pour notifier que le compte admin a été créé avec succès.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=483pt]{figure/master_creation_admin_compte_return_success.png}
+	\caption{Message renvoyé lors de la création du compte administrateur admin}
+\end{figure}
 \item Création du compte mail de Baké: Nous allumons le poste admin. Nous ouvrons le navigateur et nous entrons l'adresse www.admin.eneam.da ou admin.eneam.da.
-\item L'administrateur renseigne ses informations de connexion : son mot de passe est \textbf{amettre} et son adresse mail est \textbf{admin@eneam.da}.
+\item L'administrateur \textbf{admin} renseigne ses informations de connexion : son mot de passe est \textbf{\_Admin229@} et son adresse mail est \textbf{admin@eneam.da}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{figure/connexion_admin.png}
@@ -1123,7 +1418,7 @@ Baké et Toto sont deux nouveaux étudiants de ENEAM. L'administrateur va créer
 \includegraphics[width=483pt]{figure/retour_compte_cree.png}
 \caption{Création du compte bake@eneam.da}
 \end{figure} 
-\item Nous cliquons sur le bouton \emph{Créer le compte} 
+\item Nous cliquons sur le bouton \emph{Créer le compte}.
 \item Le système renvoie une information pour notifier que le compte à été créé ou s'il a eu une erreur (par exemple si le compte existe déjà).
 \item Il reprend la même opération pour Toto avec pour adresse mail toto@eneam.da et mot de passe to21@kesccT .
 \item Baké tape www.eneam.da pour accéder au client webmail. Il saisit ses informations de connexion et se connecte.
@@ -1132,22 +1427,27 @@ Baké et Toto sont deux nouveaux étudiants de ENEAM. L'administrateur va créer
 \includegraphics[width=483pt]{figure/connexion_bake_large_screen.png}
 \caption{Connexion de Baké au client webmail}
 \end{figure} 
-\item Il crée un nouveau message à destination de Toto et l'envoie
+\item Il crée un nouveau message à destination de Toto et l'envoie.
 \begin{figure}[H]
 \centering
 \includegraphics[width=483pt]{figure/bake_send_mail_to_toto1.png}
 \caption{Envoi d'un mail de Baké à Toto}
 \end{figure}
 
-\item Toto se connecte voit le message et répond.
+\item Toto se connecte et voit le message dans sa boite de réception.
 \begin{figure}[H]
 \centering
 \includegraphics[width=483pt]{figure/toto_see_mail_from_bake1.png} \\[1cm]
-\includegraphics[width=483pt]{figure/toto_reply_to_bake1.png}
-\caption{Réponse de Toto au mail de Baké}
+\caption{Consultation de la boite de réception de Toto}
+\end{figure} 
+\item Toto répond au mail provenant de Baké.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=483pt]{figure/toto_reply_to_bake1.png}
+	\caption{Réponse de Toto au mail de Baké}
 \end{figure} 
 
-\item L'administrateur se connecte aussi et envoie un message de convocation à Toto 
+\begin{comment}
 \item Toto se connecte voit le message de Baké et répond.
 \begin{figure}[H]
 \centering
@@ -1155,22 +1455,28 @@ Baké et Toto sont deux nouveaux étudiants de ENEAM. L'administrateur va créer
 \includegraphics[width=483pt]{figure/toto_reply_to_bake1.png}
 \caption{Lecture du mail reçu de Baké par Toto}
 \end{figure} 
+\end{comment}
 
-\item L'administrateur supprime le compte de Béréké : Pour cela il clique sur le menu Adresse mail. Ensuite, il recherche le compte de Toto et clique sur le bouton représenté par un bonhomme avec une croix. Une boite de dialogue apparaît et demande de confirmer la suppression. Il clique sur oui supprimer. Des pop-ups apparaissent pour notifier si le compte a été supprimé. Il a la possibilité de les effacer ou de les enregistrer dans un fichier au format texte. % au cas où il voudrait écrire des notes plus tard. 
+\item L'administrateur \textbf{admin}  supprime le compte de Béréké : Pour cela il clique sur le menu Adresse mail. Ensuite, il recherche le compte de Toto et clique sur le bouton représenté par un bonhomme avec une croix. Une boîte de dialogue apparaît et demande de confirmer la suppression. Il clique sur oui supprimer. Des pop-ups apparaissent pour notifier si le compte a été supprimé. Il a la possibilité de les effacer ou de les enregistrer dans un fichier au format texte. % au cas où il voudrait écrire des notes plus tard. 
 \begin{figure}[H]
 \centering
-\includegraphics[width=483pt]{figure/admin_delete_bereke_acount1.png} \\[1cm]
-\includegraphics[width=483pt]{figure/admin_delete_bereke_acount2.png}
-\caption{Suppression du compte de Béréké}
+\includegraphics[width=483pt]{figure/admin_delete_bereke_acount1.png}
+\caption{Suppression du compte de Béréké : confirmation de la suppression}
+\end{figure} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=483pt]{figure/admin_delete_bereke_acount2.png}
+	\caption{Suppression du compte de Béréké: réponse du système}
 \end{figure}  
-\item L'administrateur clique sur le menu Services. Il observe sur cette page 5 services. Le service Apache, Nginx, PHP7.2-FPM, Postfix, Dovecot. Il peut choisir de redémarrer un service en cliquant sur l'icône redémarrer dans le champ correspondant ou redémarrer tous les services à la fois en cliquant sur le bouton redémarrer tous les services. Il peut de même arrêter un service au besoin. Il est impossible d'arrêter les services web (Apache, Nginx, PHP7.2-FPM). En effet, il contrôle le serveur par l'interface web. S'il arrête donc les services web, il serait impossible de manipuler le serveur depuis le navigateur et il sera bloqué. C'est d'ailleurs la raison pour laquelle l'icône arrêter est désactivé pour ces trois services.
+
+\item L'administrateur \textbf{admin}  clique sur le menu Services. Il observe sur cette page 5 services. Le service Apache, Nginx, PHP7.2-FPM, Postfix, Dovecot. Il peut choisir de redémarrer un service en cliquant sur l'icône redémarrer dans le champ correspondant ou redémarrer tous les services à la fois en cliquant sur le bouton redémarrer tous les services. Il peut de même arrêter un service au besoin. Il est impossible d'arrêter les services web (Apache, Nginx, PHP7.2-FPM). En effet, il contrôle le serveur par l'interface web. S'il arrête donc les services web, il serait impossible de manipuler le serveur depuis le navigateur et il sera bloqué. C'est d'ailleurs la raison pour laquelle l'icône arrêter est désactivé pour ces trois services.
 \begin{figure}[H]
 \centering
 \includegraphics[width=483pt]{figure/admin_verify_state_of_service.png}
 \caption{Vérification de l'état des services}
 \end{figure}  
 
-\item L'administrateur arrête les services mails (Postfix et Dovecot)
+\item L'administrateur \textbf{admin}  arrête les services mails (Postfix et Dovecot)
 \begin{figure}[H]
 \centering
 \includegraphics[width=483pt]{figure/admin_stop_service_mail.png}
@@ -1209,6 +1515,7 @@ Notre stage académique effectué au sein de JScom s'est révélé être une exp
 \nocite{ref14}
 \nocite{ref15}
 \nocite{ref16}
+\nocite{ref17}
 \bibliographystyle{plain}
 \bibliography{bibliographie} % mon fichier de base de données s'appelle bibliogrphie.bib
 \addcontentsline{toc}{chapter}{Bibliographie} %Ajout de Bibliographie dans la table des matieres

@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{g+go}{ENABLED =1}
-\PYG{g+go}{OPTIONS=\PYGZdq{}\PYGZhy{}\PYGZhy{}create\PYGZhy{}prefs \PYGZhy{}\PYGZhy{}max\PYGZhy{}children 5 \PYGZhy{}\PYGZhy{}username spamd \PYGZhy{}\PYGZhy{}helper\PYGZhy{}home\PYGZhy{}dir /home/spamd/ \PYGZhy{}s /home/spamd/spamd.log\PYGZdq{}}
-\PYG{g+go}{CRON =1}
-\end{Verbatim}

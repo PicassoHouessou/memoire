@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{g+go}{apt\PYGZhy{}get install dovecot\PYGZhy{}core dovecot\PYGZhy{}imapd dovecot\PYGZhy{}mysql dovecot\PYGZhy{}lmtpd dovecot\PYGZhy{}pop3d}
-\end{Verbatim}

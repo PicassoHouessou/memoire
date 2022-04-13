@@ -1,6 +1,12 @@
 # LaTeX stuffs:
 *.docx
 *.doc
+*.lof
+*.toc
+*.out
+*.bbl
+*.blg
+*.synctex.gz
 *.fdb_latexmk
 *.fls
 *.fdb
@@ -22,3 +28,8 @@
 _minted*
 *converted-to*
 *.splr
+/.vs
+/.vscode
+/_minted-index
+
+/build

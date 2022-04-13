@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{g+go}{mail\PYGZus{}location = maildir:/externe/mail/vhosts/\PYGZpc{}d/\PYGZpc{}n}
-\PYG{g+go}{mail\PYGZus{}uid = vhosts}
-\PYG{g+go}{mail\PYGZus{}gid = vhosts}
-\PYG{g+go}{mail\PYGZus{}privileged\PYGZus{}group = mail}
-\PYG{g+go}{first\PYGZus{}valid\PYGZus{}uid = 5000}
-\PYG{g+go}{last\PYGZus{}valid\PYGZus{}uid = 5000}
-\end{Verbatim}

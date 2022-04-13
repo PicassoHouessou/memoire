@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{SELECT} \PYG{o}{`}\PYG{n}{nom}\PYG{o}{`}\PYG{p}{,} \PYG{o}{`}\PYG{n}{prenom}\PYG{o}{`} \PYG{k}{FROM} \PYG{o}{`}\PYG{n}{utilisateur}\PYG{o}{`} \PYG{k}{WHERE} \PYG{o}{`}\PYG{n}{utilisateur}\PYG{o}{`}\PYG{p}{.}\PYG{o}{`}\PYG{n}{age}\PYG{o}{`} \PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{18} \PYG{p}{;} \PYG{c+c1}{\PYGZhy{}\PYGZhy{}Permet de sélectionner les nom, prénoms de tous les utilisateurs majeurs.}
-\end{Verbatim}

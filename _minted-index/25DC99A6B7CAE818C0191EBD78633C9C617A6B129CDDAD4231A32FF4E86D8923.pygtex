@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{g+go}{disable\PYGZus{}plaintext\PYGZus{}auth = yes}
-\PYG{g+go}{auth\PYGZus{}mechanisms = plain login}
-\PYG{g+go}{!include auth\PYGZhy{}sql.conf.ext}
-\end{Verbatim}

@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{g+go}{openssl req \PYGZhy{}x509 \PYGZhy{}nodes \PYGZhy{}days 365 \PYGZhy{}newkey rsa:2048 \PYGZhy{}keyout /etc/ssl/private/dovecot\PYGZhy{}autosigne.key \PYGZhy{}out /etc/ssl/certs/dovecot\PYGZhy{}autosigne.crt}
-\end{Verbatim}
